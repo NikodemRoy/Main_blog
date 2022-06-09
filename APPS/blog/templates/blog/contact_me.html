@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% load static %}
+ 
+{% block title %}Blog{% endblock title %}
+
+{% block css_style %}<link rel="stylesheet" href="{% static 'blog/css/contact_me.css' %}">{% endblock css_style %}
+{% block css_responsive %}<link rel="stylesheet" href="{% static 'blog/css_responsive/contact_me_responsive.css' %}">{% endblock css_responsive %}
+
+
+{% block content %}
+<div class="main_section">
+    <div class="container">
+        <div class="left_section">
+
+            <div class="top_section">
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur ada consectetur
+                </h3>
+                <div class="user_image">
+                    <img src="{% static 'images/user.png' %}" alt="image">
+                    <a href="{% url 'contact_me' %}"><div class="overly"></div></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquadunt ut labore et dolore magna aliqua ut labore et dolore magna aliqua</p>
+                <a href="{% url 'contact_me' %}">CONTACT ME</a>
+            </div>
+
+            <div class="bottom_section">
+                <p>contact@gmail.com</p>
+                <div class="social_icons">
+                    <a href="#">
+                        <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
+                    </a>
+                    <a href="#">
+                        <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="right_section">
+            <div class="bottom_section">
+
+                <div class="half_section first">
+                    <div class="heading">
+                        <h3>Lorem ipsum dolor sit amet, <span>consectetur ada consectetur</span> </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur </p>
+                    </div>
+                    <div class="mail_id_box">
+                        <h6> <span><img src="{% static 'images/Iconly-Light-Outline-Message.svg' %}" alt="image"></span> contact@gmail.com</h6>
+                    </div>
+                </div>
+                <div class="half_section">
+
+                    <div class="form_section">
+                        <form action="#" method="post">
+                            <div class="form_heading">
+                                <h3>Send a message</h3>
+                            </div>
+        
+                            <div class="form_group">
+                                <label for="text">Your name:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form_group">
+                                <label for="text">Your Email:</label>
+                                <input type="text">
+                            </div>
+                            <div class="form_group">
+                                <label for="text">Your Message:</label>
+                                <textarea></textarea>
+                            </div>
+                            <button>submit</button>
+                        </form>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

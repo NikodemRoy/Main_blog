@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        ".vscode": true,
+        "env_blog": true
+    },
+    "liveServer.settings.port": 5501
+}
