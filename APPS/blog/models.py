@@ -44,4 +44,18 @@ class Comment(models.Model):
     def __str__(self):
         return self.user_name
 
-    
+
+class BlogPost2(TranslatableModel):
+    translations = TranslatedFields(
+        title = models.CharField(max_length=96),
+        slug = models.SlugField(max_length=255),
+        description= models.TextField(max_length=10000, blank=True),
+        publish_date = models.DateTimeField(auto_now=True),
+    )
+
+    created_date = models.DateTimeField(auto_now_add=True)
+    cover = models.ImageField(upload_to='post_cover', blank=True)
+    publish_status = models.BooleanField(default=False)
+    comment_count = models.IntegerField(default=0, blank=True)
+    heart_count = models.IntegerField(default=0, blank=True)
+

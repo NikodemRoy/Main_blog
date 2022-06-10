@@ -28,7 +28,7 @@
                         </a>
                         
                     </div>
-                    <p>5</p>
+                    <p>{{post_detail.heart_count}}</p>
                     
                 </div>
                 <div class="icon_group two">
@@ -44,7 +44,7 @@
                         </a>
                         
                     </div>
-                    <p>115</p>
+                    <p>{{post_detail.comment_count}}</p>
                     
                 </div>
                 <div class="icon_group three">
@@ -77,65 +77,22 @@
                         <div class="overly"></div>
                     </div>
                     <div class="text_section">
-                        <h5 class="first_date">25 May 2022</h5>
-                        <h3>Dealing with data in microservice architectures - part 4 - Event-driven architectures
+                        <h5 class="first_date">{{post_detail.created_date|date}}</h5>
+                        <h3>{{post_detail.title}}
                         </h3>
                         <h5 class="last_date">21 May 2022</h5>
                         <div class="tags">
+                            {% for tag in post_detail.tags.all %}
                             <a href="#">
                                 <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                news
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                testing
+                                {{tag}}
+                            {% endfor %}
                             </a>
                         </div>
 
                         <div class="details_text">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Pretium quam vulputate dignissim
-                                suspendisse in est ante. Diam ut venenatis tellus in metus vulputate eu scelerisque.
-                                A erat nam at lectus urna duis convallis. Malesuada fames ac turpis egestas sed
-                                tempus. Risus pretium quam vulputate dignissim suspendisse in est ante. Leo vel
-                                fringilla est ullamcorper eget nulla facilisi etiam dignissim. Tincidunt praesent
-                                semper feugiat nibh sed pulvinar proin. Risus feugiat in ante metus dictum at tempor
-                                commodo ullamcorper. Eget nunc lobortis mattis aliquam.
-
-                                <span>
-                                    Sollicitudin ac orci phasellus egestas tellus rutrum. Tortor at auctor urna nunc id
-                                    cursus metus. Fames ac turpis egestas integer. Blandit turpis cursus in hac
-                                    habitasse platea dictumst. Odio euismod lacinia at quis risus sed vulputate odio.
-                                    Dui ut ornare lectus sit. Arcu dictum varius duis at consectetur. Dignissim sodales
-                                    ut eu sem. Gravida in fermentum et sollicitudin ac. Ut sem viverra aliquet eget sit.
-                                    Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Et magnis
-                                    dis parturient montes nascetur. Tincidunt tortor aliquam nulla facilisi cras
-                                    fermentum odio eu feugiat. Scelerisque eleifend donec pretium vulputate sapien nec
-                                    sagittis.
-                                    
-                                </span>
-                                <span>
-                                    Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Quis varius quam
-                                quisque id. Quam id leo in vitae. Dictum non consectetur a erat nam. Cursus metus
-                                aliquam eleifend mi in nulla. Mauris in aliquam sem fringilla ut. Iaculis urna id
-                                volutpat lacus laoreet non. Nisl vel pretium lectus quam id leo in vitae. Sed lectus
-                                vestibulum mattis ullamcorper velit sed ullamcorper morbi. Aliquam nulla facilisi
-                                cras fermentum odio. Lectus arcu bibendum at varius vel pharetra vel turpis. Neque
-                                viverra justo nec ultrices. Id leo in vitae turpis massa. At ultrices mi tempus
-                                imperdiet nulla malesuada pellentesque elit eget. Mauris sit amet massa vitae. Enim
-                                ut tellus elementum sagittis vitae et leo. Sit amet tellus cras adipiscing enim eu
-                                turpis egestas pretium.
-
-                                </span>
-
-                               
-
-                                
+                                {{post_detail.description}}
                             </p>
 
                             <div class="react_icon">

@@ -22,17 +22,21 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.utils.translation import gettext_lazy as _
+
 urlpatterns = i18n_patterns(
     path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')), #fake admin url
     re_path(r'^rosetta/', include('rosetta.urls')), # roseta url
 
     path('realadmin/', admin.site.urls),
     path('', include('APPS.blog.urls')),
-    path('post', include('APPS.posts.urls')),
-    path('category', include('APPS.categories.urls')),
+    path('post/', include('APPS.posts.urls')),
+    path('category/', include('APPS.categories.urls')),
+    path(_('about_me/'), include('APPS.about_me.urls')),
 )
 
 
+# path(_('about_me'), include('APPS.categories.urls')),
 
 # adding STATIC_URL and MEDIA_URL
 urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

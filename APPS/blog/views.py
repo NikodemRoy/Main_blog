@@ -1,12 +1,15 @@
 from django.shortcuts import render
+from .models import BlogPost
 
 # pagination
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
-    posts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    posts = BlogPost.objects.filter(publish_status = True)
+    print(posts[0].slug)
 
 
+    # pagination
     paginator = Paginator(posts, 5)
     page = request.GET.get('page')
     page_post = paginator.get_page(page)
@@ -18,35 +21,12 @@ def home(request):
    
     return render(request, 'blog/home.html', context)
 
-# def home(request):
-#     posts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-
-
-#     paginator = Paginator(posts, 5)
-#     page = request.GET.get('page')
-#     page_post = paginator.get_page(page)
-
-#     context = {
-#         'posts':posts,
-#         'page_post':page_post
-#         }
-#     if request.htmx:
-#         return render(request, 'blog/home copy.html', context)
-#     return render(request, 'blog/home.html', context)
 
 
 
 def contact_me(request):
     context = {}
     return render(request, 'blog/contact_me.html', context)
-
-def about_me(request):
-    main_projects = [1,2,3,]
-    context = {
-        'main_projects':main_projects,
-        }
-    print("main_projects")    
-    return render(request, 'blog/about_me.html', context)
 
 
 def portfolio(request):

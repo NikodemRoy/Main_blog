@@ -4,7 +4,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('<str:post_slug>', views.post, name='post')
+    path('xD/', views.about_me, name='about_me')
 ]
 
 

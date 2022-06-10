@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-07 20:11+0200\n"
-"PO-Revision-Date: 2022-06-07 20:13+0000\n"
+"POT-Creation-Date: 2022-06-09 21:45+0200\n"
+"PO-Revision-Date: 2022-06-09 21:49+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,30 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: .\main_blog\settings.py:130
+#: .\main_blog\settings.py:133
 msgid "English"
 msgstr "English"
 
-#: .\main_blog\settings.py:131
+#: .\main_blog\settings.py:134
 msgid "Polish"
 msgstr "Polish"
 
-#: .\templates\includes\footer.html:5
+#: .\main_blog\urls.py:35
+#| msgid "About me"
+msgid "about_me/"
+msgstr "about_me/"
+
+#: .\templates\includes\footer.html:7
 msgid "Posssts"
 msgstr "Posssts"
 
-#: .\templates\includes\navbar.html:27
+#: .\templates\includes\navbar.html:32
 msgid "Posts"
 msgstr "Posts"
 
-#: .\templates\includes\navbar.html:30
+#: .\templates\includes\navbar.html:35
 msgid "About me"
 msgstr "About me"
 
-#: .\templates\includes\navbar.html:33
+#: .\templates\includes\navbar.html:38
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: .\templates\includes\navbar.html:36
+#: .\templates\includes\navbar.html:41
 msgid "Contact"
 msgstr "Contact"
+
+#: .\templates\includes\navbar.html:69
+msgid "Language"
+msgstr "Language"
