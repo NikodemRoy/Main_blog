@@ -3,6 +3,8 @@ from .models import BlogPost
 
 from .models import Categories, Subcategories
 
+from .services import get_search
+
 # pagination
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
@@ -10,13 +12,6 @@ def home(request):
     posts = BlogPost.objects.filter(publish_status = True)
     
     
-    # cat_list = []
-    # category_list = Categories.objects.all()
-    # for category in category_list:
-    #     cat_list.append(category)
-    # print(cat_list)
-    # sub = Subcategories.objects
-
     # pagination
     paginator = Paginator(posts, 5)
     page = request.GET.get('page')
@@ -51,4 +46,11 @@ def portfolio(request):
 def project_detail(request, project):
     context = {}
     return render(request, 'blog/project_detail.html', context)
+
+
+def search(request):
+    blog_post = get_search(request)
+    
+    context = {'page_post':blog_post}
+    return render(request, 'blog/home.html', context)
 

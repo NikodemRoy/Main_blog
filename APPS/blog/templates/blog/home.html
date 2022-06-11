@@ -43,8 +43,12 @@
         </div>
         <div class="middle_section">
             <div class="top_bar">
+                {% if 'search' in request.path %}
+                <a href="#" class="active">Search resoults:</a>
+                {% else%}
                 <a href="#" class="active">Latest</a>
                 <a href="#">Top</a>
+                {% endif %}
             </div>
 
 
@@ -94,6 +98,8 @@
                     </div>
                 </div>
                 {% endfor %}
+                {% else %}
+                <h2>No matching resoults</h2>
             {% endif %}
             </div>
 
@@ -124,7 +130,7 @@
         <div class="right_section">
 
             <div class="search_bar">
-                <form action="" class="search" method="GET">
+                <form action="{% url 'search' %}" class="search" method="GET">
                     <input type="text" placeholder="Search…." id="searchbar" name="search">
                     <img src="{% static 'images/Icon ionic-ios-search.svg' %}" alt="image">
                 </form>
