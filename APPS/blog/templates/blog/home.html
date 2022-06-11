@@ -152,50 +152,21 @@
                     <!--New Added:  toggle-container  and  dropdown-menu -->
                     <div class="all_drop_down toggle-container" id="dropdown-menu">
                         <ul class="drop_parent">
+                            {% for category in category_list %}
                             <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
+                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> {{category.category}}</a>
                                 <ul>
+                      
+                                    {% for subcategory in category.subcategories_set.all %}
                                     <li>
-                                        <a href="#">Subcategory</a>
+                                        <a href="#">{{subcategory}}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
+                                    {% endfor %}
                                 </ul>
-
+                                {% endfor %}
                             </li>
                         </ul>
-                        <ul class="drop_parent">
-                            <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </ul>
+                        
 
                     </div>
 

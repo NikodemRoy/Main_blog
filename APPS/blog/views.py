@@ -1,13 +1,21 @@
 from django.shortcuts import render
 from .models import BlogPost
 
+from .models import Categories, Subcategories
+
 # pagination
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
     posts = BlogPost.objects.filter(publish_status = True)
-    print(posts[0].slug)
-
+    
+    
+    # cat_list = []
+    # category_list = Categories.objects.all()
+    # for category in category_list:
+    #     cat_list.append(category)
+    # print(cat_list)
+    # sub = Subcategories.objects
 
     # pagination
     paginator = Paginator(posts, 5)

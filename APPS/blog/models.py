@@ -17,7 +17,7 @@ class BlogPost(TranslatableModel):
     publish_status = models.BooleanField(default=False)
     comment_count = models.IntegerField(default=0, blank=True)
     heart_count = models.IntegerField(default=0, blank=True)
-
+    
     tags = models.ManyToManyField('Tag', blank=True)
 
     
@@ -45,17 +45,30 @@ class Comment(models.Model):
         return self.user_name
 
 
-class BlogPost2(TranslatableModel):
+class Categories(TranslatableModel):
     translations = TranslatedFields(
-        title = models.CharField(max_length=96),
+        category = models.CharField(max_length=96),
         slug = models.SlugField(max_length=255),
-        description= models.TextField(max_length=10000, blank=True),
-        publish_date = models.DateTimeField(auto_now=True),
     )
 
-    created_date = models.DateTimeField(auto_now_add=True)
-    cover = models.ImageField(upload_to='post_cover', blank=True)
-    publish_status = models.BooleanField(default=False)
-    comment_count = models.IntegerField(default=0, blank=True)
-    heart_count = models.IntegerField(default=0, blank=True)
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = 'Categories'
 
+    def __str__(self):
+        return self.category
+
+class Subcategories(TranslatableModel):
+    translations = TranslatedFields(
+        subcategory = models.CharField(max_length=96),
+        slug = models.SlugField(max_length=255),
+    )
+
+    maincategory = models.ForeignKey(Categories, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "Subcategory"
+        verbose_name_plural = 'Subcategories'
+    
+    def __str__(self):
+        return self.subcategory
