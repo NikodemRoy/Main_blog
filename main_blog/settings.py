@@ -77,6 +77,7 @@ TEMPLATES = [
                 # custom context processor:
                 'APPS.blog.context_processors.category_list',
                 'APPS.blog.context_processors.tag_list',
+                'APPS.about_me.context_processors.short_description',
             ],
         },
     },
