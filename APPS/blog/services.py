@@ -11,6 +11,6 @@ def get_search(request):
                 Q(translations__title__icontains= search)|
                 Q(tags__translations__tag= search),
                 publish_status = True
-            ).distinct()
+            ).distinct().order_by('created_date')
         print(search)
     return blog_post

@@ -23,7 +23,7 @@ class BlogPost(TranslatableModel):
     
     def __str__(self):
         return self.title
-
+    
 
 class Tag(TranslatableModel):
     translations = TranslatedFields(

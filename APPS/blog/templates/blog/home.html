@@ -44,10 +44,10 @@
         <div class="middle_section">
             <div class="top_bar">
                 {% if 'search' in request.path %}
-                <a href="#" class="active">Search resoults:</a>
+                <a class="active">Search resoults:</a>
                 {% else%}
-                <a href="#" class="active">Latest</a>
-                <a href="#">Top</a>
+                <a href="{% url 'home' %}" {% if 'top' in request.path %}{% else %} class="active" {% endif %}>Latest</a>
+                <a href="{% url 'home_top' %}" {% if 'top' in request.path %} class="active" {% endif %}>Top</a>
                 {% endif %}
             </div>
 

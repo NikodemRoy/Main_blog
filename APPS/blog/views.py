@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import BlogPost
+from django.db.models import F
 
 from .models import Categories, Subcategories
 
@@ -9,8 +10,8 @@ from .services import get_search
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
-    posts = BlogPost.objects.filter(publish_status = True)
-    
+    posts = BlogPost.objects.filter(publish_status = True).order_by('-created_date')
+
     
     # pagination
     paginator = Paginator(posts, 5)
@@ -24,6 +25,21 @@ def home(request):
    
     return render(request, 'blog/home.html', context)
 
+def home_top(request):
+    posts = BlogPost.objects.filter(publish_status = True).annotate(top=F('comment_count') + F('heart_count')).order_by('-top')
+
+  
+    # # pagination
+    paginator = Paginator(posts, 5)
+    page = request.GET.get('page')
+    page_post = paginator.get_page(page)
+
+    context = {
+        'posts':posts,
+        'page_post':page_post
+        }
+   
+    return render(request, 'blog/home.html', context)
 
 
 
