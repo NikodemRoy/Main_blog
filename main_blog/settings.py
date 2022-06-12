@@ -76,6 +76,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 # custom context processor:
                 'APPS.blog.context_processors.category_list',
+                'APPS.blog.context_processors.tag_list',
             ],
         },
     },
@@ -164,7 +165,7 @@ STATICFILES_DIRS = [
 
 
 # root for media 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/uploads/'
 MEDIA_ROOT = BASE_DIR / "uploads"
 
 # Default primary key field type

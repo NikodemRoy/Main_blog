@@ -13,11 +13,13 @@ class BlogPost(TranslatableModel):
     )
 
     created_date = models.DateTimeField(auto_now_add=True)
-    cover = models.ImageField(upload_to='post_cover', blank=True)
+    cover = models.ImageField(upload_to='post_cover', default='post_cover/defoult.png')
     publish_status = models.BooleanField(default=False)
     comment_count = models.IntegerField(default=0, blank=True)
     heart_count = models.IntegerField(default=0, blank=True)
+
     
+    category = models.ForeignKey('Subcategories', on_delete=models.CASCADE, blank=True, null=True )
     tags = models.ManyToManyField('Tag', blank=True)
 
     
@@ -71,4 +73,4 @@ class Subcategories(TranslatableModel):
         verbose_name_plural = 'Subcategories'
     
     def __str__(self):
-        return self.subcategory
+        return f'{self.maincategory}: {self.subcategory}'

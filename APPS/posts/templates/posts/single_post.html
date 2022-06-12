@@ -73,21 +73,20 @@
             <div class="latest_all_cards">
                 <div class="latest_card">
                     <div class="image_section">
-                        <img src="{% static 'images/card1.png' %}" alt="image">
+                        <img src="{{post_detail.cover.url}}" alt="image">
                         <div class="overly"></div>
                     </div>
                     <div class="text_section">
                         <h5 class="first_date">{{post_detail.created_date|date}}</h5>
                         <h3>{{post_detail.title}}
                         </h3>
-                        <h5 class="last_date">21 May 2022</h5>
+                        <h5 class="last_date">{{post_detail.created_date|date}}</h5>
                         <div class="tags">
                             {% for tag in post_detail.tags.all %}
-                            <a href="#">
-                                <span>#</span>
-                                {{tag}}
+
+                            <a href="{% url 'home' %}search/?search={{tag}}"><span>#</span>{{tag}}</a>
+                            
                             {% endfor %}
-                            </a>
                         </div>
 
                         <div class="details_text">

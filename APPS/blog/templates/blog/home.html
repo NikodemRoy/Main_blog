@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load i18n %}
+
 
 {% load static %}
  
@@ -44,10 +46,13 @@
         <div class="middle_section">
             <div class="top_bar">
                 {% if 'search' in request.path %}
-                <a class="active">Search resoults:</a>
+                <a class="active">{% trans 'Search resoults:' %}</a>
                 {% else%}
-                <a href="{% url 'home' %}" {% if 'top' in request.path %}{% else %} class="active" {% endif %}>Latest</a>
-                <a href="{% url 'home_top' %}" {% if 'top' in request.path %} class="active" {% endif %}>Top</a>
+                {% if 'category' in request.path %}
+                {% else %}
+                <a href="{% url 'home' %}" {% if 'top' in request.path %}{% else %} class="active" {% endif %}>{% trans 'Latest' %}</a>
+                <a href="{% url 'home_top' %}" {% if 'top' in request.path %} class="active" {% endif %}>{% trans 'Top' %}</a>
+                {% endif %}
                 {% endif %}
             </div>
 
@@ -57,10 +62,10 @@
                 {% for post in page_post  %}
                 <div class="latest_card">
                     <div class="image_section">
-                        <a href="{% url 'post' post.slug %}"><img src="{% static 'images/card1.png' %}" alt="image"></a>
+                        <a href="{% url 'post' post.slug %}"><img src="{{post.cover.url }}" alt="image"></a>
                     </div>
                     <div class="text_section">
-                        <a href=" {% url 'post' post %}">
+                        <a href=" {% url 'post' post.slug %}">
                             <h3>{{post.title}}</h3>
                         </a>
                         <h5>{{post.created_date|date}}</h5>
@@ -99,7 +104,7 @@
                 </div>
                 {% endfor %}
                 {% else %}
-                <h2>No matching resoults</h2>
+                <h2>{% trans 'No matching resoults' %}</h2>
             {% endif %}
             </div>
 
@@ -131,7 +136,7 @@
 
             <div class="search_bar">
                 <form action="{% url 'search' %}" class="search" method="GET">
-                    <input type="text" placeholder="Search…." id="searchbar" name="search">
+                    <input type="text" placeholder="{% trans 'Search…' %}" id="searchbar" name="search">
                     <img src="{% static 'images/Icon ionic-ios-search.svg' %}" alt="image">
                 </form>
             </div>
@@ -152,7 +157,7 @@
 
                     <!--New Added:  category-nav-heading  -->
                     <div class="heading" id="category-nav-heading">
-                        <h3 class="dropdown-toggle">Categories <span><img src="{% static 'images/res_down.svg' %}"
+                        <h3 class="dropdown-toggle">{% trans 'Categories' %}<span><img src="{% static 'images/res_down.svg' %}"
                                     alt=""></span></h3>
                     </div>
                     <!--New Added:  toggle-container  and  dropdown-menu -->
@@ -165,7 +170,7 @@
                       
                                     {% for subcategory in category.subcategories_set.all %}
                                     <li>
-                                        <a href="#">{{subcategory}}</a>
+                                        <a href="{% url 'home_category' subcategory.slug %}">{{subcategory.subcategory}}</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
@@ -181,43 +186,16 @@
 
                 <div class="info_tags">
                     <div class="heading">
-                        <h3>Tags</h3>
+                        <h3>{% trans 'Tags' %}</h3>
                     </div>
 
                     <div class="tag_list">
                         <div class="list_items">
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                news
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                testing
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                news
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                testing
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
+
+                            {% for tag in tag_list %}
+                            <a href="{% url 'home' %}search/?search={{tag}}"><span>#</span>{{tag}}</a>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>

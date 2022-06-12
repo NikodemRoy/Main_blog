@@ -8,27 +8,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-09 21:45+0200\n"
-"PO-Revision-Date: 2022-06-09 21:49+0000\n"
-"Last-Translator:   <admin@admin.com>\n"
+"POT-Creation-Date: 2022-06-12 14:23+0200\n"
+"PO-Revision-Date: 2022-06-12 14:24+0000\n"
+"Last-Translator: b'  <admin@admin.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Translated-Using: django-rosetta 0.9.8\n"
+"X-Translated-Using: django-rosetta 0.9.6\n"
 
-#: .\main_blog\settings.py:133
+#: .\APPS\blog\templates\blog\home.html:49
+msgid "Search resoults:"
+msgstr "Search resoults:"
+
+#: .\APPS\blog\templates\blog\home.html:51
+msgid "Latest"
+msgstr "Latest"
+
+#: .\APPS\blog\templates\blog\home.html:52
+msgid "Top"
+msgstr "Top"
+
+#: .\APPS\blog\templates\blog\home.html:104
+#| msgid "Search resoults:"
+msgid "No matching resoults"
+msgstr "No matching resoults"
+
+#: .\APPS\blog\templates\blog\home.html:136
+msgid "Search…"
+msgstr "Search…"
+
+#: .\APPS\blog\templates\blog\home.html:157
+msgid "Categories"
+msgstr "Categories"
+
+#: .\APPS\blog\templates\blog\home.html:186
+msgid "Tags"
+msgstr "Tags"
+
+#: .\main_blog\settings.py:136
 msgid "English"
 msgstr "English"
 
-#: .\main_blog\settings.py:134
+#: .\main_blog\settings.py:137
 msgid "Polish"
 msgstr "Polish"
 
 #: .\main_blog\urls.py:35
-#| msgid "About me"
 msgid "about_me/"
 msgstr "about_me/"
 

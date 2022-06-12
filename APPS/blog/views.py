@@ -41,6 +41,21 @@ def home_top(request):
    
     return render(request, 'blog/home.html', context)
 
+def home_category(request, subcategory):
+    posts = BlogPost.objects.filter(publish_status = True, category__translations__slug=subcategory)
+  
+    # # pagination
+    paginator = Paginator(posts, 5)
+    page = request.GET.get('page')
+    page_post = paginator.get_page(page)
+
+    context = {
+        'posts':posts,
+        'page_post':page_post
+        }
+   
+    return render(request, 'blog/home.html', context)
+
 
 
 def contact_me(request):

@@ -5,11 +5,11 @@ from .models import BlogPost
 def get_search(request):
     blog_post = None
     if 'search' in request.GET:
-        search = request.GET['search'].capitalize() 
+        search = request.GET['search']
         if search:
             blog_post = BlogPost.objects.filter(
                 Q(translations__title__icontains= search)|
-                Q(tags__translations__tag= search),
+                Q(tags__translations__tag__icontains= search),
                 publish_status = True
             ).distinct().order_by('created_date')
         print(search)
