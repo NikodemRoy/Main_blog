@@ -4,7 +4,10 @@ from django.contrib import admin
 from django.contrib import admin
 from parler.admin import TranslatableAdmin
 
-from .models import Shortdescription
+from .models import Mainskill, Profile, Shortdescription, Skill
 
 admin.site.register(Shortdescription, TranslatableAdmin)
+admin.site.register(Profile, TranslatableAdmin)
+admin.site.register(Mainskill, TranslatableAdmin)
+admin.site.register(Skill, TranslatableAdmin)
 
