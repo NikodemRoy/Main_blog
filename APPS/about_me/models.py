@@ -14,9 +14,47 @@ class Shortdescription(TranslatableModel):
     )
     photo = models.ImageField(upload_to='profile', default='profile/user.png')
 
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE)
+
     class Meta:
         verbose_name = "Short"
         verbose_name_plural = 'Short'
 
     def __str__(self):
         return self.email
+
+class Profile(TranslatableModel):
+    translations = TranslatedFields(
+        full_text = models.CharField(max_length=2550),
+    )
+
+    class Meta:
+        verbose_name = "Profil"
+        verbose_name_plural = 'Profil'
+
+    def __str__(self):
+        return "this is my porofile"
+
+
+class Mainskill(TranslatableModel):
+    translations = TranslatedFields(
+        skill_name = models.CharField(max_length=2550),
+        skill_description = models.CharField(max_length=2550),
+    )
+
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.skill_name
+
+
+class Skill(TranslatableModel):
+    translations = TranslatedFields(
+        skill_name = models.CharField(max_length=2550),
+        skill_description = models.CharField(max_length=2550),
+    )
+
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.skill_name

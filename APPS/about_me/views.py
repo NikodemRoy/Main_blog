@@ -9,3 +9,5 @@ def about_me(request):
         }
     print("main_projects")    
     return render(request, 'blog/about_me.html', context)
+
+
