@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
+
 {% load static %}
  
 {% block title %}Post Title{% endblock title %}
@@ -172,69 +174,50 @@
         </div>
         <div class="right_section">
 
-
             <div class="search_bar">
-                <form action="" class="search" method="GET">
-                    <input type="text" placeholder="Search…." id="searchbar" name="search">
+                <form action="{% url 'search' %}" class="search" method="GET">
+                    <input type="text" placeholder="{% trans 'Search…' %}" id="searchbar" name="search">
                     <img src="{% static 'images/Icon ionic-ios-search.svg' %}" alt="image">
                 </form>
             </div>
+
+            <!-- <script>
+                let search = document.getElementsById("search-bar")
+
+                search.addEventListener("keyup", e => {
+                    e.preventDefault();
+                    if (e.keyCode === 13) {
+                        console.log("Enter pressed")
+                    }
+                })
+            </script> -->
 
             <div class="fixed_right_nav">
                 <div class="category_nav">
 
                     <!--New Added:  category-nav-heading  -->
                     <div class="heading" id="category-nav-heading">
-                        <h3 class="dropdown-toggle">Categories <span><img src="{% static 'images/res_down.svg' %}"
+                        <h3 class="dropdown-toggle">{% trans 'Categories' %}<span><img src="{% static 'images/res_down.svg' %}"
                                     alt=""></span></h3>
                     </div>
                     <!--New Added:  toggle-container  and  dropdown-menu -->
                     <div class="all_drop_down toggle-container" id="dropdown-menu">
                         <ul class="drop_parent">
+                            {% for category in category_list %}
                             <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
+                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> {{category.category}}</a>
                                 <ul>
+                      
+                                    {% for subcategory in category.subcategories_set.all %}
                                     <li>
-                                        <a href="#">Subcategory</a>
+                                        <a href="{% url 'home_category' subcategory.slug %}">{{subcategory.subcategory}}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
+                                    {% endfor %}
                                 </ul>
-
+                                {% endfor %}
                             </li>
                         </ul>
-                        <ul class="drop_parent">
-                            <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a><span><img src="{% static 'images/down.svg' %}" alt="images"></span> Category</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Subcategory</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-                        </ul>
+                        
 
                     </div>
 
@@ -243,48 +226,20 @@
 
                 <div class="info_tags">
                     <div class="heading">
-                        <h3>Tags</h3>
+                        <h3>{% trans 'Tags' %}</h3>
                     </div>
 
                     <div class="tag_list">
                         <div class="list_items">
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                news
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                testing
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                news
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                testing
-                            </a>
-                            <a href="#">
-                                <span>#</span>
-                                eventdriven
-                            </a>
+
+                            {% for tag in tag_list %}
+                            <a href="{% url 'home' %}search/?search={{tag}}"><span>#</span>{{tag}}</a>
+                            {% endfor %}
+
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 
