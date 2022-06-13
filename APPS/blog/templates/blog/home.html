@@ -16,30 +16,43 @@
         <div class="left_section">
             <div class="top_section">
                 <h3>
-                    Lorem ipsum dolor sit amet, consectetur ada consectetur
+                    {{short_description.up_text}}
                 </h3>
                 <div class="user_image">
                     <img src="{% static 'images/user.png' %}" alt="image">
                     <a href="{% url 'contact_me' %}"><div class="overly"></div></a>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliquadunt ut labore et dolore magna aliqua ut labore et dolore magna
-                    aliqua</p>
+                <p>{{short_description.down_text}}</p>
                 <a href="{% url 'contact_me' %}">CONTACT ME</a>
             </div>
 
             <div class="bottom_section">
-                <p>contact@gmail.com</p>
+                <p>{{short_description.email}}</p>
                 <div class="social_icons">
-                    <a href="#">
+                    {% if short_description.fb_link %}
+                    <a href="short_description.fb_link">
                         <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
                     </a>
-                    <a href="#">
+                    {% endif %}
+
+                    {% if short_description.github_link %}
+                    <a href="short_description.fb_link">
                         <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
                     </a>
-                    <a href="#">
+                    {% endif %}
+
+                    {% if short_description.linkedin_link %}
+                    <a href="short_description.fb_link">
                         <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
                     </a>
+                    {% endif %}
+                    
+                    {% if short_description.instagram_link %}
+                    <a href="short_description.fb_link">
+                        <img src="{% static 'images/Icon_11_.svg' %}" alt="icon">
+                    </a>
+                    {% endif %}
+
                 </div>
             </div>
         </div>
