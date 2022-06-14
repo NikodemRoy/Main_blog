@@ -14,7 +14,7 @@ class Shortdescription(TranslatableModel):
     )
     photo = models.ImageField(upload_to='profile', default='profile/user.png')
 
-    profile = models.ForeignKey('Profile', on_delete=models.CASCADE)
+    profile = models.ForeignKey('Profile', on_delete=models.CASCADE, default=None, null=True, blank=True)
 
     class Meta:
         verbose_name = "Short"
@@ -33,7 +33,7 @@ class Profile(TranslatableModel):
         verbose_name_plural = 'Profil'
 
     def __str__(self):
-        return "this is my porofile"
+        return f"this is my porofile {self.id}"
 
 
 class Mainskill(TranslatableModel):
@@ -50,8 +50,7 @@ class Mainskill(TranslatableModel):
 
 class Skill(TranslatableModel):
     translations = TranslatedFields(
-        skill_name = models.CharField(max_length=2550),
-        skill_description = models.CharField(max_length=2550),
+        skill_name = models.CharField(max_length=255),
     )
 
     profile = models.ForeignKey('Profile', on_delete=models.CASCADE)

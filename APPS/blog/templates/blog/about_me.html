@@ -63,41 +63,30 @@
             <div class="top_section">
                 <h3 class="heading_text">{% trans 'About Me' %}</h3>
                 <div class="details_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
+                    <p>{{profile.full_text}}</p>
                 </div>
 
                 <h3 class="heading_text">{% trans 'My Skills:' %}</h3>
 
                 <div class="couple_title_details">
+                    {% for mainskill in profile.mainskill_set.all %}
+
                     <div class="single_details">
-                        <h5>Lorem</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea id est laborum.</p>
-                    </div>
-                    <div class="single_details">
-                        <h5>Lorem</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea id est laborum.</p>
+                        <h5>{{mainskill.skill_name}}</h5>
+                        <p>{{mainskill.skill_description}}</p>
                     </div>
 
+                    {% endfor %}
+                   
+
                 </div>
+                
 
                 <h4>{% trans 'Additional skills' %}</h4>
                 <div class="btn_group">
-                    <a href="#">1Lorem</a>
-                    <a href="#">Lorem</a>
-                    <a href="#">Lorem</a>
+                    {% for skill in profile.skill_set.all %}
+                    <a>{{skill.skill_name}}</a>
+                    {% endfor %}
                 </div>
 
             </div>

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-12 14:23+0200\n"
-"PO-Revision-Date: 2022-06-12 14:24+0000\n"
+"POT-Creation-Date: 2022-06-13 21:53+0200\n"
+"PO-Revision-Date: 2022-06-13 21:54+0000\n"
 "Last-Translator: b'  <admin@admin.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,40 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 "X-Translated-Using: django-rosetta 0.9.6\n"
 
-#: .\APPS\blog\templates\blog\home.html:49
+#: .\APPS\blog\templates\blog\about_me.html:64
+#| msgid "About me"
+msgid "About Me"
+msgstr "O mnie"
+
+#: .\APPS\blog\templates\blog\about_me.html:69
+msgid "My Skills:"
+msgstr "Moje umiejętności:"
+
+#: .\APPS\blog\templates\blog\about_me.html:84
+msgid "Additional skills"
+msgstr "Dodatkowe umiejętności"
+
+#: .\APPS\blog\templates\blog\home.html:62
 msgid "Search resoults:"
 msgstr "Wyniku poszukiwania:"
 
-#: .\APPS\blog\templates\blog\home.html:51
+#: .\APPS\blog\templates\blog\home.html:66
 msgid "Latest"
 msgstr "Najnowsze"
 
-#: .\APPS\blog\templates\blog\home.html:52
+#: .\APPS\blog\templates\blog\home.html:67
 msgid "Top"
 msgstr "Topowe"
 
-#: .\APPS\blog\templates\blog\home.html:104
-#| msgid "Search resoults:"
+#: .\APPS\blog\templates\blog\home.html:120
 msgid "No matching resoults"
 msgstr "Brak pasujących wyników"
 
-#: .\APPS\blog\templates\blog\home.html:136
+#: .\APPS\blog\templates\blog\home.html:152
+#: .\APPS\posts\templates\posts\single_post.html:179
 msgid "Search…"
 msgstr "Szukaj..."
 
-#: .\APPS\blog\templates\blog\home.html:157
+#: .\APPS\blog\templates\blog\home.html:173
+#: .\APPS\posts\templates\posts\single_post.html:200
 msgid "Categories"
 msgstr "Kategorie"
 
-#: .\APPS\blog\templates\blog\home.html:186
+#: .\APPS\blog\templates\blog\home.html:202
+#: .\APPS\posts\templates\posts\single_post.html:229
 msgid "Tags"
 msgstr "Tagi"
 
-#: .\main_blog\settings.py:136
+#: .\main_blog\settings.py:137
 msgid "English"
 msgstr "Angielski"
 
-#: .\main_blog\settings.py:137
+#: .\main_blog\settings.py:138
 msgid "Polish"
 msgstr "Polskia"
 
