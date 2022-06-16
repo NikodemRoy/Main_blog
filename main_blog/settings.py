@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'APPS.categories',
     'APPS.about_me',
     'APPS.projects',
+    'APPS.comments',
     # fake admin login
     'admin_honeypot',
     # rosetta: text translations
