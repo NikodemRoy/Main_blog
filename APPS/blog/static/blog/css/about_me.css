@@ -357,7 +357,9 @@ body {
 }
 
 .main_section .container .right_section .bottom_section .card_section_parent .single_card .image_section img {
-  width: 100%;
+  width: 475px;
+  height: 265px;
+  object-fit: cover;
 }
 
 .main_section .container .right_section .bottom_section .card_section_parent .single_card .text_section {

@@ -2,7 +2,12 @@ from django.shortcuts import render
 from .models import BlogPost
 from django.db.models import F
 
+from django.shortcuts import get_object_or_404
+
+
 from .models import Categories, Subcategories
+from APPS.about_me.models import Profile
+from APPS.projects.models import Mainproject, Projects
 
 from .services import get_search
 
@@ -64,8 +69,11 @@ def contact_me(request):
 
 
 def portfolio(request):
-    main_projects = [1,2,3,]
-    other_projects = [1,2,3,4]
+    profile = get_object_or_404(Profile, id=1)
+
+    main_projects = Mainproject.objects.filter(profile=profile, is_public=True)
+    
+    other_projects = Projects.objects.filter(profile=profile, is_public=True )
     context = {
         'main_projects':main_projects,
         'other_projects':other_projects
@@ -75,7 +83,18 @@ def portfolio(request):
 
 
 def project_detail(request, project):
-    context = {}
+
+    
+    project_test = Projects.objects.filter(translations__slug=project) 
+    if project_test:
+        project = get_object_or_404(Projects, translations__slug=project) 
+        context = {'project':project,}
+
+    mainproject_test = Mainproject.objects.filter(translations__slug=project) 
+    if mainproject_test:
+        mainproject = get_object_or_404(Mainproject, translations__slug=project) 
+        context = {'project':mainproject}
+
     return render(request, 'blog/project_detail.html', context)
 
 

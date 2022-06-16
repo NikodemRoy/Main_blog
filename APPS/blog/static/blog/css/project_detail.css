@@ -281,7 +281,8 @@ body {
 }
 
 .main_section .container .right_section .top_section .banner_image img {
-  width: 100%;
+  width: 1007px;
+  height: 370px;
   object-fit: cover;
 }
 

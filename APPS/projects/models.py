@@ -7,6 +7,8 @@ from parler.models import TranslatableModel, TranslatedFields
 class Mainproject(TranslatableModel):
     translations = TranslatedFields(
         project_name = models.CharField(max_length=255),
+        slug = models.CharField(max_length=255, blank=True),
+
         project_shortdescription = models.CharField(max_length=2550, blank=True),
         project_fulldescription = models.TextField(max_length=25500, blank=True),
         github_link = models.CharField(max_length=255, blank=True),
@@ -28,6 +30,8 @@ class Mainproject(TranslatableModel):
 class Projects(TranslatableModel):
     translations = TranslatedFields(
         project_name = models.CharField(max_length=255),
+        slug = models.CharField(max_length=255, blank=True),
+
         project_shortdescription = models.CharField(max_length=2550, blank=True),
         project_fulldescription = models.TextField(max_length=25500, blank=True),
         github_link = models.CharField(max_length=255, blank=True),

@@ -194,7 +194,7 @@ body {
   height: 100%;
 }
 
-.main_section .container .left_section .top_section .user_image .overly{
+.main_section .container .left_section .top_section .user_image .overly {
   position: absolute;
   top: 0;
   left: 0;
@@ -359,7 +359,9 @@ body {
 }
 
 .main_section .container .right_section .bottom_section .card_section_parent .single_card .image_section img {
-  width: 100%;
+  width: 475px;
+  height: 265px;
+  object-fit: cover;
 }
 
 .main_section .container .right_section .bottom_section .card_section_parent .single_card .text_section {

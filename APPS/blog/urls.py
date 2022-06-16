@@ -12,7 +12,7 @@ urlpatterns = [
     path('category/<str:subcategory>', views.home_category, name='home_category'),
     path('contact/', views.contact_me, name='contact_me'),
     path('portfolio/', views.portfolio, name='portfolio'),
-    path('portfolio/project/<int:project>', views.project_detail, name='project_detail'),
+    path('portfolio/project/<str:project>', views.project_detail, name='project_detail'),
     path('search/', views.search, name='search'),
 ]
 
