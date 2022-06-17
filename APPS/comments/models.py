@@ -2,13 +2,12 @@ from django.db import models
 
 from APPS.blog.models import BlogPost
 
-from parler.models import TranslatableModel, TranslatedFields
 
 class Comment(models.Model):
-    project = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
+    project = models.ForeignKey(BlogPost, on_delete=models.CASCADE, related_name='project')
 
-    text_en = models.TextField(max_length=1000)
-    text_pl = models.TextField(max_length=1000)
+    text_en = models.TextField(max_length=1000, blank=True)
+    text_pl = models.TextField(max_length=1000, blank=True)
 
     is_public = models.BooleanField(default=True)
     user_name = models.CharField(max_length=30)
