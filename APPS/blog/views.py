@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import BlogPost
 from django.db.models import F
 
@@ -110,25 +110,30 @@ def search(request):
 
 def submit_comment(request, blogpost_id):
     url = request.META.get('HTTP_REFERER')
+    project = get_object_or_404(BlogPost, id=blogpost_id) 
 
     if request.method == "POST":
         form = CommentForm(request.POST)
+        print(form)
         if form.is_valid():
-            data = CommentForm()
-            if '/en/' in request.PATH:
+            data = Comment()
+            if '/en/' in request.path:
                 data.text_en = form.cleaned_data['text_en']
-                data.text_pl = None
-            elif '/pl/' in request.PATH:  
+                data.text_pl = ''
+            elif '/pl/' in request.path:  
                 data.text_pl = form.cleaned_data['text_pl']
-                data.text_en = None
+                data.text_en = ''
             else: 
                 raise Http404("Internal page error")   
-
+            data.project_id = blogpost_id
             data.user_name = form.cleaned_data['user_name']
             data.user_email = form.cleaned_data['user_email']
-            data.review = form.cleaned_data['review']
-            data.id = request.META.get('REMOTE_ADDR')
-            data.project_id = blogpost_id
+            data.ip = request.META.get('REMOTE_ADDR')
             data.save()
+            project.comment_count +=1
+            project.save()
+            return redirect(url)
+        else:
+            print('data is not valid')
             # messages.success(request, "Thank You! Review has been submitted.")
             return redirect(url)

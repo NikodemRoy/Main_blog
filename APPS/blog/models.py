@@ -22,7 +22,13 @@ class BlogPost(TranslatableModel):
     category = models.ForeignKey('Subcategories', on_delete=models.CASCADE, blank=True, null=True )
     tags = models.ManyToManyField('Tag', blank=True)
 
-    
+    # @property
+    # def all_comments(self):
+    #     comments_all = self.comment_set.all()
+    #     comment_count = comments_all.count()
+    #     self.comment_count = comment_count
+    #     self.save()
+
     def __str__(self):
         return self.title
     

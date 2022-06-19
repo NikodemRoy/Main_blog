@@ -191,6 +191,7 @@
                     <label for="text">{% trans 'Comment:' %}</label>
                     {% if '/en/' in request.path %}
                     <textarea name="text_en" maxlength="1000"></textarea>
+  
                     {% else %}
                     <textarea name="text_pl" maxlength="1000"></textarea>
                     {% endif %}
