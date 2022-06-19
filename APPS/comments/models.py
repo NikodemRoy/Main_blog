@@ -9,6 +9,7 @@ class Comment(models.Model):
     text_en = models.TextField(max_length=1000, blank=True)
     text_pl = models.TextField(max_length=1000, blank=True)
 
+    is_new = models.BooleanField(default=True)
     is_public = models.BooleanField(default=True)
     user_name = models.CharField(max_length=30)
     user_email = models.EmailField()

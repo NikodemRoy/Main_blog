@@ -14,10 +14,10 @@ def post(request, post_slug):
    
     # comments = Comment.objects.filter(project__translations__slug=post_slug)
     if '/en/' in request.path:
-        comments = Comment.objects.filter(project=post_detail, text_pl='')
+        comments = Comment.objects.filter(project=post_detail, text_pl='', is_public=True)
 
     elif '/pl/' in request.path:  
-        comments = Comment.objects.filter(project=post_detail, text_en='')
+        comments = Comment.objects.filter(project=post_detail, text_en='', is_public=True)
     else: 
         raise Http404("Internal page error") 
 
