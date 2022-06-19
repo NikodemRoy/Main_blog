@@ -39,5 +39,6 @@ urlpatterns = i18n_patterns(
 # path(_('about_me'), include('APPS.categories.urls')),
 
 # adding STATIC_URL and MEDIA_URL
-urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+

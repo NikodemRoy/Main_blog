@@ -2,12 +2,14 @@ from django.shortcuts import render
 from .models import BlogPost
 from django.db.models import F
 
-from django.shortcuts import get_object_or_404
-
+from django.shortcuts import get_object_or_404, redirect
+from django.http import Http404
 
 from .models import Categories, Subcategories
 from APPS.about_me.models import Profile
 from APPS.projects.models import Mainproject, Projects
+from APPS.comments.models import Comment
+from APPS.comments.forms import CommentForm
 
 from .services import get_search
 
@@ -104,3 +106,29 @@ def search(request):
     context = {'page_post':blog_post}
     return render(request, 'blog/home.html', context)
 
+
+
+def submit_comment(request, blogpost_id):
+    url = request.META.get('HTTP_REFERER')
+
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            data = CommentForm()
+            if '/en/' in request.PATH:
+                data.text_en = form.cleaned_data['text_en']
+                data.text_pl = None
+            elif '/pl/' in request.PATH:  
+                data.text_pl = form.cleaned_data['text_pl']
+                data.text_en = None
+            else: 
+                raise Http404("Internal page error")   
+
+            data.user_name = form.cleaned_data['user_name']
+            data.user_email = form.cleaned_data['user_email']
+            data.review = form.cleaned_data['review']
+            data.id = request.META.get('REMOTE_ADDR')
+            data.project_id = blogpost_id
+            data.save()
+            # messages.success(request, "Thank You! Review has been submitted.")
+            return redirect(url)

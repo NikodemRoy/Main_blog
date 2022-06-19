@@ -4,7 +4,7 @@
 
 {% load static %}
  
-{% block title %}Post Title{% endblock title %}
+{% block title %}{{post_detail.title}}{% endblock title %}
 
 {% block css_style %}<link rel="stylesheet" href="{% static 'posts/css/single_post.css' %}">{% endblock css_style %}
 {% block css_responsive %}<link rel="stylesheet" href="{% static 'posts/css_responsive/single_post_responsive.css' %}">{% endblock css_responsive %}
@@ -146,22 +146,27 @@
 
 
             </div>
-            <form action="#" method="post">
+            <form action="{% url 'submit_comment' post_detail.id %}" method="POST">
+                {% csrf_token %}
                 <div class="form_heading">
-                    <h3>Your comment</h3>
+                    <h3>{% trans 'Your comment' %}</h3>
                 </div>
 
                 <div class="form_group">
-                    <label for="text">Your name:</label>
-                    <input type="text">
+                    <label for="text">{% trans 'Your name:' %}</label>
+                    <input type="text" name="user_name" maxlength="30">
                 </div>
                 <div class="form_group">
-                    <label for="text">Your Email:</label>
-                    <input type="text">
+                    <label for="text">{% trans 'Your Email:' %}</label>
+                    <input type="text" name="user_email">
                 </div>
                 <div class="form_group">
-                    <label for="text">Your Email:</label>
-                    <textarea></textarea>
+                    <label for="text">{% trans 'Comment:' %}</label>
+                    {% if '/en/' in request.path %}
+                    <textarea name="text_en" maxlength="1000"></textarea>
+                    {% else %}
+                    <textarea name="text_pl" maxlength="1000"></textarea>
+                    {% endif %}
                 </div>
                 <button type="submit">Submit</button>
             </form>

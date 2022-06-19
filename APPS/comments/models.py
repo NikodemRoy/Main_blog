@@ -13,6 +13,8 @@ class Comment(models.Model):
     user_name = models.CharField(max_length=30)
     user_email = models.EmailField()
 
+    ip = models.CharField(max_length=2550, blank=True)
+
     creation_date = models.DateField(auto_now_add=True)
 
     class Meta:
