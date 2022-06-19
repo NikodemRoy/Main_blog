@@ -11,7 +11,9 @@ from django.db.models import F
 
 def post(request, post_slug):
     post_detail = get_object_or_404(BlogPost, translations__slug=post_slug)
-   
+
+    comments2 = Comment.objects.filter(project=post_detail, is_public=True)
+    print(comments2)
     # comments = Comment.objects.filter(project__translations__slug=post_slug)
     if '/en/' in request.path:
         comments = Comment.objects.filter(project=post_detail, text_pl='', is_public=True)
