@@ -27,6 +27,7 @@ class BlogPost(TranslatableModel):
 
 class PostImages(models.Model):
     blogpost = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='project_image', blank=True)
     alt_pl = models.CharField(max_length=255, blank=True)
     alt_en = models.CharField(max_length=255, blank=True)
 
@@ -42,15 +43,7 @@ class Tag(TranslatableModel):
         return self.tag
 
 
-class Comment(models.Model):
-    post = models.ForeignKey(BlogPost, on_delete=models.CASCADE)
-    user_name = models.CharField(max_length=30, blank=False)
-    user_email = models.EmailField(blank=False)
-    text_en = models.TextField(max_length=1000, blank=False)
-    text_pl = models.TextField(max_length=1000, blank=False)
 
-    def __str__(self):
-        return self.user_name
 
 
 class Categories(TranslatableModel):
