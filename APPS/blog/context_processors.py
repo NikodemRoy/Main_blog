@@ -7,3 +7,10 @@ def category_list(request):
 def tag_list(request):
     tag_list = Tag.objects.all()
     return {'tag_list':tag_list}
+
+def saved_post(request):
+    stored_posts = request.session.get("stored_posts")
+
+    if stored_posts is not None:
+        stored_posts = request.session.get("stored_posts")
+        return {'stored_posts':stored_posts}

@@ -25,7 +25,7 @@ class Shortdescription(TranslatableModel):
 
 class Profile(TranslatableModel):
     translations = TranslatedFields(
-        full_text = models.CharField(max_length=2550),
+        full_text = models.TextField(max_length=2550),
     )
 
     class Meta:

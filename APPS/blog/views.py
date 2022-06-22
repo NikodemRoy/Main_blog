@@ -18,7 +18,15 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home(request):
     posts = BlogPost.objects.filter(publish_status = True).order_by('-created_date')
+    all_post_id = []
 
+    for post in posts:
+        all_post_id.append(post.id)
+
+    stored_posts = request.session.get("stored_posts")
+
+ 
+    print(f'ALL STOREDPOSTS: {stored_posts}')
     
     # pagination
     paginator = Paginator(posts, 5)
@@ -27,7 +35,8 @@ def home(request):
 
     context = {
         'posts':posts,
-        'page_post':page_post
+        'page_post':page_post,
+        'stored_posts': stored_posts
         }
    
     return render(request, 'blog/home.html', context)
@@ -49,7 +58,7 @@ def home_top(request):
     return render(request, 'blog/home.html', context)
 
 def home_category(request, subcategory):
-    posts = BlogPost.objects.filter(publish_status = True, category__translations__slug=subcategory)
+    posts = BlogPost.objects.filter(publish_status = True, category__translations__slug=subcategory).distinct().order_by('-created_date')
   
     # # pagination
     paginator = Paginator(posts, 5)
@@ -63,7 +72,24 @@ def home_category(request, subcategory):
    
     return render(request, 'blog/home.html', context)
 
+def read_later(request):
+    posts = BlogPost.objects.filter(publish_status = True).distinct().order_by('-created_date')
+    all_post_id = []
 
+    for post in posts:
+        all_post_id.append(post.id)
+    print(all_post_id)
+
+    stored_posts = request.session.get("stored_posts")
+    print(f'ALL STOREDPOSTS: {stored_posts}')
+  
+    context = {
+        'posts':posts,
+        'stored_posts': stored_posts
+        }
+   
+   
+    return render(request, 'blog/read-later.html', context)
 
 def contact_me(request):
     context = {}
@@ -137,3 +163,23 @@ def submit_comment(request, blogpost_id):
             print('data is not valid')
             # messages.success(request, "Thank You! Review has been submitted.")
             return redirect(url)
+
+def save_post(request):
+    url = request.META.get('HTTP_REFERER')
+    stored_posts = request.session.get("stored_posts")
+
+    if request.method == "POST":
+        if stored_posts is None:
+            stored_posts = [] 
+
+        post_id = request.POST['post_id']
+
+        if post_id not in stored_posts:
+           stored_posts.append(post_id)
+           request.session["stored_posts"] = stored_posts
+        else:
+            stored_posts.remove(post_id)
+            request.session["stored_posts"] = stored_posts
+
+        print(f'id of stored posts: {stored_posts}')
+    return redirect(url)

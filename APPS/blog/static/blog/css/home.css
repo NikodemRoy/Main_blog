@@ -408,19 +408,26 @@
     font-weight: 400;
   }
   
-  .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn a {
+  .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn button {
     padding: 8px 12px;
     border-radius: 10px;
     border: 1px solid #AEAEB0;
     font-size: 14px;
     font-weight: 500;
     color: #AEAEB0;
+    cursor: pointer;
+    background-color: #FFFFFF;
   }
+/* 
+  .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn a button {
+    style: None
+  } */
   
-  .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn.active a {
+  .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn.active button {
     background: #7768CC;
     border-color: #7768CC;
     color: #FFFFFF;
+    cursor: pointer;
   }
   
   .main_section .container .middle_section .pagination {
@@ -627,6 +634,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    
   }
   
   .footer ul {

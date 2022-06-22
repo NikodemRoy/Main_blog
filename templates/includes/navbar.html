@@ -40,6 +40,11 @@
             <li>
                 <a href="{% url 'contact_me' %}">{% trans 'Contact' %}</a>
             </li>
+            {% if stored_posts %}
+            <li>
+                <a href="{% url 'read_later' %}">{% trans 'Saved Posts' %}</a>
+            </li>
+            {% endif %}
 
             <div id="navbar-lan" style='align-items: right;'>
 

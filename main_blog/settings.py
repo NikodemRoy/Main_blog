@@ -79,6 +79,7 @@ TEMPLATES = [
                 # custom context processor:
                 'APPS.blog.context_processors.category_list',
                 'APPS.blog.context_processors.tag_list',
+                'APPS.blog.context_processors.saved_post',
                 'APPS.about_me.context_processors.short_description',
             ],
         },
@@ -171,7 +172,11 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = BASE_DIR / "uploads"
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SESSION_COOKIE_AGE = 120960000

@@ -14,7 +14,9 @@ urlpatterns = [
     path('portfolio/', views.portfolio, name='portfolio'),
     path('portfolio/project/<str:project>', views.project_detail, name='project_detail'),
     path('search/', views.search, name='search'),
-    path('submit_comment/<int:blogpost_id>/', views.submit_comment, name='submit_comment'),
+    path('submit-comment/<int:blogpost_id>/', views.submit_comment, name='submit_comment'),
+    path('save-post/', views.save_post, name='save_post'),
+    path('read-later/', views.read_later, name='read_later'),
 ]
 
 # serving media files

@@ -17,7 +17,7 @@
                     {{short_description.up_text}}
                 </h3>
                 <div class="user_image">
-                    <img src="{% static 'images/user.png' %}" alt="image">
+                    <img src="{{short_description.photo.url}}" alt="image">
                     <a href="{% url 'contact_me' %}"><div class="overly"></div></a>
                 </div>
                 <p>{{short_description.down_text}}</p>
