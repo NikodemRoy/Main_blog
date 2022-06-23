@@ -12,8 +12,7 @@ def about_me(request):
     context = {
         'main_projects':main_projects,
         'profile':profile,
-        }
-    print("main_projects")    
+        }  
     return render(request, 'blog/about_me.html', context)
 
 

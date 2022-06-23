@@ -16,6 +16,7 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     path('submit-comment/<int:blogpost_id>/', views.submit_comment, name='submit_comment'),
     path('save-post/', views.save_post, name='save_post'),
+    path('reaction-count/', views.reaction_count, name='reaction_count'),
     path('read-later/', views.read_later, name='read_later'),
 ]
 

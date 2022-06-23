@@ -21,7 +21,8 @@
 
                 <div class="icon_group one">
                     <div class="icon">
-                        <a href="#" title="icon">
+                        <button>
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.5" viewBox="0 0 30 28.5">
                                 <g id="Iconly_Broken_Heart" data-name="Iconly/Broken/Heart"
                                     transform="translate(3 -2.5)">
@@ -32,16 +33,18 @@
                                     </g>
                                 </g>
                             </svg>
+                            <p>{{post_detail.heart_count}}</p>
 
-                        </a>
+                        </button>
 
                     </div>
-                    <p>{{post_detail.heart_count}}</p>
+                    
 
                 </div>
                 <div class="icon_group two">
                     <div class="icon">
-                        <a href="#" title="icon">
+                        <button>
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                 <g id="left_chat" transform="translate(-2 -2)">
                                     <g id="Chat" transform="translate(2 2)">
@@ -51,15 +54,18 @@
                                     </g>
                                 </g>
                             </svg>
-                        </a>
+                            <p>{{post_detail.comment_count}}</p>
+
+                        </button>
 
                     </div>
-                    <p>{{post_detail.comment_count}}</p>
+                    
 
                 </div>
                 <div class="icon_group three">
                     <div class="icon">
-                        <a href="#" title="icon">
+                        <button class="active">
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36.705" viewBox="0 0 30 36.705">
                                 <g id="Iconly_Light-Outline_Bookmark" data-name="Iconly/Light-Outline/Bookmark"
                                     transform="translate(2.817 -2)">
@@ -70,10 +76,9 @@
                                     </g>
                                 </g>
                             </svg>
-                        </a>
-
+                        </button>
                     </div>
-                    <p>15</p>
+
 
                 </div>
             </div>
@@ -163,7 +168,7 @@
                         <p>{{comment.text_en}}</p>
                         <p>{{comment.text_pl}}</p>
                     </div>
-                </div>       
+                </div>
                 {% endfor %}
 
 
@@ -191,7 +196,7 @@
                     <label for="text">{% trans 'Comment:' %}</label>
                     {% if '/en/' in request.path %}
                     <textarea name="text_en" maxlength="1000"></textarea>
-  
+
                     {% else %}
                     <textarea name="text_pl" maxlength="1000"></textarea>
                     {% endif %}

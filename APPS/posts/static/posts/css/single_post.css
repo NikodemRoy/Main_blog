@@ -193,8 +193,40 @@ body {
   background: rgba(12, 75, 51, 0.59);
 }
 
-.main_section .container .left_section .icon_group.three:hover a svg {
+.main_section .container .left_section .icon_group.three.active {
+  background: rgba(12, 75, 51, 0.59);
+}
+
+.main_section .container .left_section .icon_group.three button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.main_section .container .left_section .icon_group.three:hover button {
   fill: #0C4B33;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.main_section .container .left_section .icon_group.three button.active {
+  fill: #0C4B33;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.three:hover p {
@@ -205,8 +237,31 @@ body {
   background: rgba(220, 36, 36, 0.21);
 }
 
-.main_section .container .left_section .icon_group.one:hover a svg {
+.main_section .container .left_section .icon_group.one button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+.main_section .container .left_section .icon_group.one:hover button {
   fill: #DC2424;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.main_section .container .left_section .icon_group.one:hover button svg {
+  fill: #DC2424;
+  color: #DC2424;
 }
 
 .main_section .container .left_section .icon_group.one:hover p {
@@ -217,9 +272,27 @@ body {
   background: rgba(119, 104, 204, 0.39);
 }
 
-.main_section .container .left_section .icon_group.two:hover a svg {
-  fill: #7768CC;
+.main_section .container .left_section .icon_group.two button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
+.main_section .container .left_section .icon_group.two:hover button {
+  fill: #7768CC;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
 
 .main_section .container .left_section .icon_group.two:hover p {
   color: #7768CC;

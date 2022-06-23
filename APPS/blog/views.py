@@ -22,7 +22,7 @@ def home(request):
 
     for post in posts:
         all_post_id.append(post.id)
-
+    stored_posts = []
     stored_posts = request.session.get("stored_posts")
 
  
@@ -79,7 +79,7 @@ def read_later(request):
     for post in posts:
         all_post_id.append(post.id)
     print(all_post_id)
-
+    stored_posts = []
     stored_posts = request.session.get("stored_posts")
     print(f'ALL STOREDPOSTS: {stored_posts}')
   
@@ -168,6 +168,27 @@ def save_post(request):
     url = request.META.get('HTTP_REFERER')
     stored_posts = request.session.get("stored_posts")
 
+    if request.method == "POST":
+        if stored_posts is None:
+            stored_posts = [] 
+
+        post_id = request.POST['post_id']
+
+        if post_id not in stored_posts:
+           stored_posts.append(post_id)
+           request.session["stored_posts"] = stored_posts
+        else:
+            stored_posts.remove(post_id)
+            request.session["stored_posts"] = stored_posts
+
+        print(f'id of stored posts: {stored_posts}')
+    return redirect(url)
+
+def reaction_count(request):
+    url = request.META.get('HTTP_REFERER')
+    stored_posts = [] 
+    stored_posts = request.session.get("stored_posts")
+    
     if request.method == "POST":
         if stored_posts is None:
             stored_posts = [] 
