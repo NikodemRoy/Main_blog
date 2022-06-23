@@ -19,32 +19,43 @@
         <div class="left_section">
             <div class="left_main_section">
 
-                <div class="icon_group one">
+                <div {% if post_detail.id|slugify in liked_posts %} class="icon_group one active" {% else %}
+                    class="icon_group one" {% endif %}>
                     <div class="icon">
-                        <button>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.5" viewBox="0 0 30 28.5">
-                                <g id="Iconly_Broken_Heart" data-name="Iconly/Broken/Heart"
-                                    transform="translate(3 -2.5)">
-                                    <g id="Heart" transform="translate(2 2.5)">
-                                        <path id="Path_1028" data-name="Path 1028"
-                                            d="M15.009,1.56A9.847,9.847,0,0,1,23.281.454a9.312,9.312,0,0,1,5.572,4.787,11.85,11.85,0,0,1,.5,8.94,18.777,18.777,0,0,1-4.447,7.146,35.8,35.8,0,0,1-4.222,3.708h0l-.079.067a1.086,1.086,0,0,1-1.509-.3,1.121,1.121,0,0,1-.192-.839,1.108,1.108,0,0,1,.457-.725,35,35,0,0,0,3.971-3.492,16.42,16.42,0,0,0,3.971-6.27,9.518,9.518,0,0,0-.45-7.2,7.17,7.17,0,0,0-4.275-3.668,7.563,7.563,0,0,0-6.922,1.227,1.1,1.1,0,0,1-1.323,0A7.55,7.55,0,0,0,7.412,2.611,7.167,7.167,0,0,0,3.1,6.265a9.6,9.6,0,0,0-.424,7.173A16.472,16.472,0,0,0,6.644,19.7a49.558,49.558,0,0,0,8.63,6.742,1.144,1.144,0,0,1,.431,1.257,1.115,1.115,0,0,1-1.04.806,1.058,1.058,0,0,1-.609-.189,51.458,51.458,0,0,1-8.987-7.025A18.546,18.546,0,0,1,.609,14.14a11.918,11.918,0,0,1,.556-8.9A9.312,9.312,0,0,1,6.737.454,9.848,9.848,0,0,1,15.009,1.56ZM20.664,6h.168a5.2,5.2,0,0,1,3.56,4.517h0l.009.176a1.119,1.119,0,0,1-.23.647,1.081,1.081,0,0,1-.731.417,1.116,1.116,0,0,1-1.244-.971,2.958,2.958,0,0,0-2.038-2.7,1.143,1.143,0,0,1-.467-1.315A1.112,1.112,0,0,1,20.832,6Z"
-                                            transform="translate(-5 0)" />
+                        <form action="{% url 'reactions' post_detail.id %}" method="POST">
+                            {% csrf_token %}
+
+                            <button {% if post_detail.id|slugify in liked_posts %} class="active" {% endif %}>
+                                <input type="hidden" value="{{ post_detail.id }}" name="liked_id">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.5" viewBox="0 0 30 28.5">
+                                    <g id="Iconly_Broken_Heart" data-name="Iconly/Broken/Heart"
+                                        transform="translate(3 -2.5)">
+                                        <g id="Heart" transform="translate(2 2.5)">
+                                            <path id="Path_1028" data-name="Path 1028"
+                                                d="M15.009,1.56A9.847,9.847,0,0,1,23.281.454a9.312,9.312,0,0,1,5.572,4.787,11.85,11.85,0,0,1,.5,8.94,18.777,18.777,0,0,1-4.447,7.146,35.8,35.8,0,0,1-4.222,3.708h0l-.079.067a1.086,1.086,0,0,1-1.509-.3,1.121,1.121,0,0,1-.192-.839,1.108,1.108,0,0,1,.457-.725,35,35,0,0,0,3.971-3.492,16.42,16.42,0,0,0,3.971-6.27,9.518,9.518,0,0,0-.45-7.2,7.17,7.17,0,0,0-4.275-3.668,7.563,7.563,0,0,0-6.922,1.227,1.1,1.1,0,0,1-1.323,0A7.55,7.55,0,0,0,7.412,2.611,7.167,7.167,0,0,0,3.1,6.265a9.6,9.6,0,0,0-.424,7.173A16.472,16.472,0,0,0,6.644,19.7a49.558,49.558,0,0,0,8.63,6.742,1.144,1.144,0,0,1,.431,1.257,1.115,1.115,0,0,1-1.04.806,1.058,1.058,0,0,1-.609-.189,51.458,51.458,0,0,1-8.987-7.025A18.546,18.546,0,0,1,.609,14.14a11.918,11.918,0,0,1,.556-8.9A9.312,9.312,0,0,1,6.737.454,9.848,9.848,0,0,1,15.009,1.56ZM20.664,6h.168a5.2,5.2,0,0,1,3.56,4.517h0l.009.176a1.119,1.119,0,0,1-.23.647,1.081,1.081,0,0,1-.731.417,1.116,1.116,0,0,1-1.244-.971,2.958,2.958,0,0,0-2.038-2.7,1.143,1.143,0,0,1-.467-1.315A1.112,1.112,0,0,1,20.832,6Z"
+                                                transform="translate(-5 0)" />
+                                        </g>
                                     </g>
-                                </g>
-                            </svg>
-                            <p>{{post_detail.heart_count}}</p>
+                                </svg>
+                                <p {% if post_detail.id|slugify in liked_posts %} class="active" {% endif %}>
+                                    {{post_detail.heart_count}}</p>
 
-                        </button>
+                            </button>
+                        </form>
 
                     </div>
-                    
+
 
                 </div>
-                <div class="icon_group two">
-                    <div class="icon">
-                        <button>
 
+
+                <div {% if post_detail.id|slugify in was_commented %} class="icon_group two active" {% else %} class="icon_group two" {% endif %}>
+                    <!-- <div class="icon_group two"> -->
+                    <div class="icon">
+
+                        <a {% if post_detail.id|slugify in was_commented %} class="active" {% endif %}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                                 <g id="left_chat" transform="translate(-2 -2)">
                                     <g id="Chat" transform="translate(2 2)">
@@ -54,29 +65,40 @@
                                     </g>
                                 </g>
                             </svg>
-                            <p>{{post_detail.comment_count}}</p>
+                            <p {% if post_detail.id|slugify in was_commented %} class="active" {% endif %}>{{post_detail.comment_count}}</p>
 
-                        </button>
+                        </a>
 
                     </div>
-                    
+
 
                 </div>
-                <div class="icon_group three">
+                <div {% if post_detail.id|slugify in stored_posts %} class="icon_group three active" {% else %}
+                    class="icon_group three" {% endif %}>
                     <div class="icon">
-                        <button class="active">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36.705" viewBox="0 0 30 36.705">
-                                <g id="Iconly_Light-Outline_Bookmark" data-name="Iconly/Light-Outline/Bookmark"
-                                    transform="translate(2.817 -2)">
-                                    <g id="Bookmark" transform="translate(3 2)">
-                                        <path id="Combined-Shape"
-                                            d="M20.6,0C26.574,0,30,2.956,30,8.106V33.7A2.993,2.993,0,0,1,25.538,36.3L15.045,30.377l-10.59,5.94A2.994,2.994,0,0,1,0,33.708V7.784C0,2.836,3.428,0,9.405,0Zm0,2.641H9.405c-4.488,0-6.764,1.729-6.764,5.143V33.708a.333.333,0,0,0,.174.3.329.329,0,0,0,.349,0l11.237-6.3a1.326,1.326,0,0,1,1.3,0L26.836,34a.329.329,0,0,0,.35,0,.337.337,0,0,0,.173-.3V7.905C27.345,6.39,27.052,2.641,20.6,2.641Zm.773,9.206a1.32,1.32,0,0,1,0,2.641H8.489a1.32,1.32,0,1,1,0-2.641Z"
-                                            transform="translate(-5.816 0)" fill-rule="evenodd" />
+                        <form action="{% url 'save_post' %}" method="POST">
+                            {% csrf_token %}
+
+                            <button {% if post_detail.id|slugify in stored_posts %} class="active" {% endif %}>
+                                <input type="hidden" value="{{ post_detail.id }}" name="post_id">
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="36.705"
+                                    viewBox="0 0 30 36.705">
+                                    <g id="Iconly_Light-Outline_Bookmark" data-name="Iconly/Light-Outline/Bookmark"
+                                        transform="translate(2.817 -2)">
+                                        <g id="Bookmark" transform="translate(3 2)">
+                                            <path id="Combined-Shape"
+                                                d="M20.6,0C26.574,0,30,2.956,30,8.106V33.7A2.993,2.993,0,0,1,25.538,36.3L15.045,30.377l-10.59,5.94A2.994,2.994,0,0,1,0,33.708V7.784C0,2.836,3.428,0,9.405,0Zm0,2.641H9.405c-4.488,0-6.764,1.729-6.764,5.143V33.708a.333.333,0,0,0,.174.3.329.329,0,0,0,.349,0l11.237-6.3a1.326,1.326,0,0,1,1.3,0L26.836,34a.329.329,0,0,0,.35,0,.337.337,0,0,0,.173-.3V7.905C27.345,6.39,27.052,2.641,20.6,2.641Zm.773,9.206a1.32,1.32,0,0,1,0,2.641H8.489a1.32,1.32,0,1,1,0-2.641Z"
+                                                transform="translate(-5.816 0)" fill-rule="evenodd" />
+                                        </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </button>
+                                </svg>
+
+                            </button>
+                        </form>
                     </div>
 
 

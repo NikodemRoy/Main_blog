@@ -11,4 +11,6 @@ def tag_list(request):
 def saved_post(request):
     stored_posts = request.session.get("stored_posts")
 
+    if stored_posts is None or len(stored_posts) == 0:
+        stored_posts = []
     return {'stored_posts':stored_posts}

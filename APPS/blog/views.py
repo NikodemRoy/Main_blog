@@ -136,11 +136,15 @@ def search(request):
 
 def submit_comment(request, blogpost_id):
     url = request.META.get('HTTP_REFERER')
-    project = get_object_or_404(BlogPost, id=blogpost_id) 
+    project = get_object_or_404(BlogPost, id=blogpost_id)
+
+    was_commented = request.session.get("was_commented")
+    if was_commented is None or len(was_commented) == 0:
+        was_commented = []
 
     if request.method == "POST":
         form = CommentForm(request.POST)
-        print(form)
+        # print(form)
         if form.is_valid():
             data = Comment()
             if '/en/' in request.path:
@@ -158,6 +162,15 @@ def submit_comment(request, blogpost_id):
             data.save()
             project.comment_count +=1
             project.save()
+            
+            # checking if post was commented in session 
+            was_commented_id = str(project.id)
+
+            if was_commented_id not in was_commented:
+                was_commented.append(was_commented_id)
+                request.session["was_commented"] = was_commented
+                
+                print(f'Was commented list ID: {was_commented}')
             return redirect(url)
         else:
             print('data is not valid')
@@ -184,8 +197,9 @@ def save_post(request):
         print(f'id of stored posts: {stored_posts}')
     return redirect(url)
 
-def reaction_count(request):
+def reaction_count(request, blogpost_id):
     url = request.META.get('HTTP_REFERER')
+    project = get_object_or_404(BlogPost, id=blogpost_id) 
     stored_posts = [] 
     stored_posts = request.session.get("stored_posts")
     
