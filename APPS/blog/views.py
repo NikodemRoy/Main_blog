@@ -22,8 +22,12 @@ def home(request):
 
     for post in posts:
         all_post_id.append(post.id)
-    stored_posts = []
+    
     stored_posts = request.session.get("stored_posts")
+
+    if stored_posts is None or len(stored_posts) == 0:
+        stored_posts = []
+    
 
  
     print(f'ALL STOREDPOSTS: {stored_posts}')
@@ -92,7 +96,8 @@ def read_later(request):
     return render(request, 'blog/read-later.html', context)
 
 def contact_me(request):
-    context = {}
+    profile = get_object_or_404(Profile, id=1)
+    context = {'profile':profile}
     return render(request, 'blog/contact_me.html', context)
 
 
