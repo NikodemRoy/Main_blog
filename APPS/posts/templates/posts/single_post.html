@@ -51,7 +51,8 @@
                 </div>
 
 
-                <div {% if post_detail.id|slugify in was_commented %} class="icon_group two active" {% else %} class="icon_group two" {% endif %}>
+                <div {% if post_detail.id|slugify in was_commented %} class="icon_group two active" {% else %}
+                    class="icon_group two" {% endif %}>
                     <!-- <div class="icon_group two"> -->
                     <div class="icon">
 
@@ -65,7 +66,8 @@
                                     </g>
                                 </g>
                             </svg>
-                            <p {% if post_detail.id|slugify in was_commented %} class="active" {% endif %}>{{post_detail.comment_count}}</p>
+                            <p {% if post_detail.id|slugify in was_commented %} class="active" {% endif %}>
+                                {{post_detail.comment_count}}</p>
 
                         </a>
 
@@ -96,6 +98,7 @@
                                         </g>
                                     </g>
                                 </svg>
+
 
                             </button>
                         </form>
@@ -135,13 +138,35 @@
                             </p>
 
                             <div class="react_icon">
-                                <a href="#">
-                                    <img src="{% static 'images/heart_post.svg' %}" alt="image">
-                                </a>
+                                <form action="{% url 'reactions' post_detail.id %}" method="POST" class="mobile form">
+                                    {% csrf_token %}
+                                    <button {% if post_detail.id|slugify in liked_posts %} class="heart" {% endif %}>
+                                        <input type="hidden" value="{{ post_detail.id }}" name="liked_id">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21.85"
+                                            viewBox="0 0 23 21.85">
+                                            <path id="Path_1028" data-name="Path 1028"
+                                                d="M11.507,1.2A7.55,7.55,0,0,1,17.849.348a7.139,7.139,0,0,1,4.272,3.67,9.085,9.085,0,0,1,.386,6.854A14.4,14.4,0,0,1,19.1,16.35a27.446,27.446,0,0,1-3.237,2.843h0l-.061.052a.833.833,0,0,1-1.157-.227.86.86,0,0,1-.148-.643.849.849,0,0,1,.35-.556,26.836,26.836,0,0,0,3.044-2.677,12.589,12.589,0,0,0,3.044-4.807,7.3,7.3,0,0,0-.345-5.52A5.5,5.5,0,0,0,17.311,2,5.8,5.8,0,0,0,12,2.943a.84.84,0,0,1-1.015,0A5.788,5.788,0,0,0,5.682,2,5.5,5.5,0,0,0,2.374,4.8a7.36,7.36,0,0,0-.325,5.5,12.629,12.629,0,0,0,3.044,4.8,37.995,37.995,0,0,0,6.616,5.169.877.877,0,0,1,.33.964.855.855,0,0,1-.8.618.811.811,0,0,1-.467-.145,39.452,39.452,0,0,1-6.89-5.386,14.219,14.219,0,0,1-3.42-5.479A9.137,9.137,0,0,1,.893,4.018,7.139,7.139,0,0,1,5.165.348,7.55,7.55,0,0,1,11.507,1.2Zm4.336,3.4h.129A3.986,3.986,0,0,1,18.7,8.06h0l.007.135a.858.858,0,0,1-.176.5.829.829,0,0,1-.561.32.855.855,0,0,1-.954-.744A2.268,2.268,0,0,0,15.454,6.2.876.876,0,0,1,15.1,5.191a.853.853,0,0,1,.876-.594Z" />
+                                        </svg>
+                                    </button>
+                                </form>
+                                
 
-                                <a href="#">
-                                    <img src="{% static 'images/save_icon.svg' %}" alt="image">
-                                </a>
+                                <form action="{% url 'save_post' %}" method="POST" class="mobile form">
+                                    {% csrf_token %}
+                                        <button {% if post_detail.id|slugify in stored_posts %} class="active" {% endif %}>
+                                            <input type="hidden" value="{{ post_detail.id }}" name="post_id">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22.023"
+                                                viewBox="0 0 18 22.023">
+                                                <g id="Group_366" data-name="Group 366"
+                                                    transform="translate(-77 -281.462)">
+                                                    <path id="Combined-Shape"
+                                                        d="M12.361,0C15.944,0,18,1.774,18,4.864V20.219a1.8,1.8,0,0,1-2.677,1.563l-6.3-3.557L2.672,21.79A1.8,1.8,0,0,1,0,20.225V4.67C0,1.7,2.057,0,5.643,0Zm0,1.585H5.643c-2.693,0-4.059,1.037-4.059,3.086V20.225a.2.2,0,0,0,.1.181.2.2,0,0,0,.209,0L8.64,16.626a.8.8,0,0,1,.778,0L16.1,20.4a.2.2,0,0,0,.21,0,.2.2,0,0,0,.1-.182V4.743C16.407,3.834,16.231,1.585,12.361,1.585Zm.464,5.523a.792.792,0,0,1,0,1.585H5.094a.792.792,0,0,1,0-1.585Z"
+                                                        transform="translate(77 281.462)" fill-rule="evenodd" />
+                                                </g>
+                                            </svg>
+
+                                        </button>
+                                </form>
                             </div>
                         </div>
 

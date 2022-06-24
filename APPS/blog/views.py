@@ -113,12 +113,12 @@ def portfolio(request):
 def project_detail(request, project):
 
     
-    project_test = Projects.objects.filter(translations__slug=project) 
+    project_test = Projects.objects.filter(translations__slug=project).exists() 
     if project_test:
         project = get_object_or_404(Projects, translations__slug=project) 
         context = {'project':project,}
 
-    mainproject_test = Mainproject.objects.filter(translations__slug=project) 
+    mainproject_test = Mainproject.objects.filter(translations__slug=project).exists() 
     if mainproject_test:
         mainproject = get_object_or_404(Mainproject, translations__slug=project) 
         context = {'project':mainproject}
