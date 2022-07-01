@@ -492,6 +492,16 @@ body {
   background: #FFFFFF;
 }
 
+.main_section .container .middle_section .pagination button:hover {
+  padding: 12px 20px;
+  border: 1px solid #DEE2E6;
+  font-weight: 500;
+  color: #41319c;
+  font-size: 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
 .main_section .container .middle_section .pagination button.active {
   background: #7768CC;
   color: #FFF;

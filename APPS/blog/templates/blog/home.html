@@ -22,6 +22,7 @@
                 <a class="active">{% trans 'Search resoults:' %}</a>
                 {% else%}
                 {% if 'category' in request.path %}
+
                 {% else %}
                 <a href="{% url 'home' %}" {% if 'top' in request.path %}{% else %} class="active" {% endif %}>{% trans 'Latest' %}</a>
                 <a href="{% url 'home_top' %}" {% if 'top' in request.path %} class="active" {% endif %}>{% trans 'Top' %}</a>
@@ -58,13 +59,13 @@
                                     <button>
                                         <img src="{% static 'images/heart.svg' %}" alt="">
                                     </button>
-                                    <p>{{post.heart_count}} reaction</p>
+                                    <p>{{post.heart_count}} {% trans 'reactions' %}</p>
                                 </div>
                                 <div class="single_react">
                                     <button>
                                         <img src="{% static 'images/comment.svg' %}" alt="">
                                     </button>
-                                    <p>{{post.comment_count}} comment</p>
+                                    <p>{{post.comment_count}} {% trans 'comments' %}</p>
                                 </div>
 
                             </div>
@@ -78,7 +79,7 @@
                                 <form action="{% url 'save_post' %}" method="POST">
                                     {% csrf_token %}
                                     
-                                    <button><input type="hidden" value="{{ post.id }}" name="post_id">Post Saved</button>
+                                    <button><input type="hidden" value="{{ post.id }}" name="post_id">{% trans 'Post Saved' %}</button>
                                 </form>
                             </div>
                             {% else %}
@@ -86,7 +87,7 @@
                                 <form action="{% url 'save_post' %}" method="POST">
                                     {% csrf_token %}
                                     
-                                    <button><input type="hidden" value="{{ post.id }}" name="post_id">Read later</button>
+                                    <button><input type="hidden" value="{{ post.id }}" name="post_id">{% trans 'Read later' %}</button>
                                 </form>
                             </div>
                             {% endif %}
@@ -107,7 +108,7 @@
             <div class="pagination">
                 {% if page_post.has_other_pages %}
                     {% if page_post.has_previous %}
-                    <button><a href="?page={{page_post.previous_page_number}}">Previous</a></button>
+                    <a href="?page={{page_post.previous_page_number}}"><button>Previous</button></a>
                     {% endif %}
                     
                     {% for i in page_post.paginator.page_range %}
