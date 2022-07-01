@@ -125,7 +125,8 @@
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
     }
 
     /* added
@@ -431,7 +432,8 @@
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
         margin-top: 10px;
     }
 

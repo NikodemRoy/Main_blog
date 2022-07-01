@@ -40,25 +40,25 @@
             <li>
                 <a href="{% url 'contact_me' %}">{% trans 'Contact' %}</a>
             </li>
+
             {% if stored_posts %}
-            <li>
+            <li class="ml-auto">
                 <a href="{% url 'read_later' %}">{% trans 'Saved Posts' %}</a>
             </li>
             {% endif %}
 
-            <div id="navbar-lan" style='align-items: right;'>
 
-                {% for language in languages %}
-                {% if language.code != CURRENT_LANGUAGE %}
-                <li style='align-items: right;'>
-                    <a href="/{{ language.code }}/" style='align-items: right;'>
-                        {{ language.code|upper }}
-                    </a>
-                </li>
-                {% endif %}
-                {% endfor %}
+            {% for language in languages %}
+            {% if language.code != CURRENT_LANGUAGE %}
+            <li {% if not stored_posts %} class="ml-auto lang" {% endif %} id="navbar-lan">
+                <a class="lang" href="/{{ language.code }}/" >
+                    {{ language.code|upper }}
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
 
-            </div>
+
 
         </ul>
 

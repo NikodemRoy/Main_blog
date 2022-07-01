@@ -32,6 +32,10 @@ body {
 }
 
 /*================= header section start ================= */
+.ml-auto{
+  margin-left: auto;
+}
+
 .container {
   width: 100%;
   max-width: 1260px;
@@ -94,6 +98,7 @@ body {
   align-items: center;
   margin-left: 42px;
   padding-left: 0;
+  width: 100%;
 }
 
 .header_section .container ul li a {
@@ -102,8 +107,6 @@ body {
   margin-right: 60px;
   position: relative;
   color: #231E1E;
-  text-align: right;
-  align-items: right;
 }
 
 .header_section .container ul li a::after {
@@ -112,7 +115,7 @@ body {
   bottom: 0;
   left: -5px;
   height: 2px;
-  width: 33px;
+  width: 50%;
   background: #7768CC;
 }
 
@@ -122,9 +125,30 @@ body {
   bottom: 0;
   right: -5px;
   height: 2px;
-  width: 33px;
+  width: 50%;
   background: #7768CC;
 }
+
+.header_section .container ul li a.lang::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  width: 50%;
+  background: #7768CC;
+}
+
+.header_section .container ul li a.lang::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  height: 2px;
+  width: 50%;
+  background: #7768CC;
+}
+
 
 @-webkit-keyframes show_nav {
   100% {
@@ -137,6 +161,7 @@ body {
     left: -43px;
   }
 }
+
 
 /* ================= header section End ================= */
 .main_section {
@@ -452,6 +477,17 @@ body {
   margin-left: auto;
   text-align: right;
   display: none;
+}
+
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon form {
+	border: 0px;
+	width: auto;
+	box-shadow: none;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
 }
 
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon button {
