@@ -444,6 +444,12 @@ body {
   margin-top: 10px;
 }
 
+.footer.no_scroll {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 .footer ul {
   display: flex;
   justify-content: center;

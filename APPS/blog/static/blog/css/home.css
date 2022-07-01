@@ -680,11 +680,6 @@ body {
 
 }
 
-.footer .no_scroll {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
 
 .footer.no_scroll {
   position: fixed;
