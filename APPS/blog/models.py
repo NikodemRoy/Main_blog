@@ -43,7 +43,6 @@ class Tag(TranslatableModel):
         return self.tag
 
 
-1
 
 
 class Categories(TranslatableModel):

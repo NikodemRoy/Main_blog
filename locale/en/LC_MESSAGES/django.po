@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 17:55+0200\n"
-"PO-Revision-Date: 2022-07-01 17:55+0000\n"
+"POT-Creation-Date: 2022-07-01 22:12+0200\n"
+"PO-Revision-Date: 2022-07-01 22:12+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -50,10 +50,14 @@ msgid "Your Email:"
 msgstr "Your Email:"
 
 #: .\APPS\blog\templates\blog\contact_me.html:48
+msgid "Subject:"
+msgstr "Subject:"
+
+#: .\APPS\blog\templates\blog\contact_me.html:52
 msgid "Your Message:"
 msgstr "Your Message:"
 
-#: .\APPS\blog\templates\blog\contact_me.html:51
+#: .\APPS\blog\templates\blog\contact_me.html:55
 #: .\APPS\posts\templates\posts\single_post.html:251
 msgid "Submit"
 msgstr "Submit"
@@ -62,33 +66,32 @@ msgstr "Submit"
 msgid "Search resoults:"
 msgstr "Search resoults:"
 
-#: .\APPS\blog\templates\blog\home.html:26
+#: .\APPS\blog\templates\blog\home.html:27
 msgid "Latest"
 msgstr "Latest"
 
-#: .\APPS\blog\templates\blog\home.html:27
+#: .\APPS\blog\templates\blog\home.html:28
 msgid "Top"
 msgstr "Top"
 
-#: .\APPS\blog\templates\blog\home.html:61
-#| msgid "reaction"
+#: .\APPS\blog\templates\blog\home.html:62
 msgid "reactions"
 msgstr "reactions"
 
-#: .\APPS\blog\templates\blog\home.html:67
+#: .\APPS\blog\templates\blog\home.html:68
 #: .\APPS\blog\templates\blog\read-later.html:62
 msgid "comments"
 msgstr "comments"
 
-#: .\APPS\blog\templates\blog\home.html:81
+#: .\APPS\blog\templates\blog\home.html:82
 msgid "Post Saved"
 msgstr "Post Saved"
 
-#: .\APPS\blog\templates\blog\home.html:89
+#: .\APPS\blog\templates\blog\home.html:90
 msgid "Read later"
 msgstr "Read later"
 
-#: .\APPS\blog\templates\blog\home.html:101
+#: .\APPS\blog\templates\blog\home.html:102
 msgid "No matching resoults"
 msgstr "No matching resoults"
 
@@ -139,6 +142,10 @@ msgstr "about_me/"
 #: .\templates\includes\footer.html:7
 msgid "Posssts"
 msgstr "Posssts"
+
+#: .\templates\includes\left_section.html:14
+msgid "CONTACT ME"
+msgstr "CONTACT ME"
 
 #: .\templates\includes\navbar.html:32
 msgid "Posts"

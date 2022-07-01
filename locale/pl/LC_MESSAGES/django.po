@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 17:55+0200\n"
-"PO-Revision-Date: 2022-07-01 17:57+0000\n"
+"POT-Creation-Date: 2022-07-01 22:12+0200\n"
+"PO-Revision-Date: 2022-07-01 22:12+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -50,10 +50,14 @@ msgid "Your Email:"
 msgstr "Twój email:"
 
 #: .\APPS\blog\templates\blog\contact_me.html:48
+msgid "Subject:"
+msgstr "Temat:"
+
+#: .\APPS\blog\templates\blog\contact_me.html:52
 msgid "Your Message:"
 msgstr "Treść"
 
-#: .\APPS\blog\templates\blog\contact_me.html:51
+#: .\APPS\blog\templates\blog\contact_me.html:55
 #: .\APPS\posts\templates\posts\single_post.html:251
 msgid "Submit"
 msgstr "Wyślij"
@@ -62,33 +66,32 @@ msgstr "Wyślij"
 msgid "Search resoults:"
 msgstr "Wyniku wyszukiwania:"
 
-#: .\APPS\blog\templates\blog\home.html:26
+#: .\APPS\blog\templates\blog\home.html:27
 msgid "Latest"
 msgstr "Najnowsze"
 
-#: .\APPS\blog\templates\blog\home.html:27
+#: .\APPS\blog\templates\blog\home.html:28
 msgid "Top"
 msgstr "Topowe"
 
-#: .\APPS\blog\templates\blog\home.html:61
-#| msgid "reaction"
+#: .\APPS\blog\templates\blog\home.html:62
 msgid "reactions"
 msgstr "reakcji"
 
-#: .\APPS\blog\templates\blog\home.html:67
+#: .\APPS\blog\templates\blog\home.html:68
 #: .\APPS\blog\templates\blog\read-later.html:62
 msgid "comments"
 msgstr "komentarzy"
 
-#: .\APPS\blog\templates\blog\home.html:81
+#: .\APPS\blog\templates\blog\home.html:82
 msgid "Post Saved"
 msgstr "Post Zapisany"
 
-#: .\APPS\blog\templates\blog\home.html:89
+#: .\APPS\blog\templates\blog\home.html:90
 msgid "Read later"
 msgstr "Czytaj później"
 
-#: .\APPS\blog\templates\blog\home.html:101
+#: .\APPS\blog\templates\blog\home.html:102
 msgid "No matching resoults"
 msgstr "Brak pasujących wyników"
 
@@ -139,6 +142,10 @@ msgstr "o_mnie/"
 #: .\templates\includes\footer.html:7
 msgid "Posssts"
 msgstr "Possty"
+
+#: .\templates\includes\left_section.html:14
+msgid "CONTACT ME"
+msgstr "KONTAKT"
 
 #: .\templates\includes\navbar.html:32
 msgid "Posts"

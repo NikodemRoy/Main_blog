@@ -1,3 +1,4 @@
+from email import message
 from django.db import models
 
 from parler.models import TranslatableModel, TranslatedFields
@@ -59,3 +60,21 @@ class Skill(TranslatableModel):
 
     def __str__(self):
         return self.skill_name
+    
+class Message(models.Model):
+    profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, default=None, null=True, blank=True)
+    creation_date = models.DateTimeField(auto_now_add=True)
+    is_read = models.BooleanField(default=False, null=True)
+    ip = models.CharField(max_length=2550, blank=True)
+
+    name = models.CharField(max_length=96, blank=False)
+    email = models.EmailField(max_length=96, blank=False)
+    subject = models.CharField(max_length=96, blank=False)
+    message = models.TextField(max_length=9600, blank=False)
+
+    class Meta:
+        verbose_name = "Message"
+        verbose_name_plural = 'Messages'
+
+    def __str__(self):
+        return f'Message: {self.subject}, Date: {self.creation_date}, Email: {self.email}'
