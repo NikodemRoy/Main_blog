@@ -1,3 +1,4 @@
+from django.dispatch import receiver
 from django.shortcuts import render, redirect
 from .models import BlogPost
 from django.db.models import F
@@ -6,10 +7,15 @@ from django.shortcuts import get_object_or_404, redirect
 from django.http import Http404
 
 from .models import Categories, Subcategories
-from APPS.about_me.models import Profile
+
+from APPS.about_me.models import Profile, Message
+from APPS.about_me.forms import MessageForm
+
 from APPS.projects.models import Mainproject, Projects
+
 from APPS.comments.models import Comment
 from APPS.comments.forms import CommentForm
+
 
 from .services import get_search
 
@@ -97,8 +103,35 @@ def read_later(request):
 
 def contact_me(request):
     profile = get_object_or_404(Profile, id=1)
+    
     context = {'profile':profile}
     return render(request, 'blog/contact_me.html', context)
+
+def send_message(request):
+    url = request.META.get('HTTP_REFERER')
+
+    if request.method == "POST":
+        form = MessageForm(request.POST)
+        message_receiver = get_object_or_404(Profile, id=1)
+
+        if form.is_valid():
+            data = Message() 
+            data.name = form.cleaned_data['name']
+            data.email = form.cleaned_data['email']
+            data.subject = form.cleaned_data['subject']
+            data.message = form.cleaned_data['message']
+            
+            data.ip = request.META.get('REMOTE_ADDR')
+            data.receiver = message_receiver
+
+            data.save()
+
+            return redirect(url)
+        else:
+            print('data is not valid')
+            # messages.success(request, "Thank You! Review has been submitted.")
+            return redirect(url)
+
 
 
 def portfolio(request):

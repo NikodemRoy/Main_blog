@@ -62,9 +62,9 @@ class Skill(TranslatableModel):
         return self.skill_name
     
 class Message(models.Model):
-    profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, default=None, null=True, blank=True)
-    creation_date = models.DateTimeField(auto_now_add=True)
-    is_read = models.BooleanField(default=False, null=True)
+    receiver = models.ForeignKey(Profile, on_delete=models.SET_NULL, default=None, null=True, blank=True)
+    creation_date = models.DateField(auto_now_add=True)
+    is_read = models.BooleanField(default=False)
     ip = models.CharField(max_length=2550, blank=True)
 
     name = models.CharField(max_length=96, blank=False)
@@ -77,4 +77,4 @@ class Message(models.Model):
         verbose_name_plural = 'Messages'
 
     def __str__(self):
-        return f'Message: {self.subject}, Date: {self.creation_date}, Email: {self.email}'
+        return f'Subject: {self.subject}, Email: {self.email}, Date: {self.creation_date}'

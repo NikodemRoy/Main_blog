@@ -15,6 +15,7 @@ urlpatterns = [
     path('portfolio/project/<str:project>', views.project_detail, name='project_detail'),
     path('search/', views.search, name='search'),
     path('submit-comment/<int:blogpost_id>/', views.submit_comment, name='submit_comment'),
+    path('send-message/', views.send_message, name='send_message'),
     path('save-post/', views.save_post, name='save_post'),
     path('reaction-count/<int:blogpost_id>/', views.reaction_count, name='reaction_count'),
     path('read-later/', views.read_later, name='read_later'),

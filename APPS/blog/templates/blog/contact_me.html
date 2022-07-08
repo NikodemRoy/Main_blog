@@ -3,11 +3,13 @@
 {% load i18n %}
 
 {% load static %}
- 
+
 {% block title %}Blog{% endblock title %}
 
-{% block css_style %}<link rel="stylesheet" href="{% static 'blog/css/contact_me.css' %}">{% endblock css_style %}
-{% block css_responsive %}<link rel="stylesheet" href="{% static 'blog/css_responsive/contact_me_responsive.css' %}">{% endblock css_responsive %}
+{% block css_style %}
+<link rel="stylesheet" href="{% static 'blog/css/contact_me.css' %}">{% endblock css_style %}
+{% block css_responsive %}
+<link rel="stylesheet" href="{% static 'blog/css_responsive/contact_me_responsive.css' %}">{% endblock css_responsive %}
 
 
 {% block content %}
@@ -15,7 +17,7 @@
     <div class="container">
 
         {% include 'includes/left_section.html' %}
-        
+
         <div class="right_section">
             <div class="bottom_section">
 
@@ -25,39 +27,41 @@
                         <p>{{profile.contact_me_down}} </p>
                     </div>
                     <div class="mail_id_box">
-                        <h6> <span><img src="{% static 'images/Iconly-Light-Outline-Message.svg' %}" alt="image"></span>{{ short_description.email }}</h6>
+                        <h6> <span><img src="{% static 'images/Iconly-Light-Outline-Message.svg' %}"
+                                    alt="image"></span>{{ short_description.email }}</h6>
                     </div>
                 </div>
                 <div class="half_section">
 
                     <div class="form_section">
-                        <form action="#" method="post">
+                        <form action="{% url 'send_message' %}" method="POST">
+                            {% csrf_token %}
                             <div class="form_heading">
                                 <h3>{% trans 'Send a message' %}</h3>
                             </div>
-        
+
                             <div class="form_group">
                                 <label for="text">{% trans 'Your name:' %}</label>
-                                <input type="text">
+                                <input type="text" name="name">
                             </div>
                             <div class="form_group">
                                 <label for="text">{% trans 'Your Email:' %}</label>
-                                <input type="text">
+                                <input type="text" name="email">
                             </div>
                             <div class="form_group">
                                 <label for="text">{% trans 'Subject:' %}</label>
-                                <input type="text">
+                                <input type="text" name="subject">
                             </div>
                             <div class="form_group">
                                 <label for="text">{% trans 'Your Message:' %}</label>
-                                <textarea></textarea>
+                                <textarea name="message" maxlength="9599"></textarea>
                             </div>
-                            <button>{% trans 'Submit' %}</button>
+                            <button type="submit">{% trans 'Submit' %}</button>
                         </form>
                     </div>
 
                 </div>
-                
+
             </div>
 
         </div>
