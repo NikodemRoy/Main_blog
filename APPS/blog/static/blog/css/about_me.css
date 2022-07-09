@@ -337,10 +337,11 @@ body {
 }
 
 .main_section .container .right_section .top_section .couple_title_details .single_details h5 {
-  padding-right: 95px;
+  /* padding-right: 95px; */
   color: #6A6680;
   font-weight: 600;
   font-size: 20px;
+  width: 20%;
 }
 
 .main_section .container .right_section .top_section .couple_title_details .single_details p {
@@ -348,6 +349,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
+  width: 80%;
 }
 
 .main_section .container .right_section .top_section h4 {
