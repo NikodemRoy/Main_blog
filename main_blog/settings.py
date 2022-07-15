@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 
+# serving env variables 
+from decouple import config
+from decouple import Csv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8_pqrf3!&mcgc)^srx7&2jbnwna4&x%6j@31u=x#nxnydgg*qs'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
@@ -134,8 +138,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Adding translations 
 
+# Adding translations 
 from django.utils.translation import gettext_lazy as _
 
 LANGUAGES = (
@@ -184,8 +188,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SESSION_COOKIE_AGE = 120960000
 
 
-
-from ckeditor.configs import DEFAULT_CONFIG
+# Adding CKEditor
 
 CUSTOM_TOOLBAR = [
     {
