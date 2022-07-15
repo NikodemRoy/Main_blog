@@ -1,6 +1,8 @@
 from django.db import models
 from django.shortcuts import render
 
+from ckeditor.fields import RichTextField
+
 from parler.models import TranslatableModel, TranslatedFields
 
 
@@ -8,7 +10,7 @@ class BlogPost(TranslatableModel):
     translations = TranslatedFields(
         title = models.CharField(max_length=96),
         slug = models.SlugField(max_length=255),
-        description= models.TextField(max_length=10000, blank=True),
+        description= RichTextField(max_length=10000, blank=True),
         publish_date = models.DateTimeField(auto_now=True),
     )
 

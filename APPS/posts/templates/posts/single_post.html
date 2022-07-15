@@ -6,6 +6,16 @@
 
 {% block title %}{{post_detail.title}}{% endblock title %}
 
+
+{% block head_script %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/docco.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+{% endblock head_script %}
+
+
+
+
 {% block css_style %}
 <link rel="stylesheet" href="{% static 'posts/css/single_post.css' %}">{% endblock css_style %}
 {% block css_responsive %}
@@ -134,7 +144,7 @@
 
                         <div class="details_text">
                             <p>
-                                {{post_detail.description}}
+                                {{post_detail.description|safe}}
                             </p>
 
                             <div class="react_icon">
