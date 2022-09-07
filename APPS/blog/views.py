@@ -15,6 +15,7 @@ from APPS.projects.models import Mainproject, Projects
 
 from APPS.comments.models import Comment
 from APPS.comments.forms import CommentForm
+from django.contrib import messages
 
 
 from .services import get_search
@@ -22,6 +23,10 @@ from .services import get_search
 # pagination
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
+
+def home_redirect(request):
+    return redirect(home)
+    
 def home(request):
     posts = BlogPost.objects.filter(publish_status = True).order_by('-created_date')
     all_post_id = []
@@ -126,12 +131,15 @@ def send_message(request):
 
             data.save()
 
-            return redirect(url)
-        else:
-            print('data is not valid')
-            # messages.success(request, "Thank You! Review has been submitted.")
+            if '/en/' in request.path:
+                messages.success(request, "Thank You! Your message has been sent.")
+            elif '/pl/' in request.path:  
+                messages.success(request, "Dziękuję! Twoja wiadomość została wysłana.")
             return redirect(url)
 
+        else:
+            messages.error(request, form.errors)
+            return redirect(url)
 
 
 def portfolio(request):
@@ -209,10 +217,14 @@ def submit_comment(request, blogpost_id):
                 request.session["was_commented"] = was_commented
                 
                 print(f'Was commented list ID: {was_commented}')
+
+            if '/en/' in request.path:
+                messages.success(request, "Thank You! Comment has been submitted.")
+            elif '/pl/' in request.path:  
+                messages.success(request, "Dziękuję! Komentarz został dodany.")
             return redirect(url)
         else:
-            print('data is not valid')
-            # messages.success(request, "Thank You! Review has been submitted.")
+            messages.error(request, form.errors)
             return redirect(url)
 
 def save_post(request):
@@ -256,3 +268,9 @@ def reaction_count(request, blogpost_id):
 
         print(f'id of stored posts: {stored_posts}')
     return redirect(url)
+
+def page_404(request, exception):
+    return render(request, '404.html', status=404)
+
+def page_500(request):
+    return render(request, '500.html', status = 500)

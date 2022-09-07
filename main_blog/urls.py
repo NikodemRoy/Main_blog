@@ -35,6 +35,9 @@ urlpatterns = i18n_patterns(
     path(_('about_me/'), include('APPS.about_me.urls')),
 )
 
+handler404 = "APPS.blog.views.page_404"
+handler500 = "APPS.blog.views.page_500"
+
 
 # path(_('about_me'), include('APPS.categories.urls')),
 

@@ -109,6 +109,14 @@ body {
   color: #231E1E;
 }
 
+.header_section .container ul li a.active {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 60px;
+  position: relative;
+  color: #7768CC;
+}
+
 .header_section .container ul li a::after {
   content: '';
   position: absolute;

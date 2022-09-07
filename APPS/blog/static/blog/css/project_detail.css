@@ -109,6 +109,14 @@ body {
   color: #231E1E;
 }
 
+.header_section .container ul li a.active {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 60px;
+  position: relative;
+  color: #7768CC;
+}
+
 .header_section .container ul li a::after {
   content: '';
   position: absolute;
@@ -314,14 +322,13 @@ body {
 }
 
 .main_section .container .right_section .top_section .banner_image img {
-  width: 1007px;
-  height: 370px;
+  width: 100%;
   object-fit: cover;
 }
 
 .main_section .container .right_section .top_section .top_section_container {
-  padding-left: 58px;
-  padding-right: 58px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .main_section .container .right_section .top_section .top_section_container .heading {
@@ -340,18 +347,24 @@ body {
 }
 
 .main_section .container .right_section .top_section .top_section_container .container_image img {
-  height: 100%;
+  border-radius: 0px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.main_section .container .right_section .top_section .top_section_container p img {
+  width: 100%;
   object-fit: cover;
   border-radius: 14px;
 }
 
-.main_section .container .right_section .top_section .top_section_container .container_image.first {
+/* .main_section .container .right_section .top_section .top_section_container .container_image.first {
   height: 242px;
 }
 
 .main_section .container .right_section .top_section .top_section_container .container_image.second {
   height: 428px;
-}
+} */
 
 .main_section .container .right_section .top_section .top_section_container .para_text p {
   font-size: 18px;

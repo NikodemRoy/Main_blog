@@ -117,6 +117,14 @@ body {
   color: #231E1E;
 }
 
+.header_section .container ul li a.active {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 60px;
+  position: relative;
+  color: #7768CC;
+}
+
 .header_section .container ul li a::after {
   content: '';
   position: absolute;
@@ -214,7 +222,7 @@ body {
 .main_section .container .left_section .top_section .user_image {
   height: 75px;
   width: 75px;
-  border-radius: 50%;
+  border-radius: 75%;
   overflow: hidden;
   border: 2.2px solid #7768CC;
   margin-top: 8px;
@@ -404,13 +412,13 @@ body {
   margin-right: 15px;
 }
 
-.main_section .container .middle_section .latest_all_cards .latest_card .text_section .tags a:hover {
+/* .main_section .container .middle_section .latest_all_cards .latest_card .text_section .tags a:hover {
   font-size: 14px;
   font-weight: 400;
   color: #7B6CCC;
   letter-spacing: 100;
   margin-right: 15px;
-}
+} */
 
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .tags a span {
   color: #7B6CCC;
@@ -442,7 +450,7 @@ body {
   border: none;
   background: transparent;
   margin-right: 7px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .react_count .single_react p {

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% load static %}
+ 
+{% block title %}Blog{% endblock title %}
+
+{% block css_style %}<link rel="stylesheet" href="{% static 'blog/css/home.css' %}">{% endblock css_style %}
+{% block css_responsive %}<link rel="stylesheet" href="{% static 'blog/css_responsive/home_responsive.css' %}">{% endblock css_responsive %}
+
+
+{% block content %}
+<div class="main_section">
+    <div class="container">
+
+        {% include 'includes/left_section.html' %}
+
+        <div class="middle_section">
+            <div class="top_bar">
+
+                <a class="active">{% trans '404 Error, Page Not Found' %}</a>
+
+            </div>
+
+
+            
+
+        </div>
+
+        {% include 'includes/right_section.html' %}
+        
+    </div>
+
+</div>
+{% endblock content %}

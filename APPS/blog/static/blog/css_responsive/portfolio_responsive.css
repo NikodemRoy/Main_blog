@@ -66,6 +66,16 @@
         display: block;
         text-align: center;
     }
+
+    .header_section .container ul li a.active {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 0px;
+        display: block;
+        text-align: center;
+        color: #7768CC;
+    }
+
     .header_section .container ul li a::after{
         left: 0px;
         height: 2px;
@@ -116,6 +126,16 @@
         display: block;
         text-align: center;
     }
+
+    .header_section .container ul li a.active {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 0px;
+        display: block;
+        text-align: center;
+        color: #7768CC;
+    }
+    
     .header_section .container ul li a::after{
         left: 0px;
         height: 2px;

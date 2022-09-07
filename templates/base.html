@@ -1,15 +1,18 @@
 {% load static %}
+{% load i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ LANGUAGE_CODE }}">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <title>{% block title %}Blog{% endblock title %}</title>
+    <title>{% block title %}{% trans 'TheDjango.Dev - Blog about programming in Django ' %}{% endblock title %}</title>
+    <meta name="description" content={% block meta_description %}{% endblock meta_description %}>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,12 +27,103 @@
 
     {% block head_script %}{% endblock head_script %}
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" /> 
+    {% if '/pl/' in request.path %}
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f3f2f8",
+                        "text": "#5c7291"
+                    },
+                    "button": {
+                        "background": "#7B6CCC",
+                        "text": "#ffffff"
+                    }
+                },
+                "showLink": false,
+                "position": "top",
+                "static": true,
+                "content": {
+                    "message": "Ta strona wykorzystuje pliki cookie. Używamy informacji zapisanych za pomocą plików cookies w celu zapewnienia maksymalnej wygody w korzystaniu z naszego serwisu. Mogą też korzystać z nich współpracujące z nami firmy badawcze oraz reklamowe. Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies kliknij na &bdquo;Zgadzam się&rdquo; w prawym górnym rogu tej informacji. Jeśli nie wyrażasz zgody, ustawienia dotyczące plików cookies możesz zmienić w swojej przeglądarce.",
+                    "dismiss": "Zgadzam się"
+                }
+            })
+        });
+    </script>
+    {% else %}
+    <script>
+        window.addEventListener("load", function() {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f3f2f8",
+                        "text": "#5c7291"
+                    },
+                    "button": {
+                        "background": "#7B6CCC",
+                        "text": "#ffffff"
+                    }
+                },
+                "showLink": false,
+                "position": "top",
+                "static": true,
+                "content": {
+                    "message": "This site uses cookies. We use the information stored by cookies to provide maximum convenience in using our site. They may also be used by research and advertising companies that cooperate with us. If you agree to save the information contained in cookies, click on &bdquo;I agree&rdquo; in the upper right corner of this notice. If you do not agree, you can change your cookie settings in your browser.",
+                    "dismiss": "Agree"
+                }
+            })
+        });
+    </script>
+    {% endif %}
 
 
 </head>
 
 <body>
     {% include 'includes/navbar.html' %}
+
+    <!-- {% block messages %}
+    <ul class="messages" id="messages-list">
+        {% if messages %}
+        {% for message in messages %}
+        <li>
+            {% if message.tags %}
+            <div class="alert alert-{{ message.tags }} msg fade show" role="alert">{{ message }}</div>
+            {% else %}
+            <div class="alert alert-info msg fade show" role="alert">{{ message }}</div>
+            {% endif %}
+        </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+    {% endblock %} -->
+
+    {% if messages %}
+    <link rel="stylesheet" href="{% static 'message/message.css' %}">
+
+        <ul id="messag" class="messages">
+            {% for message in messages %}
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+
+            {% endfor %}
+        </ul>
+
+    {% endif %}
+
+    <!-- {% if messages %}
+    {% for message in messages %}
+        <link rel="stylesheet" href="{% static 'message/message.css' %}">
+        <div class="alert alert--{{message.tags}}">
+            <p class="alert__message">{{message}}</p>
+            <button class="alert__close">⨯</button>
+        </div>
+
+    {% endfor %}
+    {% endif %} -->
+
 
 
     {% block content %}

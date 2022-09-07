@@ -4,19 +4,21 @@ from APPS.comments.models import Comment
 
 from django.shortcuts import get_object_or_404
 from django.http import Http404
+from django.contrib import messages
 
 from django.db.models import F
 # Create your views here.
 
 
 def post(request, post_slug):
+    
     post_detail = get_object_or_404(BlogPost, translations__slug=post_slug)
 
     if '/en/' in request.path:
-        comments = Comment.objects.filter(project=post_detail, text_pl='', is_public=True)
+        comments = Comment.objects.filter(project=post_detail, text_pl='', is_public=True).order_by('creation_date')
 
     elif '/pl/' in request.path:  
-        comments = Comment.objects.filter(project=post_detail, text_en='', is_public=True)
+        comments = Comment.objects.filter(project=post_detail, text_en='', is_public=True).order_by('creation_date')
     else: 
         raise Http404("Internal page error") 
     

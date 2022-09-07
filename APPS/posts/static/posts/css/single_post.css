@@ -22,6 +22,8 @@ body {
   background: #F5F5F7;
 }
 
+
+
 .bl-br-none {
   border-left: 0px !important;
   border-right: 0px !important;
@@ -32,7 +34,7 @@ body {
 }
 
 /*================= header section start ================= */
-.ml-auto{
+.ml-auto {
   margin-left: auto;
 }
 
@@ -224,34 +226,34 @@ body {
 
 .main_section .container .left_section .icon_group.three button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.three:hover button {
   fill: #0C4B33;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.three button.active {
   fill: #0C4B33;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.three:hover p {
@@ -269,35 +271,35 @@ body {
 
 .main_section .container .left_section .icon_group.one button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 
 .main_section .container .left_section .icon_group.one:hover button {
   fill: #DC2424;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.one.active button {
   fill: #DC2424;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.one:hover button svg {
@@ -324,35 +326,38 @@ body {
 
 .main_section .container .left_section .icon_group.two button {
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
+
 .main_section .container .left_section .icon_group.two:hover a {
   fill: #7768CC;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
 }
 
 .main_section .container .left_section .icon_group.two.active a {
   fill: #7768CC;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
-
+.main_section .container .left_section .icon_group.two p {
+  color: black;
+}
 
 .main_section .container .left_section .icon_group.two:hover p {
   color: #7768CC;
@@ -402,10 +407,9 @@ body {
   padding-top: 13px;
   padding-bottom: 18px;
   border-bottom: 1px solid #D7D7D9;
-  padding-left: 50px;
 }
 
-.main_section .container .middle_section .latest_all_cards .latest_card .text_section h3 {
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section h1 {
   font-size: 36px;
   font-weight: 600;
   color: #201E26;
@@ -459,9 +463,27 @@ body {
   padding-right: 15px;
 }
 
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .container_image {
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .container_image img {
+  border-radius: 0px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text p img {
+  border-radius: 14px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #201E26;
   line-height: 22px;
   /* width: 622px; */
@@ -480,37 +502,37 @@ body {
 }
 
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon form {
-	border: 0px;
-	width: auto;
-	box-shadow: none;
-	display: inline-block;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	padding: 0px;
+  border: 0px;
+  width: auto;
+  box-shadow: none;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon button {
   margin-right: 20px;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
-.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .heart button {
+.main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .heart button svg {
   fill: #DC2424;
   margin-right: 20px;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .main_section .container .middle_section .discussion_part {
@@ -573,6 +595,7 @@ body {
   color: #201E26;
   font-weight: 400;
   line-height: 22px;
+  padding-right: 5px;
 }
 
 .main_section .container .middle_section form {
@@ -610,6 +633,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 9px;
 }
+
 
 .main_section .container .middle_section form .form_group input {
   width: 100%;
@@ -874,7 +898,7 @@ body {
   overflow: hidden;
 }
 
-.toggle-container.active{
+.toggle-container.active {
   transition: all 0.4s ease-in-out;
   max-height: 0px;
 }
@@ -902,4 +926,91 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background: #584d97;
   border-radius: 10px;
+}
+
+
+
+
+
+/* .badge-light {
+  margin-top: 2.5em;
+}
+.errorlist {
+  list-style: none;
+  padding-left: 0px;
+  opacity: 0.8;
+  color: #dc3545;
+  font-size: 12px;
+}
+.msg {
+  margin: 0 !important;
+  margin-bottom: 4px !important;
+  margin-top: 4px !important;
+}
+.messages {
+  z-index: 100;
+  position: fixed;
+  right: 2em;
+  margin-top: -1em;
+  list-style: none;
+  text-align: right;
+}
+.alert {
+  margin-top: 1rem;
+}
+.alert-error {
+  background-color: #f2dede;
+  border-color: #ebcccc;
+  color: #a94442;
+} */
+
+/* ul.messages li.success{    
+  font-weight: 600;                                                                                                                                                                 
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  max-width: 460px;
+  color: #03611b;
+  background-color: #81bd7b;
+} */
+
+
+blockquote {
+  background: #f9f9f9;
+  font-style: italic;
+  border-left: 5px solid #bdb6e2;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #bdb6e2;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+blockquote a {
+  font-style: italic;
+  display: block;
+  color: black;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+blockquote a:hover {
+  display: block;
+  color: #7768CC;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10px;
 }

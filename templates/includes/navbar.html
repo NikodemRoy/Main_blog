@@ -29,16 +29,16 @@
         <!--New Added:  navbar-parent -->
         <ul id="navbar-parent">
             <li>
-                <a href="{% url 'home' %}">{% trans 'Posts' %}</a>
+                <a href="{% url 'home' %}" {% if '/posts/' in request.path %}class="active"{% endif %}>{% trans 'Posts' %}</a>
             </li>
             <li>
-                <a href="{% url 'about_me' %}">{% trans 'About me' %}</a>
+                <a href="{% url 'about_me' %}" {% if '/about_me/' in request.path %}class="active"{% elif '/o_mnie/' in request.path %}class="active"{% endif %}>{% trans 'About me' %}</a>
             </li>
             <li>
-                <a href="{% url 'portfolio' %}">{% trans 'Portfolio' %}</a>
+                <a href="{% url 'portfolio' %}" {% if '/portfolio/' in request.path %}class="active"{% endif %}>{% trans 'Portfolio' %}</a>
             </li>
             <li>
-                <a href="{% url 'contact_me' %}">{% trans 'Contact' %}</a>
+                <a href="{% url 'contact_me' %}" {% if '/contact/' in request.path %}class="active"{% endif %}>{% trans 'Contact' %}</a>
             </li>
 
             {% if stored_posts %}

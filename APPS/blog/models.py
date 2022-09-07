@@ -12,7 +12,9 @@ class BlogPost(TranslatableModel):
         slug = models.SlugField(max_length=255),
         description= RichTextField(max_length=10000, blank=True),
         publish_date = models.DateTimeField(auto_now=True),
+        opis2 = models.TextField(blank=True),
     )
+    opis = models.TextField(blank=True)
 
     created_date = models.DateTimeField(auto_now_add=True)
     cover = models.ImageField(upload_to='post_cover', default='post_cover/defoult.png')

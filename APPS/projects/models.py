@@ -11,9 +11,10 @@ class Mainproject(TranslatableModel):
 
         project_shortdescription = models.CharField(max_length=2550, blank=True),
         project_fulldescription = models.TextField(max_length=25500, blank=True),
+        # description= RichTextField(max_length=10000, blank=True),
         github_link = models.CharField(max_length=255, blank=True),
     )
-
+    
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     stack = models.ManyToManyField('stack', blank=True)
     is_public = models.BooleanField(default=False)

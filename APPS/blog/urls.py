@@ -7,8 +7,9 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('top/', views.home_top, name='home_top'),
+    path('', views.home_redirect, name='home_redirect'),
+    path('posts/', views.home, name='home'),
+    path('posts/top/', views.home_top, name='home_top'),
     path('category/<str:subcategory>', views.home_category, name='home_category'),
     path('contact/', views.contact_me, name='contact_me'),
     path('portfolio/', views.portfolio, name='portfolio'),

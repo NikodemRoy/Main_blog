@@ -15,8 +15,17 @@
         width: 62%;
     }
 
-    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h3 {
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h1 {
         font-size: 30px;
+        font-weight: 600;
+        color: #201E26;
+        line-height: 37px;
+        width: 96%;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h2 {
+        font-weight: 600;
+        font-size: 26px;
         font-weight: 600;
         color: #201E26;
         line-height: 37px;
@@ -115,8 +124,14 @@
         /* margin-bottom: 20px; */
     }
 
-    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h3 {
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h1 {
         font-size: 24px;
+        line-height: 30px;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h2 {
+        font-weight: 600;
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -147,6 +162,19 @@
         /* /* color: #201E26; */
         background-color: #201E26;
         /* box-shadow: none; */
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .one button svg {
+        fill: red;
+        padding: none;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .two button svg {
+        fill: #0e7950;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 
@@ -303,7 +331,9 @@
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section {
         border-bottom: 0;
         padding-bottom: 0;
-        padding-left: 10px;
+        /* padding-left: 10px; */
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .toggle-container {
@@ -338,15 +368,33 @@
         display: inline-block;
     }
 
-    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h3 {
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h1 {
+        font-size: 22px;
+        line-height: 25px;
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section h2 {
+        font-weight: 600;
         font-size: 18px;
         line-height: 25px;
+        padding-right: 5px;
+        padding-bottom: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section h5 {
         font-size: 13px;
         margin-bottom: 6px;
         margin-top: 0;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .tags {
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .discussion_part .discussion_card .header_part h4 {
@@ -375,34 +423,60 @@
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section h5.first_date {
         display: block;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section h5.last_date {
         display: none;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .react_count .single_react button {
         margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .react_count .single_react p {
         font-size: 13px;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .react_section .save_btn a {
         padding: 5px 8px;
         font-size: 13px;
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text {
         padding-top: 18px;
         padding-bottom: 0px;
+        padding-right: 0px;
     }
+
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .container_image img {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    
 
     .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text p {
         font-size: 16px;
         line-height: 19px;
-        max-width: 98%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text span {
+        padding-left: 10px;
+        padding-right: 5px;
     }
 
     .main_section .container .middle_section form .form_heading h3 {
@@ -435,6 +509,17 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 10px;
+
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .one button svg {
+        fill: red;
+
+    }
+
+    .main_section .container .middle_section .latest_all_cards .latest_card .text_section .details_text .react_icon .two button svg {
+        fill: #0e7950;
+
     }
 
 
@@ -452,6 +537,21 @@
     .footer ul li .page_link {
         margin-right: 30px;
     }
+
+    ul.messages li.success{
+        text-align: center;
+        font-size: 16px;    
+        font-weight: 600;                                                                                                                                                                 
+        border: 2px solid;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 10px 8px 8px 10px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        max-width: 250px;
+        color: #03611b;
+        background-color: #81bd7b;
+      }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {}

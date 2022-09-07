@@ -1,0 +1,1945 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$PdvQIEiVA0f1sExGUODsCa$+iQIKB285D20MXy1KM61+jgm0CcPqkuMfZ4lKb2bj/U=",
+        "last_login": "2022-07-22T17:30:56.357Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-10T11:47:53.656Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "title": "Culture and the arts",
+        "slug": "culture-and-the-arts",
+        "description": "The word culture is derived from the Latin root cultura or cultus meaning to \"inhabit, cultivate, or honour\". In general, culture refers to human activity; different definitions of culture reflect different theories for understanding, or criteria for valuing human activity. Present day anthropologists use the term to refer to the universal human capacity to classify experiences and to encode and communicate them symbolically. They regard this capacity as a defining feature of the genus Homo. Since culture is learned, people living in different places have different cultures. There can be different cultures in different countries, and there can also be shared cultures among continents.\r\nThe arts are a vast subdivision of culture, composed of many creative endeavors and disciplines. It is a broader term than \"art,\" which as a description of a field usually means only the visual arts. The arts encompasses visual arts, literary arts and the performing arts – music, theatre, dance, spoken word and film, among others.\r\n\r\nArt, in its broadest meaning, is the expression of creativity or imagination. The word art comes from the Latin word ars, which, loosely translated, means \"arrangement\". Art is commonly understood as the act of making works (or artworks) which use the human creative impulse and which have meaning beyond simple description. Art is often distinguished from crafts and recreational hobby activities. The term creative arts denotes a collection of disciplines whose principal purpose is the output of material for the viewer or audience to interpret. As such, art may be taken to include forms as diverse as prose writing, poetry, dance, acting or drama, film, music, sculpture, photography, illustration, architecture, collage, painting, craft and fashion. Art may also be understood as relating to creativity, æsthetics and the generation of emotion.",
+        "publish_date": "2022-06-10T11:49:52.001Z",
+        "master": 1
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "title": "Kultura i sztuka",
+        "slug": "kultura-i-sztuka",
+        "description": "Słowo kultura pochodzi od łacińskiego rdzenia cultura lub cultus, oznaczającego \"zamieszkiwanie, kultywowanie lub czczenie\". Ogólnie rzecz biorąc, kultura odnosi się do działalności ludzkiej; różne definicje kultury odzwierciedlają różne teorie rozumienia lub kryteria wartościowania działalności ludzkiej. Współcześni antropolodzy używają tego terminu w odniesieniu do uniwersalnej ludzkiej zdolności do klasyfikowania doświadczeń oraz kodowania i przekazywania ich w sposób symboliczny. Uważają tę zdolność za cechę definiującą rodzaj Homo. Ponieważ kultura jest wyuczona, ludzie żyjący w różnych miejscach mają różne kultury. W różnych krajach mogą istnieć różne kultury, ale mogą też istnieć kultury wspólne dla wszystkich kontynentów.\r\nSztuka jest rozległym działem kultury, na który składa się wiele twórczych przedsięwzięć i dyscyplin. Jest to termin szerszy niż \"sztuka\", która jako określenie dziedziny zwykle oznacza tylko sztuki wizualne. Sztuka obejmuje sztuki wizualne, literackie i performatywne - między innymi muzykę, teatr, taniec, słowo mówione i film.\r\n\r\nSztuka, w najszerszym znaczeniu, jest wyrazem kreatywności lub wyobraźni. Słowo sztuka pochodzi od łacińskiego słowa ars, które w luźnym tłumaczeniu oznacza \"układ\". Sztuka jest powszechnie rozumiana jako akt tworzenia dzieł (lub prac artystycznych), które wykorzystują ludzki impuls twórczy i które mają znaczenie wykraczające poza prosty opis. Sztukę często odróżnia się od rzemiosła i rekreacyjnych zajęć hobbystycznych. Termin sztuki twórcze oznacza zbiór dyscyplin, których głównym celem jest tworzenie materiałów przeznaczonych do interpretacji przez widza lub publiczność. Sztuka jako taka może obejmować tak różnorodne formy, jak proza, poezja, taniec, aktorstwo lub dramat, film, muzyka, rzeźba, fotografia, ilustracja, architektura, kolaż, malarstwo, rzemiosło i moda. Sztuka może być również rozumiana jako związana z kreatywnością, estetyką i generowaniem emocji.",
+        "publish_date": "2022-06-10T11:50:59.110Z",
+        "master": 1
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "title": "Personal life and career",
+        "slug": "personal-life-and-career",
+        "description": "Spiro graduated from Harvard University in 1982, where he majored in history and wrote his senior honors thesis on France's relations with Germany in the immediate aftermath of World War II.[3] He went on to the University of Virginia Law School, receiving his J.D. in 1987. For his first several years out of law school, Spiro circulated among various government and NGO positions in DC, spending two years in the State Department's Office of the Legal Adviser and two more as a law clerk for DC Circuit judge Stephen F. Williams and then Supreme Court Associate Justice David Souter.[4] After spending 1992 and 1993 in private practice at Shea & Gardner, he joined the Carnegie Endowment for International Peace as a Council on Foreign Relations Fellow, and then the Clinton administration's National Security Council as Director for Democracy.[4]\r\n\r\nSpiro began teaching at the Hofstra University School of Law in 1994, where he remained until joining the faculty of the University of Georgia School of Law as the Dean and Virginia Rusk Professor of International Law in 2004. He was additionally appointed as UGA's associate dean for faculty development in 2005.[4][5] The following year, he moved on to the Temple University Beasley School of Law as one of a number of hires that year aimed at expanding the university's highly ranked international law program.[4]\r\n\r\nWorks\r\nBeyond Citizenship\r\nBeyond Citizenship: American Identity After Globalization' 'Beyond Citizenship: American Identity After Globalization discusses the impact of dual citizenship, naturalization, and diaspora identity on citizenship in the United States.[6] Spiro criticized traditional methods of ascribing nationality — jus soli and jus sanguinis — for their increasing disassociation with the reality of who participates in the American political and social community, and argued that the ultimate effect would be a decline in the importance of countries and citizenship laws.[7][8] It was reviewed by political scientist Rogers Smith of the University of Pennsylvania in the Harvard Law Review.[9]",
+        "publish_date": "2022-06-10T11:53:04.641Z",
+        "master": 2
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "title": "Życie osobiste i kariera",
+        "slug": "zycie-osobiste-i-kariera",
+        "description": "Spiro ukończył Uniwersytet Harvarda w 1982 r., gdzie studiował historię i napisał pracę dyplomową na temat stosunków Francji z Niemcami bezpośrednio po II wojnie światowej.[3] Następnie studiował prawo na University of Virginia Law School, gdzie w 1987 r. uzyskał tytuł J.D. Przez pierwsze kilka lat po ukończeniu studiów prawniczych Spiro pracował na różnych stanowiskach rządowych i w organizacjach pozarządowych w Waszyngtonie, spędzając dwa lata w Biurze Doradcy Prawnego Departamentu Stanu, a kolejne dwa jako urzędnik sądowy sędziego okręgu DC Stephena F. Williamsa, a następnie sędziego Sądu Najwyższego Davida Soutera[4].[5] Po spędzeniu 1992 i 1993 roku w prywatnej praktyce w kancelarii Shea & Gardner, dołączył do Carnegie Endowment for International Peace jako stypendysta Rady Stosunków Zagranicznych, a następnie do Rady Bezpieczeństwa Narodowego administracji Clintona jako dyrektor ds. demokracji[6].\r\n\r\nW 1994 r. Spiro rozpoczął pracę dydaktyczną w Hofstra University School of Law, gdzie pozostał do czasu, gdy w 2004 r. został zatrudniony w University of Georgia School of Law jako Dean and Virginia Rusk Professor of International Law. W 2005 r. został dodatkowo mianowany zastępcą dziekana UGA ds. rozwoju wydziału.[4][5] W następnym roku przeniósł się do Temple University Beasley School of Law, jako jeden z kilku zatrudnionych w tym samym roku pracowników, których celem było rozwinięcie wysoko ocenianego programu prawa międzynarodowego tej uczelni.[4]\r\n\r\nPrace\r\nPoza obywatelstwem\r\nBeyond Citizenship: Tożsamość amerykańska po globalizacji\" \"Beyond Citizenship: American Identity After Globalization\" omawia wpływ podwójnego obywatelstwa, naturalizacji i tożsamości diasporycznej na obywatelstwo w Stanach Zjednoczonych. [6] Spiro skrytykował tradycyjne metody przypisywania obywatelstwa - jus soli i jus sanguinis - za ich rosnące oderwanie od rzeczywistości, w której funkcjonuje amerykańska wspólnota polityczna i społeczna, i argumentował, że ostatecznym efektem będzie spadek znaczenia państw i praw dotyczących obywatelstwa.[7][8] Praca została zrecenzowana przez politologa Rogersa Smitha z Uniwersytetu Pensylwanii w Harvard Law Review.[9]",
+        "publish_date": "2022-06-10T11:53:38.442Z",
+        "master": 2
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "title": "List of Queensland Government departments",
+        "slug": "list-of-queensland-government-departments",
+        "description": "Government in Queensland is delivered by a number of agencies, grouped under areas of portfolio responsibility. Each portfolio is led by a government minister who is a member of the Parliament of Queensland, appointed by the Governor as the representative of the Crown.\r\n\r\nThe agencies are principally grouped as eight departments, each led by a secretary or director-general and comprising a number of portfolios covering specific policy areas across the department and allocated statutory authorities, trading enterprises, boards, councils and other public bodies.\r\n\r\nAgencies have varying levels of operational autonomy, and deliver one or more of frontline public services, administrative functions and law enforcement. Some are structured as for-profit corporations. Where there are multiple portfolios within a department, directors-general may be accountable to a number of ministers. In addition to the list below, a range of other agencies support the functions of the departments. The government is responsible for a number of corporations, of which the responsible minister typically holds a 100% ownership stake in.[1] In 2006, Premier Peter Beattie privatised a number of government owned electricity retailers.[2] On 2 June 2009 the government announced the 'Renewing Queensland Plan' that would sell state-owned railway, port and forestry assets to raise $15 billion, and avoid a further $12 billion required in future capital investment.[3][4] On 18 May 2010, Queensland Forestry Plantations was the first commercial business to be sold.\r\n\r\nAll agencies are identifiable by their corporate logo, which features in agency advertising, publications and correspondence, pictured right.\r\n\r\nA list of articles on Queensland government agencies sorted alphabetically is available at Government agencies of Queensland. The Queensland Government maintains a list of agencies and their contact details at its website.",
+        "publish_date": "2022-06-10T11:54:22.538Z",
+        "master": 3
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "title": "Lista departamentów rządu Queensland",
+        "slug": "lista-departamentow-rzadu-queensland",
+        "description": "Rząd w Queensland jest sprawowany przez szereg agencji, zgrupowanych w ramach obszarów odpowiedzialności portfolio. Na czele każdej teczki stoi minister rządu, który jest członkiem parlamentu Queensland, mianowanym przez gubernatora jako przedstawiciela Korony.\r\n\r\nAgencje są zasadniczo pogrupowane jako osiem departamentów, z których każdy jest kierowany przez sekretarza lub dyrektora generalnego i składa się z szeregu teczek obejmujących określone obszary polityki w ramach departamentu oraz przypisanych do nich władz statutowych, przedsiębiorstw handlowych, zarządów, rad i innych podmiotów publicznych.\r\n\r\nAgencje mają różny poziom autonomii operacyjnej i świadczą jedną lub więcej usług publicznych, pełnią funkcje administracyjne i egzekwują prawo. Niektóre z nich są zorganizowane jako korporacje nastawione na zysk. W przypadku gdy w ramach jednego departamentu istnieje wiele tek, dyrektorzy generalni mogą odpowiadać przed kilkoma ministrami. Poza wymienionymi poniżej, funkcje departamentów są wspierane przez szereg innych agencji. Rząd jest odpowiedzialny za szereg korporacji, w których właściwy minister zazwyczaj posiada 100% udziałów.[1] W 2006 roku premier Peter Beattie sprywatyzował kilka państwowych przedsiębiorstw zajmujących się sprzedażą energii elektrycznej.[2] 2 czerwca 2009 roku rząd ogłosił \"Plan odnowy Queensland\", który zakłada sprzedaż państwowych aktywów kolejowych, portowych i leśnych w celu pozyskania 15 miliardów dolarów i uniknięcia dalszych 12 miliardów dolarów potrzebnych na przyszłe inwestycje kapitałowe.[3][4] 18 maja 2010 roku Queensland Forestry Plantations było pierwszym przedsiębiorstwem komercyjnym, które zostało sprzedane.\r\n\r\nWszystkie agencje można rozpoznać po ich logo korporacyjnym, które widnieje w reklamach, publikacjach i korespondencji agencji, fot. po prawej.\r\n\r\nLista artykułów o agencjach rządowych Queensland uporządkowanych alfabetycznie jest dostępna na stronie Government agencies of Queensland. Rząd Queensland prowadzi wykaz agencji i ich danych kontaktowych na swojej stronie internetowej.",
+        "publish_date": "2022-06-10T11:54:55.118Z",
+        "master": 3
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "en",
+        "title": "Convert your website into an android app using capacitor",
+        "slug": "convert-your-website-into-an-android-app-using-capacitor",
+        "description": "According to Atwood's Law, \"Any application that can be written in JavaScript, will eventually be written in JavaScript.\"\r\n\r\nIn this article, we will learn how to convert a website or web application to an android app that can be deployed on the Android play store or installed on a mobile device using a library from Ionic called a capacitor. I will use react for this demo, but you can use any other framework or even plain old JavaScript.\r\n\r\nPrerequisite\r\nA production build folder. Most frameworks have a build command to create a build folder for you. If you are using vanilla JavaScript add all your assets and files to a folder.\r\nAndroid studio\r\nStep 1: Create a react application.\r\nWe will begin by creating a react application using the following commands. You can skip steps 1 and 2 if you already have an existing project and build folder.\r\nnpx create-react-app my-app\r\ncd my-app\r\nNow to run our react application we use the below command\r\nnpm start\r\nOur demo application will look something like this.\r\n\r\ndemo app\r\n\r\nStep 2: Create a Build folder for your application.\r\nA build folder is crucial in converting our react application to an android application. We use the following command to create a build folder for our react application. If you are using another framework, it might have different commands, so I recommend reading the documentation for the framework you are using. If you are using plain JavaScript, create a folder that contains all your files and assets.",
+        "publish_date": "2022-06-10T11:56:11.622Z",
+        "master": 4
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 8,
+    "fields": {
+        "language_code": "pl",
+        "title": "Przekształć swoją stronę internetową w aplikację na androida za pomocą kondensatora",
+        "slug": "przeksztalc-swoja-strone-internetowa-w-aplikacje-na-androida-za-pomoca-kondensatora",
+        "description": "Zgodnie z prawem Atwooda \"Każda aplikacja, która może być napisana w JavaScript, w końcu zostanie napisana w JavaScript\".\r\n\r\nW tym artykule dowiemy się, jak przekonwertować stronę internetową lub aplikację internetową na aplikację androidową, którą można wdrożyć w sklepie Android play lub zainstalować na urządzeniu mobilnym, używając biblioteki z Ionic zwanej kondensatorem. Do tego dema użyję react, ale możesz użyć dowolnego innego frameworka lub nawet zwykłego starego JavaScriptu.\r\n\r\nWymagania wstępne\r\nFolder buildów produkcyjnych. Większość frameworków posiada komendę build, która tworzy folder build dla Ciebie. Jeśli używasz waniliowego JavaScriptu, dodaj wszystkie swoje zasoby i pliki do folderu.\r\nAndroid studio\r\nKrok 1: Utwórz aplikację react.\r\nRozpoczniemy od utworzenia aplikacji react za pomocą poniższych poleceń. Możesz pominąć kroki 1 i 2, jeśli masz już istniejący projekt i folder budowania.\r\nnpx create-react-app my-app\r\ncd my-app\r\nTeraz, aby uruchomić naszą aplikację react, użyjemy poniższego polecenia\r\nnpm start\r\nNasza aplikacja demo będzie wyglądała tak jak poniżej.\r\n\r\ndemo app\r\n\r\nKrok 2: Utwórz folder Build dla swojej aplikacji.\r\nFolder build jest kluczowy w konwersji naszej aplikacji react na aplikację androidową. Używamy następującego polecenia, aby utworzyć folder budowania dla naszej aplikacji react. Jeśli używasz innego frameworka, może on mieć inne polecenia, więc zalecam przeczytanie dokumentacji frameworka, którego używasz. Jeśli używasz zwykłego JavaScriptu, utwórz folder, który zawiera wszystkie pliki i zasoby.",
+        "publish_date": "2022-06-10T11:56:38.324Z",
+        "master": 4
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 9,
+    "fields": {
+        "language_code": "en",
+        "title": "Rick Roll Your Friends Using Appwrite, Twilio, and .NET",
+        "slug": "rick-roll-your-friends-using-appwrite-twilio-and-net",
+        "description": "Being the fun-loving guy and absolute geek that I am, I've always looked for ways to use tech to prank my friends 😏. I remember that first prank I did 11 years back, a little shortcut hidden behind an Internet Explorer icon that shut down my friend's Windows XP based PC and gave him a mini heart-attack 😆. My pranks have gotten \"a little more sophisticated\" since then, having graduated to rick rolling them via phone calls now! 🤣\r\n\r\nGIFRick Roll GIF\r\n\r\nThe best part is that little prank is really easy to create, and I will show you how to create this prank using 3 of my favourite technologies, Appwrite, Twilio, and .NET today! 😄\r\n\r\n📃 Table of Contents\r\n📝 Prerequisites\r\n🏗️ Setting up Appwrite and Initializing Our Function\r\n🧑‍💻 Creating the Rick Roll Function\r\n😜 Testing the Rick Roll Cloud Function\r\n🏆 Conclusion\r\n📝 Prerequisites\r\nBefore we get started, there are a couple of prerequisites. If you have the prerequisites set up already, you can skip to the following section.\r\n\r\nIn order to follow along, you’ll need a few things beforehand.\r\n\r\n🖥 An Appwrite instance\r\nIf you haven’t set up an Appwrite instance yet, you can follow the getting started guides to get it up and running quickly. Feel free to choose between the One-Click installations on DigitalOcean or [manual installations with Docker].(https://appwrite.io/docs/installation#installWithDocker).\r\n\r\nTL;DR: It just takes a single command to install Appwrite.\r\ndocker run -it --rm \\\r\n    --volume /var/run/docker.sock:/var/run/docker.sock \\\r\n    --volume \"$(pwd)\"/appwrite:/usr/src/code/appwrite:rw \\\r\n    --entrypoint=\"install\" \\\r\n    appwrite/appwrite:0.14.2\r\nOnce your server is up and running, head over to the Appwrite Dashboard on your server’s public IP address ( or localhost if you installed locally ) and create a new admin user account.",
+        "publish_date": "2022-06-10T11:57:14.310Z",
+        "master": 5
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 10,
+    "fields": {
+        "language_code": "pl",
+        "title": "Rick Roll Your Friends przy użyciu Appwrite, Twilio i .NET",
+        "slug": "rick-roll-your-friends-przy-uzyciu-appwrite-twilio-i-net",
+        "description": "Jako człowiek kochający zabawę i absolutny kujon, zawsze szukałem sposobów na wykorzystanie technologii do robienia psikusów moim przyjaciołom 😏. Pamiętam mój pierwszy psikus sprzed 11 lat - mały skrót ukryty za ikoną Internet Explorera, który wyłączył komputer mojego przyjaciela z systemem Windows XP i przyprawił go o mały zawał serca 😆. Od tamtego czasu moje psikusy stały się \"nieco bardziej wyrafinowane\", bo teraz zacząłem je robić przez telefon! 🤣\r\n\r\nGIFRick Roll GIF\r\n\r\nNajlepsze jest to, że ten mały dowcip jest naprawdę łatwy do stworzenia, a ja pokażę Wam dzisiaj, jak go stworzyć przy użyciu 3 moich ulubionych technologii: Appwrite, Twilio i .NET! 😄\r\n\r\n📃 Spis treści\r\n📝 Wymagania wstępne\r\n🏗️ Konfiguracja Appwrite i inicjalizacja naszej funkcji\r\n🧑💻 Tworzenie funkcji Rick Roll\r\n😜 Testowanie funkcji Rick Roll Cloud\r\n🏆 Zakończenie\r\n📝 Wymagania wstępne\r\nZanim zaczniemy, jest kilka warunków wstępnych. Jeśli masz już skonfigurowane warunki wstępne, możesz pominąć poniższy rozdział.\r\n\r\nAby móc kontynuować, będziesz potrzebował kilku rzeczy.\r\n\r\n🖥 Instancja Appwrite\r\nJeśli nie założyłeś jeszcze instancji Appwrite, możesz skorzystać z przewodnika, aby szybko ją uruchomić. Możesz wybrać pomiędzy instalacją One-Click na DigitalOcean lub [ręczną instalacją za pomocą Dockera].(https://appwrite.io/docs/installation#installWithDocker).\r\n\r\nTL;DR: Aby zainstalować Appwrite, wystarczy jedno polecenie.\r\ndocker run -it --rm \\\r\n    --volume /var/run/docker.sock:/var/run/docker.sock\r\n    --volume \"$(pwd)\"/appwrite:/usr/src/code/appwrite:rw \\\r\n    --entrypoint=\"install\" \\(pwd)\r\n    appwrite/appwrite:0.14.2\r\nPo uruchomieniu serwera przejdź do Appwrite Dashboard na publicznym adresie IP swojego serwera (lub localhost, jeśli instalowałeś lokalnie) i utwórz nowe konto użytkownika admin.",
+        "publish_date": "2022-06-10T11:57:45.580Z",
+        "master": 5
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 11,
+    "fields": {
+        "language_code": "en",
+        "title": "Trendiest Admin Template for React & Chakra UI!",
+        "slug": "trendiest-admin-template-for-react-and-chakra-ui",
+        "description": "Save hundreds of hours trying to create and develop a dashboard from scratch. The fastest & responsive admin template is here. Seriously.\r\n\r\nGet started and build your dream web app updated to the latest UI trends with Horizon UI PRO! Now available with discounts up to -34% off!\r\n(Limited time) ⏳\r\n\r\nLearn more: https://horizon-ui.com/pro\r\n\r\nHorizon UI PRO - Trendiest Admin Template for React\r\n\r\n\r\n400+ Components | 42+ Example Pages | Dark & Light Modes\r\nDesigned for those who like modern UI elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Horizon UI PRO is ready to help you create stunning websites and webapps.\r\n\r\nIn this beautiful admin dashboard you will find many examples with pages like NFTs Pages, Authentication Pages, Profile and so on. Just choose between a Basic Design or a cover and you are good to go!\r\n\r\nSee all pages live here: https://horizon-ui.com/chakra-pro/\r\n\r\n\r\nNews Feed - Horizon UI PRO - Trendiest Admin Template for React\r\nHorizon UI PRO is built with over 400+ frontend individual elements, like buttons, inputs, navbars, nav tabs, cards, or alerts, giving you the freedom of choosing and combining.\r\n\r\n\r\nIf you didn't already upgrade to Horizon PRO, now is your great chance! Discounts up to -34% off! 🔥\r\n\r\nGrab your limited discount now: https://bit.ly/horizon-discount\r\n\r\nSee it live: https://horizon-ui.com/chakra-pro/",
+        "publish_date": "2022-06-10T11:58:19.660Z",
+        "master": 6
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 12,
+    "fields": {
+        "language_code": "pl",
+        "title": "Najmodniejszy szablon administratora dla React i Chakra UI!",
+        "slug": "najmodniejszy-szablon-administratora-dla-react-i-chakra-ui",
+        "description": "Zaoszczędź setki godzin spędzonych na tworzeniu i rozwijaniu pulpitu nawigacyjnego od podstaw. Najszybszy i najbardziej responsywny szablon administratora jest tutaj. Poważnie.\r\n\r\nRozpocznij pracę i zbuduj swoją wymarzoną aplikację internetową zaktualizowaną do najnowszych trendów UI z Horizon UI PRO! Teraz dostępny z rabatem do -34%!\r\n(Czas ograniczony) ⏳\r\n\r\nDowiedz się więcej: https://horizon-ui.com/pro\r\n\r\nHorizon UI PRO - najmodniejszy szablon administratora dla React\r\n\r\n\r\n400+ komponentów | 42+ przykładowe strony | tryby Dark i Light\r\nZaprojektowany dla tych, którzy lubią nowoczesne elementy UI i piękne strony internetowe. Zbudowany z setek elementów, zaprojektowanych bloków i w pełni zakodowanych stron, Horizon UI PRO jest gotowy, aby pomóc Ci stworzyć wspaniałe strony internetowe i webapps.\r\n\r\nW tym pięknym panelu administracyjnym znajdziesz wiele przykładów stron, takich jak strony NFT, strony uwierzytelniania, profile i tak dalej. Wystarczy wybrać pomiędzy projektem podstawowym a okładką i można zaczynać!\r\n\r\nZobacz wszystkie strony na żywo tutaj: https://horizon-ui.com/chakra-pro/\r\n\r\n\r\nNews Feed - Horizon UI PRO - najmodniejszy szablon administratora dla React\r\nHorizon UI PRO jest zbudowany z ponad 400+ pojedynczych elementów frontendowych, takich jak przyciski, inputy, navbary, nav tabs, karty czy alerty, dając Ci swobodę wyboru i kombinacji.\r\n\r\n\r\nJeśli jeszcze nie uaktualniłeś do Horizon PRO, teraz masz świetną okazję! Zniżki do -34%! 🔥\r\n\r\nSkorzystaj z ograniczonej zniżki już teraz: https://bit.ly/horizon-discount\r\n\r\nZobacz na żywo: https://horizon-ui.com/chakra-pro/",
+        "publish_date": "2022-06-10T11:58:50.381Z",
+        "master": 6
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 13,
+    "fields": {
+        "language_code": "en",
+        "title": "Why Big Data Analytics Is In The Big Picture in Banking Market?",
+        "slug": "why-big-data-analytics-is-in-the-big-picture-in-banking-market",
+        "description": "<blockquote>\r\n<h3>Can you tell me</h3>\r\n</blockquote>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p style=\"margin-left:40px\"><img alt=\"cool\" height=\"23\" src=\"http://127.0.0.1:8000/static/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png\" title=\"cool\" width=\"23\" />what has been helping to change the banking market? It&rsquo;s big data analytics. Experts are forecasting that between the perio<strong>d 2020 to 2027 t</strong>he market will grow significantly. The growth is very high and substantial with the help of Big data analytics. We are adopting technologies like the Internet of Things very fast and the need for real-time monitoring of data which is generated by the banks has made them launch something new and something enhanced. Globally Big Data analytics have provided a drastic evaluation in the ba<strong>nking market.</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n<code class=\"language-python\">def loginPage(request):\r\n    # page = 'login'\r\n\r\n    if request.user.is_authenticated:\r\n        return redirect('profile')\r\n\r\n    if request.method == 'POST':\r\n        username = request.POST['username'].lower()\r\n        password = request.POST['password']\r\n\r\n        try:\r\n            user = User.objects.get(username=username)\r\n        except:\r\n            messages.error(request, \"Username nie istnieje\")\r\n        \r\n        user = authenticate(request, username=username, password=password)\r\n</code></pre>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2><span style=\"color:#3498db\">So what does</span></h2>\r\n\r\n<p>this change offers to the banks and their consumers? Well, that&rsquo;s the main question and the title of this article. Using this technique, you can get an understanding of the actual segments, trends, drivers, restraints, competitive landscape, and other important factors for the banking sector. So, now you know that Big Data Analytics is important and how it can be helpful. Let&rsquo;s analyze these analytics with deeper analytics. But before that, we need to know what is big data anallytics? What is Big Data Analytics? Bank records are very confidential and transactions of millions and trillions occur on daily basis. With the rising population, the transactions are also rising. Using improved technology is essential for data banks to comply with the same privacy and security standards. This is where Big Data Analytics comes into the picture. Well, some of the ground rules are now destroyed and banks have transformed the structure of financial services. With the help of the different types of models such as Data mining, artificial intelligence, and Big Data analysis banks are now coming up with innovative</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>and less risky business ideas. So, What Are The Scopes Of This Big Data Analytics? Well, Big Data analytics is all about its insights, and with these insights, the banks will be able to understand the behavior, patterns, shopping trends, investment background as well as the personal and financial background of the customer. Moreover, Big Data Analytics also helps banks understand the different trends of the market, allowing them to increase or decrease their interest rates accordingly. Where has the data of Big Data analytics been stored? Unlike, the paperwork, the Big Data Analytics can be stored in the electronic records of the respective banks. Well, this stored data can improve scalability, and also it can be very helpful to the environment. Do you now understand the significance of Big Data Analytics in Banking and do you think that it is a real necessity? If banks are going to use Big Data Analytics effectively, they will have to be on top of the trends. So, let me tell you some trends in the Banking market related to Big Data Analytics. Surely none of us is unaware that banks operate within a highly regulated environment, so they have organized themselves well and have a good handle on monitoring all of this. For information and to manage regulatory compliance, Credit Suisse uses big data analytics. There are several uses of Big Data Analytics that could be helpful to the banks such as experience analysis, credit risk assessment, and customer segmentation. Some other banks like BNY Mellon, Morgan Stanley, and Bank of America are working to build a strategy around Big Data in Banking. Not to mention that other banks are following them with great speed and great enthusiasm. Now, let&rsquo;s talk about the government. The banks and governments</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>are both looking at Big Data Analytics in the big picture. Currently, the government is reforming its identity system to protect banks from fraudulent activities. Danemark&#39;s largest bank, Danske Bank, implemented a modern enterprise analytics solution that reduced false positives by 60% and ultimately increased true positives by 50%. That was helpful for Danske bank. According to the report of Commerzbank, there are some parts of Europe in which Big Data Analytics is not working properly. Big Data analytics must require certain things, such as sustainable infrastructure, wide public cloud adoption, and deployment of 5G. Oooh! That is gonna be tough. forecast of big data analytics in the banking market Well, about the forecast, we sure can not see the future. But we can expect the number which can be true or around. So, Big Data Analytics is going to be in the big picture very soon and about numbers, it is gonna register a CAGR of 22.97% in just 6 years of the time period. It&rsquo;s been recorded in 2020 that the losses in the financial market were around 744 billion US dollars. The numbers will be changed soon. Conclusion In the end, Big Data Analytics is safer and less hectic than several banking frameworks of today&rsquo;s world. But some things are needed and highly recommended for this Technology to get adopted. We will have to wait for some time and accept this. In nearer future Big Data analytics going to be a great part of our life and also it will make transactions smoother.</p>",
+        "publish_date": "2022-07-13T09:27:10.851Z",
+        "master": 7
+    }
+},
+{
+    "model": "blog.blogposttranslation",
+    "pk": 14,
+    "fields": {
+        "language_code": "pl",
+        "title": "Dlaczego analityka Big Data ma duże znaczenie dla rynku bankowego?",
+        "slug": "dlaczego-analityka-big-data-ma-duze-znaczenie-dla-rynku-bankowego",
+        "description": "Czy może mi Pan powiedzieć, co przyczynia się do zmian na rynku bankowym? Jest to analityka big data. Eksperci przewidują, że w latach 2020-2027 rynek ten będzie się znacząco rozwijał. Wzrost ten jest bardzo wysoki i znaczący dzięki analityce Big Data.\r\n\r\nBardzo szybko wdrażamy technologie takie jak Internet Rzeczy, a potrzeba monitorowania w czasie rzeczywistym danych generowanych przez banki sprawiła, że wprowadzono coś nowego i ulepszonego.\r\n\r\nAnalityka Big Data w skali globalnej spowodowała drastyczną ewolucję na rynku bankowym. Co zatem ta zmiana oferuje bankom i ich konsumentom? Oto główne pytanie i tytuł tego artykułu.\r\n\r\nKorzystając z tej techniki, można uzyskać wiedzę na temat aktualnych segmentów, trendów, czynników napędzających, ograniczeń, krajobrazu konkurencyjnego i innych ważnych czynników dla sektora bankowego.\r\n\r\nTeraz już wiesz, jak ważna jest analityka Big Data i w czym może być pomocna. Przeanalizujmy te dane za pomocą głębszej analityki. Zanim jednak to zrobimy, musimy wiedzieć, czym jest analiza big data?\r\n\r\nCo to jest analityka dużych zbiorów danych?\r\n\r\nDane bankowe są bardzo poufne, a codziennie zawierane są w nich transakcje o wartości milionów i bilionów. Wraz ze wzrostem liczby ludności rośnie też liczba transakcji. Zastosowanie ulepszonej technologii jest niezbędne, aby banki danych spełniały te same standardy prywatności i bezpieczeństwa.\r\n\r\nW tym miejscu do akcji wkracza analityka Big Data. Cóż, niektóre z podstawowych zasad zostały już zniszczone, a banki zmieniły strukturę usług finansowych. Z pomocą różnego rodzaju modeli, takich jak eksploracja danych, sztuczna inteligencja i analiza Big Data, banki opracowują innowacyjne i mniej ryzykowne pomysły biznesowe.\r\n\r\nJaki jest zatem zakres analityki Big Data?\r\n\r\nAnalityka Big Data to przede wszystkim wgląd w dane, dzięki któremu banki są w stanie zrozumieć zachowania, wzorce, trendy zakupowe, tło inwestycyjne oraz osobiste i finansowe klientów.\r\n\r\nCo więcej, analiza Big Data pomaga bankom zrozumieć różne trendy rynkowe, co pozwala im odpowiednio podnosić lub obniżać stopy procentowe.\r\n\r\nGdzie przechowywane są dane z analizy Big Data?\r\n\r\nW przeciwieństwie do dokumentacji papierowej, dane Big Data Analytics mogą być przechowywane w elektronicznych rejestrach poszczególnych banków. Przechowywane w ten sposób dane mogą poprawić skalowalność, a także być bardzo pomocne dla środowiska.\r\n\r\nCzy teraz rozumiesz znaczenie Big Data Analytics w bankowości i czy uważasz, że jest to prawdziwa konieczność? Jeśli banki zamierzają efektywnie wykorzystywać Big Data Analytics, muszą być na bieżąco z trendami.\r\n\r\nPozwólcie więc, że przedstawię Wam kilka trendów na rynku bankowym związanych z Big Data Analytics.\r\n\r\nZ pewnością nikt z nas nie wie, że banki działają w środowisku podlegającym ścisłym regulacjom prawnym, dlatego dobrze się zorganizowały i potrafią to wszystko monitorować.\r\n\r\nCredit Suisse wykorzystuje analitykę big data do pozyskiwania informacji oraz do zarządzania zgodnością z przepisami.\r\n\r\nIstnieje kilka zastosowań analityki Big Data, które mogą być pomocne dla banków, np. analiza doświadczeń, ocena ryzyka kredytowego i segmentacja klientów.\r\n\r\nNiektóre inne banki, takie jak BNY Mellon, Morgan Stanley i Bank of America, pracują nad stworzeniem strategii dotyczącej Big Data w bankowości. Nie mówiąc już o tym, że inne banki podążają za nimi z wielką szybkością i entuzjazmem.\r\n\r\nPorozmawiajmy teraz o rządzie. Zarówno banki, jak i rządy patrzą na analitykę Big Data w szerszej perspektywie. Obecnie rząd reformuje swój system tożsamości, aby chronić banki przed oszustwami.\r\n\r\nNajwiększy bank Danemark, Danske Bank, wdrożył nowoczesne rozwiązanie analityczne dla przedsiębiorstw, które zmniejszyło liczbę fałszywych alarmów o 60% i zwiększyło liczbę prawdziwych alarmów o 50%. To było pomocne dla banku Danske.\r\n\r\nZ raportu Commerzbanku wynika, że w niektórych częściach Europy analityka Big Data nie działa prawidłowo.\r\nAnalityka Big Data musi wymagać pewnych rzeczy, takich jak zrównoważona infrastruktura, szerokie zastosowanie chmury publicznej oraz wdrożenie sieci 5G. Oooh! To będzie trudne.\r\nprognoza rozwoju analityki big data na rynku bankowym\r\n\r\nCóż, jeśli chodzi o prognozę, to z pewnością nie możemy przewidzieć przyszłości. Ale możemy spodziewać się liczb, które mogą być prawdziwe lub zbliżone. Tak więc, Big Data Analytics już wkrótce stanie się bardzo popularna, a jeśli chodzi o liczby, to w ciągu zaledwie 6 lat odnotuje CAGR na poziomie 22,97%.\r\nW 2020 r. odnotowano, że straty na rynku finansowym wyniosły około 744 mld USD. Liczby te wkrótce ulegną zmianie.\r\n\r\nWnioski\r\n\r\nPodsumowując, Big Data Analytics jest bezpieczniejsza i mniej kłopotliwa niż kilka systemów bankowych współczesnego świata. Aby jednak technologia ta mogła się przyjąć, konieczne są pewne rzeczy i jest to wysoce zalecane. Będziemy musieli poczekać jakiś czas i zaakceptować ten fakt. W niedalekiej przyszłości analityka Big Data stanie się ważną częścią naszego życia, a także sprawi, że transakcje będą przebiegać płynniej.",
+        "publish_date": "2022-06-10T11:59:44.666Z",
+        "master": 7
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 1,
+    "fields": {
+        "created_date": "2022-06-10T11:49:51.978Z",
+        "cover": "post_cover/okleina_meblowa_50mm_53mm_5m.png",
+        "publish_status": true,
+        "comment_count": 11,
+        "heart_count": 45,
+        "category": 3,
+        "tags": [
+            4,
+            5,
+            6,
+            7,
+            8
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 2,
+    "fields": {
+        "created_date": "2022-06-10T11:53:04.639Z",
+        "cover": "post_cover/sklejka_6mm_10sztuk.png",
+        "publish_status": true,
+        "comment_count": 43,
+        "heart_count": 34,
+        "category": 1,
+        "tags": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 3,
+    "fields": {
+        "created_date": "2022-06-10T11:54:22.537Z",
+        "cover": "post_cover/Querysets_FzXwBEw.png",
+        "publish_status": false,
+        "comment_count": 4,
+        "heart_count": 32,
+        "category": 1,
+        "tags": [
+            1,
+            2,
+            6
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 4,
+    "fields": {
+        "created_date": "2022-06-10T11:56:11.600Z",
+        "cover": "post_cover/vector.png",
+        "publish_status": true,
+        "comment_count": 14,
+        "heart_count": 9,
+        "category": 6,
+        "tags": [
+            2,
+            3,
+            4,
+            6,
+            8
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 5,
+    "fields": {
+        "created_date": "2022-06-10T11:57:14.297Z",
+        "cover": "post_cover/Querysets_snEWnZT.png",
+        "publish_status": true,
+        "comment_count": 72,
+        "heart_count": 52,
+        "category": 5,
+        "tags": [
+            8,
+            3,
+            5
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 6,
+    "fields": {
+        "created_date": "2022-06-10T11:58:19.658Z",
+        "cover": "post_cover/Querysets_qMgqSXX.png",
+        "publish_status": true,
+        "comment_count": 4,
+        "heart_count": 17,
+        "category": 1,
+        "tags": [
+            8,
+            4,
+            6
+        ]
+    }
+},
+{
+    "model": "blog.blogpost",
+    "pk": 7,
+    "fields": {
+        "created_date": "2022-06-10T11:59:19.655Z",
+        "cover": "post_cover/Querysets.png",
+        "publish_status": true,
+        "comment_count": 18,
+        "heart_count": 5,
+        "category": 1,
+        "tags": [
+            1,
+            3,
+            6
+        ]
+    }
+},
+{
+    "model": "blog.postimages",
+    "pk": 1,
+    "fields": {
+        "blogpost": 7,
+        "image": "project_image/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png",
+        "alt_pl": "",
+        "alt_en": ""
+    }
+},
+{
+    "model": "blog.postimages",
+    "pk": 2,
+    "fields": {
+        "blogpost": 7,
+        "image": "project_image/images_dW7PlyW.png",
+        "alt_pl": "",
+        "alt_en": ""
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "tag": "BigData",
+        "master": 1
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en",
+        "tag": "Life",
+        "master": 2
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "tag": "HTML",
+        "master": 3
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "en",
+        "tag": "Django",
+        "master": 4
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "tag": "React",
+        "master": 5
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "en",
+        "tag": "Begginer",
+        "master": 6
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "en",
+        "tag": "Advance",
+        "master": 7
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 8,
+    "fields": {
+        "language_code": "en",
+        "tag": "Meddium",
+        "master": 8
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 9,
+    "fields": {
+        "language_code": "pl",
+        "tag": "Średni",
+        "master": 8
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 10,
+    "fields": {
+        "language_code": "pl",
+        "tag": "Zaawansowany",
+        "master": 7
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 11,
+    "fields": {
+        "language_code": "pl",
+        "tag": "Początkujący",
+        "master": 6
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 12,
+    "fields": {
+        "language_code": "pl",
+        "tag": "React",
+        "master": 5
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 13,
+    "fields": {
+        "language_code": "pl",
+        "tag": "Django",
+        "master": 4
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 14,
+    "fields": {
+        "language_code": "pl",
+        "tag": "HTML",
+        "master": 3
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 15,
+    "fields": {
+        "language_code": "pl",
+        "tag": "Żyćko",
+        "master": 2
+    }
+},
+{
+    "model": "blog.tagtranslation",
+    "pk": 16,
+    "fields": {
+        "language_code": "pl",
+        "tag": "BigData",
+        "master": 1
+    }
+},
+{
+    "model": "blog.tag",
+    "pk": 1,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 2,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 3,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 4,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 5,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 6,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 7,
+    "fields": {}
+},
+{
+    "model": "blog.tag",
+    "pk": 8,
+    "fields": {}
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "category": "Begginer",
+        "slug": "begginer",
+        "master": 1
+    }
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "category": "Początkujący",
+        "slug": "poczatkujacy",
+        "master": 1
+    }
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "category": "Medium",
+        "slug": "medium",
+        "master": 2
+    }
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "category": "Średniozaawansowany",
+        "slug": "sredniozaawansowany",
+        "master": 2
+    }
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "category": "Advance",
+        "slug": "advance",
+        "master": 3
+    }
+},
+{
+    "model": "blog.categoriestranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "category": "Zaawansowany",
+        "slug": "zaawansowany",
+        "master": 3
+    }
+},
+{
+    "model": "blog.categories",
+    "pk": 1,
+    "fields": {}
+},
+{
+    "model": "blog.categories",
+    "pk": 2,
+    "fields": {}
+},
+{
+    "model": "blog.categories",
+    "pk": 3,
+    "fields": {}
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "Models",
+        "slug": "models",
+        "master": 1
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "Models",
+        "slug": "models",
+        "master": 1
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "Admin panel",
+        "slug": "admin-panel",
+        "master": 2
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "Panel Admina",
+        "slug": "panel-admina",
+        "master": 2
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "Cheat Sheet",
+        "slug": "cheat-sheet",
+        "master": 3
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "Ściągawka",
+        "slug": "sciagawka",
+        "master": 3
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "URL roads",
+        "slug": "url-roads",
+        "master": 4
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 8,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "Ścieżki URL",
+        "slug": "sciezki-url",
+        "master": 4
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 9,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "views",
+        "slug": "views",
+        "master": 5
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 10,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "views",
+        "slug": "views",
+        "master": 5
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 11,
+    "fields": {
+        "language_code": "en",
+        "subcategory": "Context proccesors",
+        "slug": "context-proccesors",
+        "master": 6
+    }
+},
+{
+    "model": "blog.subcategoriestranslation",
+    "pk": 12,
+    "fields": {
+        "language_code": "pl",
+        "subcategory": "Context proccesors",
+        "slug": "context-proccesors",
+        "master": 6
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 1,
+    "fields": {
+        "maincategory": 1
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 2,
+    "fields": {
+        "maincategory": 1
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 3,
+    "fields": {
+        "maincategory": 1
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 4,
+    "fields": {
+        "maincategory": 2
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 5,
+    "fields": {
+        "maincategory": 2
+    }
+},
+{
+    "model": "blog.subcategories",
+    "pk": 6,
+    "fields": {
+        "maincategory": 3
+    }
+},
+{
+    "model": "about_me.shortdescriptiontranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en",
+        "up_text": "Django blog, from developer's notebook",
+        "down_text": "My personal notes from my struggles with Django, databases, code and whatever else is needed to develop software",
+        "fb_link": "asdasd",
+        "github_link": "https://www.deepl.com/translator",
+        "linkedin_link": "https://www.deepl.com/translator",
+        "instagram_link": "",
+        "email": "nikodem.roy@gmail.com",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.shortdescriptiontranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "pl",
+        "up_text": "Blog Django, z notatnika dewelopera",
+        "down_text": "Moje osobiste notatki z moich zmagań z Django, bazami danych, kodem i wszystkim innym, co jest potrzebne do tworzenia oprogramowania",
+        "fb_link": "asdasd",
+        "github_link": "https://www.deepl.com/translator",
+        "linkedin_link": "",
+        "instagram_link": "",
+        "email": "nikodem.roy@gmail.com",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.shortdescription",
+    "pk": 2,
+    "fields": {
+        "photo": "profile/user.png",
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.profiletranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "full_text": "Why did you take on your business and what experience do you have? Let's go back to the example above. The description signals that Ewa is a photographer, but she doesn't offer ordinary photographs, she offers photographs that are associated with emotions, memories and experiences that we want to return to years later. Here, it is also clear that Ewa perfectly meets the requirements of her ideal clients - not because she is a graduate of a renowned Academy of Fine Arts, but she is a mother herself, so she knows best how to photograph children and what is worth capturing in family photography. You don't have to write about your diplomas to emphasise your competences and convince the client that you are worth trusting. Often, an interesting story about what motivated you to take up your profession will be enough to arouse emotions and make them want to get to know you better.  What makes you different? Remember that the About Me text should convince the client that you meet their requirements and at the same time help you stand out from the competition. Distance yourself from your competitors and show how you work, what you put emphasis on in your work and what gives you an edge.",
+        "contact_me_up": "If you have any questions or just want to chat, go ahead!",
+        "contact_me_down": "You can use the form on the website or write to this address:",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.profiletranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "full_text": "Dlaczego zająłeś się swoim biznesem i jakie masz doświadczenie? Wróćmy do powyższego przykładu. Opis sygnalizuje, że Ewa jest fotografem, ale nie oferuje zwykłych zdjęć, tylko fotografie, z którymi wiążą się emocje, wspomnienia i przeżycia, do których chcemy wracać po latach. W tym miejscu dodatkowo widać, że Ewa doskonale spełnia wymagania swoich idealnych klientów – nie dlatego, że jest absolwentką renomowanej ASP, ale sama jest mamą, więc wie najlepiej, jak fotografować dzieci i co, warto uchwycić w fotografii rodzinnej. Nie musisz, więc rozpisywać się o swoich dyplomach, by podkreślić swoje kompetencje i przekonać klienta, że warto Ci zaufać. Często wystarczy ciekawa opowieść, o tym, co zmotywowało Cię do zajęcia się swoją profesją, która wzbudzi emocje i sprawi, że dasz się bliżej poznać.  Co Cię wyróżnia? Pamiętaj, że tekst O mnie powinien przekonać klienta o tym, że spełnisz jego wymagania i jednocześnie pomóc Ci odróżnić się od konkurencji. Zdystansuj się od konkurentów i pokaż, jak pracujesz, na co stawiasz nacisk w swojej pracy i co daje Ci przewagę.",
+        "contact_me_up": "Jeśli macie jakieś pytania lub po prostu chcecie pogadać, śmiało!",
+        "contact_me_down": "Możesz do tego użyć formularza na stronie lub napisać na adres:",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.profile",
+    "pk": 1,
+    "fields": {}
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "Django",
+        "skill_description": "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "HTML",
+        "skill_description": "is a markup language for the web that defines the structure of web pages. It is one of the most basic building blocks of every website, so it's crucial to learn if you want to have a career in web development.",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "HTML",
+        "skill_description": "to język znaczników dla sieci, który definiuje strukturę stron internetowych. Jest to jeden z najbardziej podstawowych elementów składowych każdej strony internetowej, dlatego jego znajomość jest niezbędna, jeśli chcesz rozwijać swoją karierę w tej dziedzinie.",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "Django",
+        "skill_description": "Django to wysokopoziomowy framework internetowy w języku Python, który umożliwia szybkie tworzenie bezpiecznych i łatwych w utrzymaniu stron internetowych. Stworzony przez doświadczonych programistów, Django przejmuje wiele kłopotów związanych z tworzeniem stron internetowych, dzięki czemu można skupić się na pisaniu aplikacji bez konieczności wymyślania koła na nowo.",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "Test",
+        "skill_description": "The following example gets the object with the primary key of 1 from MyModel:",
+        "master": 3
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "Test",
+        "skill_description": "Poniższy przykład pobiera z MyModel obiekt o kluczu podstawowym 1:",
+        "master": 3
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "HTTTTML",
+        "skill_description": "is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation",
+        "master": 4
+    }
+},
+{
+    "model": "about_me.mainskilltranslation",
+    "pk": 8,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "CSS",
+        "skill_description": "Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML",
+        "master": 5
+    }
+},
+{
+    "model": "about_me.mainskill",
+    "pk": 1,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.mainskill",
+    "pk": 2,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.mainskill",
+    "pk": 3,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.mainskill",
+    "pk": 4,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.mainskill",
+    "pk": 5,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "CSS",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "JavaScript",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "JavaScript",
+        "master": 2
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "CSS",
+        "master": 1
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "skill_name": "Python",
+        "master": 3
+    }
+},
+{
+    "model": "about_me.skilltranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "skill_name": "Python",
+        "master": 3
+    }
+},
+{
+    "model": "about_me.skill",
+    "pk": 1,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.skill",
+    "pk": 2,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.skill",
+    "pk": 3,
+    "fields": {
+        "profile": 1
+    }
+},
+{
+    "model": "about_me.message",
+    "pk": 2,
+    "fields": {
+        "receiver": null,
+        "creation_date": "2022-07-03",
+        "is_read": false,
+        "ip": "",
+        "name": "Nikodem",
+        "email": "niki6017@wp.pl",
+        "subject": "asd",
+        "message": "asdasd"
+    }
+},
+{
+    "model": "about_me.message",
+    "pk": 3,
+    "fields": {
+        "receiver": 1,
+        "creation_date": "2022-07-03",
+        "is_read": false,
+        "ip": "192.168.8.133",
+        "name": "Nikodem Roy",
+        "email": "info@brovan.pl",
+        "subject": "asdasd asdasd",
+        "message": "asdddddddddddddddddddddd1111111111"
+    }
+},
+{
+    "model": "about_me.message",
+    "pk": 4,
+    "fields": {
+        "receiver": 1,
+        "creation_date": "2022-07-22",
+        "is_read": false,
+        "ip": "192.168.1.58",
+        "name": "Nikodem",
+        "email": "info@brovan.pl",
+        "subject": "123",
+        "message": "lubisz placki ?"
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "project_name": "How to Prevent Merge Conflicts",
+        "slug": "how-to-prevent-merge-conflicts",
+        "project_shortdescription": "A few months ago, I wrote a DEV post about resolving merge commits. The resounding feedback I received from readers was: \"JUST AVOID THEM.\" While I agree, I wrote the post for technologists who were past the point of prevention.",
+        "project_fulldescription": "Merge conflicts are mostly inevitable. You will experience more than one merge conflict in your career, but with good communication and planning, you can reduce the number of merge conflicts you encounter. Let's discuss how we can do that!\r\n\r\nUnderstand why merge conflicts happen\r\nI mentioned this in an earlier DEV post, but I think it's worth repeating.\r\n\r\nVersion control systems, like git, auto-magically manage code contributions. It identifies the change, when it occurred, who made it, and on what line so that developers can easily track the history of their codebase. However, git sometimes gets confused in the following situations:\r\n\r\nWhen more than one person changes the same line in a file and tries to merge the change to the same branch\r\nWhen a developer deletes a file, but another developer edits it, and they both try to merge their changes to the same branch.\r\nWhen a developer deletes a line, but another developer edits it, and they both try to merge their changes to the same branch\r\nWhen a developer is cherry-picking a commit, which is the act of picking a commit from a branch and applying it to another\r\nWhen a developer is rebasing a branch, which is the process of moving a sequence of commits to a base commit\r\nGit is unsure which change to apply, so it leans on the developer for help and notifies them of a merge conflict. Your job is to help git determine which proposed change is most accurate and up to date.\r\n\r\nThe benefits of preventing merge conflicts\r\nSometimes, doing that upfront work for your team or yourself to avoid merge conflicts may seem tedious, but it's worthwhile. Using guard rails to prevent merge conflicts will save time and increase developer happiness. Solving a bug, writing a new feature, or scripting automation is time-consuming. Adding the barrier of debugging and resolving a merge conflict means it takes longer to merge to 'main' and longer to deploy to production. Also, if your team is constantly experiencing conflicts, they'll eventually feel disenchanted with their work.",
+        "github_link": "asd",
+        "master": 1
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "project_name": "Jak zapobiegać konfliktom łączenia?",
+        "slug": "jak-zapobiegac-konfliktom-laczenia",
+        "project_shortdescription": "Kilka miesięcy temu napisałem post DEV o rozwiązywaniu zatwierdzeń scalających. Głośne opinie, jakie otrzymałem od czytelników, brzmiały: „PO PROSTU UNIKAJ ICH”. Zgadzam się, ale napisałem post dla technologów, którzy nie mieli już prewencji.",
+        "project_fulldescription": "Konflikty scalające są w większości nieuniknione. W swojej karierze doświadczysz więcej niż jednego konfliktu scalania, ale dzięki dobrej komunikacji i planowaniu możesz zmniejszyć liczbę napotkanych konfliktów scalania. Porozmawiajmy, jak możemy to zrobić! Zrozum, dlaczego występują konflikty scalania Wspomniałem o tym we wcześniejszym poście DEV, ale myślę, że warto to powtórzyć. Systemy kontroli wersji, takie jak git, automatycznie zarządzają wkładem kodu. Identyfikuje zmianę, kiedy nastąpiła, kto ją wprowadził i w jakiej linii, dzięki czemu programiści mogą łatwo śledzić historię swojej bazy kodu. Jednak git czasami się myli w następujących sytuacjach: Gdy więcej niż jedna osoba zmienia tę samą linię w pliku i próbuje scalić zmianę w tej samej gałęzi Gdy programista usuwa plik, ale inny programista go edytuje i obaj próbują scalić swoje zmiany w tej samej gałęzi. Gdy programista usuwa linię, a inny programista ją edytuje i oboje próbują scalić swoje zmiany w tej samej gałęzi Kiedy programista wybiera zatwierdzenie, co jest aktem wybrania zatwierdzenia z gałęzi i zastosowania go do innego Kiedy programista zmienia bazę gałęzi, co jest procesem przenoszenia sekwencji zatwierdzeń do zatwierdzenia podstawowego Git nie jest pewien, którą zmianę zastosować, dlatego zwraca się do programisty o pomoc i powiadamia go o konflikcie scalania. Twoim zadaniem jest pomóc git określić, która proponowana zmiana jest najdokładniejsza i najbardziej aktualna. Korzyści z zapobiegania konfliktom scalającym Czasami wykonanie tej pracy z góry dla swojego zespołu lub dla siebie, aby uniknąć konfliktów scalających, może wydawać się nużące, ale warto. Używanie barierek ochronnych w celu zapobiegania konfliktom podczas łączenia pozwoli zaoszczędzić czas i zwiększyć zadowolenie programistów. Rozwiązywanie błędu, napisanie nowej funkcji lub automatyzacja skryptów jest czasochłonne. Dodanie bariery debugowania i rozwiązywania konfliktu scalania oznacza, że ​​scalanie z „głównym” trwa dłużej, a wdrożenie w środowisku produkcyjnym zajmuje więcej czasu. Ponadto, jeśli Twój zespół stale doświadcza konfliktów, w końcu poczuje się rozczarowany swoją pracą.",
+        "github_link": "",
+        "master": 1
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "project_name": "Designing a Scalable and Secure REST API Gateway",
+        "slug": "designing-a-scalable-and-secure-rest-api-gateway",
+        "project_shortdescription": "Design patterns in microservices: API Gateway, Backend for Frontend, Event-Driven Architecture Microservices are a hot topic in the software development world right now. Many organizations are looking to adopt this architecture style in order to improve their ability to deliver software quickly and efficiently.",
+        "project_fulldescription": "API Gateway\r\nAn API Gateway is a microservice that acts as an entry point for all incoming requests. It is responsible for routing requests to the appropriate backend service, and can also provide additional functionality such as load balancing, caching, and security. The API Gateway pattern is often used in conjunction with the Microservice Pattern to provide a single point of access for all of your microservices.\r\nAWS Lambda is a popular choice for implementing an API Gateway. Lambda is a serverless platform that allows you to run code without provisioning or managing any servers. This makes it very easy to get started with and can be very cost-effective at scale. Lambda also has built-in support for many common API Gateway use cases such as authentication, authorization, and rate limiting.\r\n\r\nBackend For Frontend\r\nThe Backend For Frontend (BFF) pattern is a variation of the API Gateway pattern that is specifically designed to address the needs of mobile and web applications. The BFF sits between the client application and the backend services, and provides a tailored interface for each type of client. This allows you to optimize your backend services for each type of client without having to duplicate any logic. The BFF pattern can also help reduce the number of round trips between the client and backend by batching together related requests.\r\nOne common pitfall with BFFs is that they can start to become bloated over time as more and more client-specific logic is added to them. It is important to keep the BFFs lean and only include logic that is absolutely necessary. Another potential issue is that BFFs can introduce tight coupling between the frontend and backend if they are not designed properly. It is important to design your BFFs in a way that allows them to be easily replaced or removed if needed.\r\n\r\nEvent-Driven Architecture\r\nEvent-Driven Architecture (EDA) is a design pattern in which events are used to trigger actions or workflow within an application. This allows different parts of the system to be decoupled from each other and allows for more flexibility when changes need to be made. EDA can be used in conjunction with other design patterns such as Microservices or API Gateway. When used together, these patterns can provide a very powerful way to build scalable and maintainable applications.\r\n\r\nIf you're looking to get started with microservices, then you should definitely check out these design patterns. They'll help you build a robust and scalable system that can handle a lot of traffic. And if you're already using microservices, then these patterns will help you improve your system's performance.",
+        "github_link": "",
+        "master": 2
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "project_name": "Projektowanie skalowalnej i bezpiecznej bramy REST API",
+        "slug": "projektowanie-skalowalnej-i-bezpiecznej-bramy-rest-api",
+        "project_shortdescription": "Wzorce projektowe w mikrousługach: API Gateway, Backend for Frontend, Event-Driven Architecture Mikrousługi są obecnie gorącym tematem w świecie tworzenia oprogramowania. Wiele organizacji chce przyjąć ten styl architektury, aby poprawić swoją zdolność do szybkiego i wydajnego dostarczania oprogramowania.",
+        "project_fulldescription": "Brama API Brama interfejsu API to mikrousługa, która działa jako punkt wejścia dla wszystkich żądań przychodzących. Odpowiada za kierowanie żądań do odpowiedniej usługi zaplecza, a także może zapewniać dodatkowe funkcje, takie jak równoważenie obciążenia, buforowanie i bezpieczeństwo. Wzorzec API Gateway jest często używany w połączeniu ze wzorcem mikrousług, aby zapewnić pojedynczy punkt dostępu dla wszystkich mikrousług. AWS Lambda to popularny wybór do implementacji API Gateway. Lambda to platforma bezserwerowa, która umożliwia uruchamianie kodu bez udostępniania jakichkolwiek serwerów ani zarządzania nimi. Ułatwia to rozpoczęcie pracy i może być bardzo opłacalne na dużą skalę. Lambda ma również wbudowaną obsługę wielu typowych przypadków użycia usługi API Gateway, takich jak uwierzytelnianie, autoryzacja i ograniczanie szybkości. Backend dla frontendu Wzorzec Backend For Frontend (BFF) jest odmianą wzorca API Gateway, która została zaprojektowana specjalnie z myślą o potrzebach aplikacji mobilnych i internetowych. BFF znajduje się między aplikacją kliencką a usługami zaplecza i zapewnia dostosowany interfejs dla każdego typu klienta. Pozwala to zoptymalizować usługi zaplecza dla każdego typu klienta bez konieczności duplikowania jakiejkolwiek logiki. Wzorzec BFF może również pomóc w zmniejszeniu liczby podróży w obie strony między klientem a zapleczem poprzez grupowanie powiązanych żądań. Jedną z powszechnych pułapek związanych z BFF jest to, że z czasem mogą zacząć się rozdęwać, ponieważ dodawana jest do nich coraz więcej logiki specyficznej dla klienta. Ważne jest, aby BFF były szczupłe i zawierały tylko logikę, która jest absolutnie niezbędna. Innym potencjalnym problemem jest to, że BFF mogą wprowadzić ścisłe sprzężenie między frontendem a backendem, jeśli nie są odpowiednio zaprojektowane. Ważne jest, aby zaprojektować swoje BFF w taki sposób, aby w razie potrzeby można je było łatwo wymienić lub usunąć. Architektura sterowana zdarzeniami Architektura sterowana zdarzeniami (EDA) to wzorzec projektowy, w którym zdarzenia są używane do wyzwalania akcji lub przepływu pracy w aplikacji. Pozwala to na oddzielenie od siebie różnych części systemu i zapewnia większą elastyczność w przypadku konieczności wprowadzenia zmian. EDA można używać w połączeniu z innymi wzorcami projektowymi, takimi jak mikrousługi lub brama API. Gdy są używane razem, te wzorce mogą zapewnić bardzo wydajny sposób tworzenia skalowalnych i łatwych w utrzymaniu aplikacji. Jeśli chcesz zacząć korzystać z mikrousług, zdecydowanie powinieneś zapoznać się z tymi wzorcami projektowymi. Pomogą Ci zbudować solidny i skalowalny system, który poradzi sobie z dużym ruchem. A jeśli już korzystasz z mikrousług, te wzorce pomogą Ci poprawić wydajność systemu.",
+        "github_link": "",
+        "master": 2
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "en",
+        "project_name": "Quickly develop risk control algorithms in business scenarios based on MetaSpore",
+        "slug": "quickly-develop-risk-control-algorithms-in-business-scenarios-based-on-metaspore",
+        "project_shortdescription": "After decades of development, the traditional credit evaluation model for risk management is relatively mature and stable. Represented by the FICO score in the United States, it builds a rule engine and promotes the rapid development of the financial loan business in the United States.",
+        "project_fulldescription": "In recent years, with the leapfrog development of big data and artificial intelligence technologies, financial institutions can draw diversified user portraits and build more accurate risk control models under the support of new technologies.\r\n\r\nThis paper will take the Tianchi loan default data set as an example, train and evaluate the default prediction model in MetaSpore on the AlphaIDE development environment launched by DMetaSoul , and give intelligent credit score according to the estimated probability. In the following chapters, I will focus on environmental use, problem modeling, feature derivation, modeling, score cards, and so on.\r\n\r\n2.MetaSpore On AlphaIDE\r\n2.1 IDE environment configuration and startup\r\nRegister or log in AlphaIDE account: https://registry-alphaide.dmetasoul.com/. Enter the AlphaIDE service, click application service on the left, click Kubeflow drop-down menu, and enter the Jupyter page.\r\nImage description\r\n\r\nClick on the upper right to create the Notebook and select the desired resource under CPU/RAM. It is recommended to use 2Core CPU X 8GB or more of RAM:\r\nImage description\r\n\r\nCheck Kubeflow, AWS, and Spark, and then Launch to create the Notebook.\r\nImage description\r\n\r\nAfter creating the Juyper Notebook, click Connect to open a Terminal and run:\r\ngit clone git@github.com:meta-soul/MetaSpore.git \r\nRun the algorithm Demo and develop it after the completion of the clone code base\r\n\r\n2.2 Training machine learning models\r\nSee the algorithms project in MetaSpore's Demo directory for recommendations, search, NLP, and risk control-related applications. Here take the risk control project (Demo/RiskModels/Loan_default /) as an example:\r\n1. Star the Spark Session: If using Spark in the Alpha IDE distributed cluster training, you need to increase the Spark. Kubernetes. Namespace configuration parameters, such as:\r\ndef init_spark(app_name, cluster_namespace, ..., **kwargs):\r\n    spark = pyspark.sql.SparkSession.builder\\\r\n        .appName(app_name) \\\r\n        .config(\"spark.kubernetes.namespace\", cluster_namespace)\r\n        ...\r\n        .getOrCreate()\r\n    sc = spark.sparkContext\r\n    print(sc.version)\r\n    print(sc.applicationId)\r\n    print(sc.uiWebUrl)\r\n    return spark\r\nOf course, you can also run in local mode by changing the fourth line above to master(\"local\"). When the number of samples is small, the local mode is better.\r\n\r\n2. Start the model training script: follow the steps in the readme.md document to prepare the training data, initialize the model configuration file we need and then execute the training script.\r\n\r\n3. Save the model training results: Save the trained model and estimated results to S3 cloud storage as we did in default_ESTIMation_spark_lgbm.py.\r\n\r\nIt may take some time to download the dependent libraries during the first execution.\r\n\r\n3.Intelligent risk control algorithm\r\n3.1 Background\r\nBefore diving into the actual code implementation, let's take a quick look at the data set. The data set given by the Tianchi community is used in this article. The data set is to predict whether the user defaults on loan",
+        "github_link": "",
+        "master": 3
+    }
+},
+{
+    "model": "projects.mainprojecttranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "project_name": "Szybko opracuj algorytmy kontroli ryzyka w scenariuszach biznesowych w oparciu o MetaSpore",
+        "slug": "szybko-opracuj-algorytmy-kontroli-ryzyka-w-scenariuszach-biznesowych-w-oparciu-o-metaspore",
+        "project_shortdescription": "Po dziesięcioleciach rozwoju tradycyjny model oceny kredytowej w zarządzaniu ryzykiem jest stosunkowo dojrzały i stabilny. Reprezentowany przez punktację FICO w Stanach Zjednoczonych, buduje silnik reguł i promuje szybki rozwój biznesu pożyczek finansowych w Stanach Zjednoczonych.",
+        "project_fulldescription": "W ostatnich latach, dzięki skokowemu rozwojowi technologii big data i sztucznej inteligencji, instytucje finansowe mogą rysować zróżnicowane portrety użytkowników i budować dokładniejsze modele kontroli ryzyka przy wsparciu nowych technologii. W tym artykule jako przykład posłuży zestaw danych dotyczących niespłacania kredytów Tianchi, przeszkoli i oceni domyślny model przewidywania w MetaSpore w środowisku programistycznym AlphaIDE uruchomionym przez DMetaSoul i poda inteligentną ocenę kredytową zgodnie z oszacowanym prawdopodobieństwem. W kolejnych rozdziałach skupię się na wykorzystaniu środowiska, modelowaniu problemów, wyprowadzaniu funkcji, modelowaniu, kartach wyników i tak dalej. 2.MetaSpore na AlphaIDE 2.1 Konfiguracja i uruchamianie środowiska IDE Zarejestruj się lub zaloguj na konto AlphaIDE: https://registry-alphaide.dmetasoul.com/. Wejdź do usługi AlphaIDE, kliknij usługę aplikacji po lewej stronie, kliknij menu rozwijane Kubeflow i wejdź na stronę Jupyter. opis obrazu Kliknij w prawym górnym rogu, aby utworzyć Notatnik i wybierz żądany zasób w obszarze CPU/RAM. Zalecane jest użycie 2Core CPU X 8GB lub więcej pamięci RAM: opis obrazu Zaznacz Kubeflow, AWS i Spark, a następnie uruchom, aby utworzyć Notatnik. opis obrazu Po utworzeniu notatnika Juyper kliknij Połącz, aby otworzyć terminal i uruchomić: klon git git@github.com:meta-soul/MetaSpore.git Uruchom Demo algorytmu i rozwiń go po ukończeniu bazy kodu klonów 2.2 Szkolenie modeli uczenia maszynowego Zobacz projekt algorytmów w katalogu Demo MetaSpore, aby uzyskać rekomendacje, aplikacje związane z wyszukiwaniem, NLP i kontrolą ryzyka. Oto przykład projektu kontroli ryzyka (Demo/RiskModels/Loan_default /): 1. Rozpocznij sesję Spark: Jeśli używasz Spark w szkoleniu klastra rozproszonego Alpha IDE, musisz zwiększyć Spark. Kubernetes. Parametry konfiguracyjne przestrzeni nazw, takie jak: def init_spark(nazwa_aplikacji, przestrzeń_nazw_klastra, ..., **kwargs): iskra = pyspark.sql.SparkSession.builder\\ .nazwa aplikacji(nazwa_aplikacji) \\ .config(\"spark.kubernetes.namespace\", klaster_namespace) ... .getOrCreate() sc = iskra.sparkContext drukuj(wersja sc) print(sc.applicationId) print(sc.uiWebUrl) powrotna iskra Oczywiście możesz również uruchomić w trybie lokalnym, zmieniając czwartą linię powyżej na master(\"local\"). Gdy liczba próbek jest mała, lepszy jest tryb lokalny. 2. Uruchom skrypt szkoleniowy modelu: wykonaj kroki opisane w dokumencie readme.md, aby przygotować dane szkoleniowe, zainicjuj potrzebny nam plik konfiguracyjny modelu, a następnie uruchom skrypt szkoleniowy. 3. Zapisz wyniki szkolenia modelu: Zapisz wyszkolony model i szacunkowe wyniki w magazynie w chmurze S3, tak jak to zrobiliśmy w default_ESTIMation_spark_lgbm.py. Pobranie bibliotek zależnych podczas pierwszego wykonania może zająć trochę czasu. 3. Inteligentny algorytm kontroli ryzyka 3.1 Tło Zanim zagłębimy się w rzeczywistą implementację kodu, rzućmy okiem na zestaw danych. W tym artykule wykorzystano zestaw danych podany przez społeczność Tianchi. Zestaw danych ma na celu przewidzenie, czy użytkownik nie spłaca pożyczki",
+        "github_link": "",
+        "master": 3
+    }
+},
+{
+    "model": "projects.mainproject",
+    "pk": 1,
+    "fields": {
+        "profile": 1,
+        "is_public": true,
+        "cover": "project_cover/okladka-project-manager.png",
+        "image": "project_image/ec62299b-07e7-4491-b777-77f1cbe477ec.png",
+        "stack": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "projects.mainproject",
+    "pk": 2,
+    "fields": {
+        "profile": 1,
+        "is_public": true,
+        "cover": "project_cover/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png",
+        "image": "project_image/images.png",
+        "stack": [
+            1,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "projects.mainproject",
+    "pk": 3,
+    "fields": {
+        "profile": 1,
+        "is_public": true,
+        "cover": "project_cover/pobrane.jpg",
+        "image": "project_image/maxresdefault.jpg",
+        "stack": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "projects.projectstranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "project_name": "CSS Logos: Scalable Apple Photos logo",
+        "slug": "css-logos-scalable-apple-photos-logo",
+        "project_shortdescription": "It's been a while since I posted in the CSS Logos series, but I finally found some new inspiration.  In today's article, we'll recreate the apple photos logo and make it scalable!",
+        "project_fulldescription": "New to CSS design, no problem. You can follow along in this tutorial as we'll go through the whole process.\r\n\r\nNote: Throughout this article, I will use SCSS because it makes loops and variables easier!\r\n\r\nAnalysing the logo\r\nLet's first look at how the logo looks and see what we'll need from that.\r\n\r\nApple Photos logo\r\n\r\nThe logo consists of either petal that makes it look like a flow, they are positioned from the center, and each has its color and amount of rotation.\r\n\r\nKnowing this, let's set up our HTML as we need a container and eight-petal elements inside.\r\n<div class=\"container\">\r\n  <span class=\"petal\"></span>\r\n  <span class=\"petal\"></span>\r\n  <span class=\"petal\"></span>\r\n  <span class=\"petal\"></span>\r\n  <div class=\"petal\"></div>\r\n  <span class=\"petal\"></span>\r\n  <span class=\"petal\"></span>\r\n  <span class=\"petal\"></span>\r\n</div>\r\nNow let's add the variables we need.\r\nAs mentioned, we will make the logo scalable to let's define a root start size CSS variable.\r\n:root {\r\n  --size: 15rem;\r\n}\r\nThen for our main HTML, we set everything to the center and chose a more awesome font.\r\nhtml {\r\n  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;\r\n  display: grid;\r\n  place-items: center;\r\n  min-height: 100vh;\r\n}\r\nAnd our container div will receive this initial size and some additional styling.\r\n.container {\r\n  width: var(--size);\r\n  height: var(--size);\r\n  background: #fff;\r\n  border-radius: 16.667%;\r\n  display: grid;\r\n  place-items: center;\r\n  position: relative;\r\n  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);\r\n  transition: all 0.5s ease-in-out;\r\n}\r\nNow it's time to start working on our petals. We set the basic width and height. Let's use percentage so it will support being scalable later on.\r\n.petal {\r\n  height: 37.5%;\r\n  width: 22.5%;\r\n  border-radius: 50% / 30%;\r\n  position: absolute;\r\n  top: 10%;\r\n}\r\nNow all the petals are sitting on top of each other.\r\nWe first want to address the transform-origin, as we want them to transform from the center out.\r\n.petal {\r\n  transform-origin: center 105%;\r\n}\r\nA little side note on the calculations we did above.\r\n\r\nWe have two petals sitting on top of each other (top to bottom) which calculates 2x37.5% (height), which comes down to 75%, then we add 105% in the center so we can add the 5% once.\r\nThis leaves 20% for the top and bottom, so we have a perfectly aligned element by setting the top to 10%.\r\n\r\nThen we also want to create a loop to set some variables for each petal.\r\nFor this, I'll use an SCSS loop.",
+        "github_link": "a",
+        "master": 1
+    }
+},
+{
+    "model": "projects.projectstranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "pl",
+        "project_name": "Logo CSS: Skalowalne logo zdjęć Apple",
+        "slug": "logo-css-skalowalne-logo-zdjec-apple",
+        "project_shortdescription": "Minęło trochę czasu, odkąd pisałem w serii CSS Logos, ale w końcu znalazłem nową inspirację. W dzisiejszym artykule odtworzymy logo zdjęć jabłek i uczynimy je skalowalnym!",
+        "project_fulldescription": "Teraz dodajmy potrzebne nam zmienne. Jak wspomniano, sprawimy, że logo będzie skalowalne, aby zdefiniować zmienną CSS głównego rozmiaru początkowego. :źródło { --rozmiar: 15rem; } Następnie dla naszego głównego kodu HTML ustawiliśmy wszystko na środku i wybraliśmy bardziej niesamowitą czcionkę. html { rodzina czcionek: Roboto, „Helvetica Neue”, Arial, bezszeryfowy; wyświetlacz: siatka; miejsce-przedmioty: centrum; wysokość min: 100vh; } A nasz div kontenera otrzyma ten początkowy rozmiar i dodatkową stylizację. .pojemnik { szerokość: var(--rozmiar); wysokość: var(--rozmiar); tło: #fff; promień graniczny: 16,667%; wyświetlacz: siatka; miejsce-przedmioty: centrum; pozycja: względna; box-shadow: 0px 0px 10px 1px rgba (0, 0, 0, 0,2); przejście: wszystkie 0,5 s luzu; } Teraz czas zacząć pracę nad naszymi płatkami. Ustalamy podstawową szerokość i wysokość. Użyjmy procentu, aby później obsługiwał skalowalność. płatek { wzrost: 37,5%; szerokość: 22,5%; promień graniczny: 50% / 30%; pozycja: bezwzględna; góra: 10%; } Teraz wszystkie płatki siedzą jeden na drugim. Najpierw chcemy zająć się źródłem transformacji, ponieważ chcemy, aby przekształcały się od środka. płatek { transform-origin: centrum 105%; } Mała uwaga na temat obliczeń, które wykonaliśmy powyżej. Mamy dwa płatki siedzące jeden na drugim (od góry do dołu), co oblicza 2x37,5% (wysokość), co sprowadza się do 75%, a następnie dodajemy 105% na środku, więc możemy dodać 5% raz. Pozostawia to 20% na górę i dół, więc mamy idealnie wyrównany element, ustawiając górę na 10%. Następnie chcemy również stworzyć pętlę, aby ustawić kilka zmiennych dla każdego płatka. W tym celu użyję pętli SCSS.",
+        "github_link": "",
+        "master": 1
+    }
+},
+{
+    "model": "projects.projectstranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "project_name": "You don't need a JavaScript library for your components",
+        "slug": "you-dont-need-a-javascript-library-for-your-components",
+        "project_shortdescription": "Have you ever asked yourself how many times you wrote a Button component using different libraries or frameworks? Components are the base block of any Web project, but with all the changes and new frameworks appearing, it can be hard to reuse or keep them updated.",
+        "project_fulldescription": "As a result, increasing the development time.\r\n\r\nTo solve this problem, Web Components can simplify this process since they work natively with the Browsers and can also be integrated into any JS Framework/Library.\r\n\r\nYou must understand HTML, CSS, and Javascript before getting started.\r\n\r\nIn the end, you will comprehend how to create and integrate a Web Component. I will provide links containing the example while sharing my experience, caveats, and solutions I found for the most common problems when starting to develop native Web Components.\r\n\r\nWhat is a Web Component?\r\nA Web Component is a way to create an encapsulated, single-responsibility code block that can be reused on any page.\r\n\r\nThe Web Component technology is older and more used than most people know. The <audio>, <meter>, <video>, and many other HTML tags are implemented in each Browser with Web Component (like) technology. But, that technology was not available externally. So, what we now call \"Web Components\" (Custom Elements API, Templates, Shadow DOM) is that very same technology available to us all.\r\n\r\nBuilding Blocks of a Web Component\r\nThe main features you need to understand to start creating your own components are:\r\n\r\nShadow DOM\r\nHTML Templates\r\nCustom Elements\r\nFor this tutorial, you are going to build an alert component.\r\n\r\nCustom Alert Element\r\n\r\nShadow DOM\r\nA key aspect of web components is encapsulation — keeping the markup structure, style, and behavior hidden and separate from other code on the page so that different parts do not clash and the code can be kept nice and clean. The Shadow DOM API is crucial, providing a way to attach a hidden separated DOM to an element.\r\n\r\nShadow DOM allows hidden DOM trees to be attached to elements in the regular DOM tree — this shadow DOM tree starts with a shadow root, underneath which can be attached to any elements you want, in the same way as the standard DOM.\r\n\r\nShadowDOM Abstraction\r\n\r\nIn simple terms, shadow DOMs are self-contained, encapsulated blocks of code within a regular DOM that have their own scope.\r\n\r\nHTML Templates\r\nThe HTML Templates are where you create and add the HTML markup and the CSS. You just have to write your markup inside the <template> tag to use it.\r\n\r\nThe different aspect of the template is that it will be parsed but not rendered, so the template will appear in the DOM but not be presented on the page. To understand it better, let's look at the example below.\r\n<template>\r\n  <div class=\"alert\">\r\n    <span class=\"alert__text\">\r\n      <slot></slot>\r\n    </span>\r\n    <button id=\"close-button\" type=\"button\" class=\"alert__button\">x</button>\r\n  </div>\r\n</template>\r\nSince you don't have native support to import HTML files into the JavaScript code, the easier way to achieve this is to add a template tag via code in the JavaScript file and assign the HTML content to the innerHTML property.",
+        "github_link": "",
+        "master": 2
+    }
+},
+{
+    "model": "projects.projectstranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "pl",
+        "project_name": "Nie potrzebujesz biblioteki JavaScript dla swoich komponentów",
+        "slug": "nie-potrzebujesz-biblioteki-javascript-dla-swoich-komponentow",
+        "project_shortdescription": "Czy kiedykolwiek zastanawiałeś się, ile razy napisałeś komponent Button przy użyciu różnych bibliotek lub frameworków? Komponenty są podstawowym blokiem każdego projektu internetowego, ale przy wszystkich zmianach i pojawiających się nowych frameworkach, ich ponowne użycie lub aktualizowanie może być trudne.",
+        "project_fulldescription": "W rezultacie wydłużenie czasu rozwoju. Aby rozwiązać ten problem, komponenty sieciowe mogą uprościć ten proces, ponieważ działają natywnie z przeglądarkami i mogą być również zintegrowane z dowolnym frameworkiem/biblioteką JS. Zanim zaczniesz, musisz zrozumieć HTML, CSS i Javascript. W końcu zrozumiesz, jak stworzyć i zintegrować komponent sieciowy. Podam linki zawierające przykład podczas dzielenia się moim doświadczeniem, zastrzeżeniami i rozwiązaniami, które znalazłem dla najczęstszych problemów, gdy zaczynałem tworzyć natywne komponenty sieciowe. Co to jest składnik sieciowy? Składnik sieci Web to sposób na utworzenie zamkniętego bloku kodu z jedną odpowiedzialnością, który można ponownie wykorzystać na dowolnej stronie. Technologia Web Component jest starsza i częściej używana niż większość ludzi wie.",
+        "github_link": "",
+        "master": 2
+    }
+},
+{
+    "model": "projects.projects",
+    "pk": 1,
+    "fields": {
+        "profile": 1,
+        "is_public": true,
+        "image": "project_image/WhatsApp_Image_2022-06-11_at_14.15.28.jpeg",
+        "stack": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "projects.projects",
+    "pk": 2,
+    "fields": {
+        "profile": 1,
+        "is_public": true,
+        "image": "",
+        "stack": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 1,
+    "fields": {
+        "language_code": "en",
+        "stack": "HTML",
+        "master": 1
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 2,
+    "fields": {
+        "language_code": "en",
+        "stack": "Django",
+        "master": 2
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 3,
+    "fields": {
+        "language_code": "en",
+        "stack": "PostgreSQL",
+        "master": 3
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 4,
+    "fields": {
+        "language_code": "en",
+        "stack": "Adobe XD",
+        "master": 4
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 5,
+    "fields": {
+        "language_code": "pl",
+        "stack": "Adobe XD",
+        "master": 4
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 6,
+    "fields": {
+        "language_code": "pl",
+        "stack": "PostgreSQL",
+        "master": 3
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 7,
+    "fields": {
+        "language_code": "pl",
+        "stack": "Django",
+        "master": 2
+    }
+},
+{
+    "model": "projects.stacktranslation",
+    "pk": 8,
+    "fields": {
+        "language_code": "pl",
+        "stack": "HTML",
+        "master": 1
+    }
+},
+{
+    "model": "projects.stack",
+    "pk": 1,
+    "fields": {}
+},
+{
+    "model": "projects.stack",
+    "pk": 2,
+    "fields": {}
+},
+{
+    "model": "projects.stack",
+    "pk": 3,
+    "fields": {}
+},
+{
+    "model": "projects.stack",
+    "pk": 4,
+    "fields": {}
+},
+{
+    "model": "comments.comment",
+    "pk": 1,
+    "fields": {
+        "project": 6,
+        "text_en": "Thanks for the article!\r\n\r\nOne correction:\r\n\r\nfind(), finds an item in list else null\r\n\r\nfind() actually returns undefined if no value is matched in the array.",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "nikodem.roy@gmail.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 2,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "Świetny wpis z krótkimi i zwięzłymi przykładami!\r\nChciałbym dodać jeszcze jeden przykład destrukturyzacji tablic. Można wykorzystać fakt, że tablice są obiektami, a indeksy tablic są kluczami obiektów. Oznacza to, że z kluczem 0 otrzymujemy pierwszy element, ale co ważniejsze, z obliczonym kluczem właściwości, takim jak [length-2], możemy otrzymać element w środku tablicy, co nie jest możliwe w przypadku destrukcji tablicy i pozostałych parametrów:\r\n\r\nPrzetłumaczono z www.DeepL.com/Translator (wersja darmowa)",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Chris",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 3,
+    "fields": {
+        "project": 6,
+        "text_en": "Only english comment",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "English",
+        "user_email": "info@brovan.pl",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 4,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "Tylko po polsku",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Polsku",
+        "user_email": "pentagon24@gmail.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 5,
+    "fields": {
+        "project": 6,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@mat-sped.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 6,
+    "fields": {
+        "project": 6,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 7,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "asdasd",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 8,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "asdasd",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 9,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "asdasd",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 10,
+    "fields": {
+        "project": 6,
+        "text_en": "11111111111111",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 11,
+    "fields": {
+        "project": 6,
+        "text_en": "11111111111111",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 12,
+    "fields": {
+        "project": 7,
+        "text_en": "Great post with short and concise examples!\r\nI'd like to add one more example for array destructuring. You can use the fact that arrays are objects and the array indices are object keys. That means with key 0 you get the fist element, but more importantly with a computed property key like [length-2] you can get an element in the middle of the array which is not possible with array destructuring and rest parameters:",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "niki6017@wp.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 13,
+    "fields": {
+        "project": 7,
+        "text_en": "",
+        "text_pl": "ale gowno xD",
+        "is_new": false,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "niki6017@wp.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 14,
+    "fields": {
+        "project": 7,
+        "text_en": "Great post with short and concise examples! I'd like to add one more example for array destructuring. You can use the fact that arrays are objects and the array indices are object keys. That means with key 0 you get the fist element, but more importantly with a computed property key like [length-2] you can get an element in the middle of the array which is not possible with array destructuring and rest parameters:",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": false,
+        "user_name": "Nikodem",
+        "user_email": "niki6017@wp.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 15,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "",
+        "creation_date": "2022-06-19"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 16,
+    "fields": {
+        "project": 5,
+        "text_en": "",
+        "text_pl": "komentarz po polsku",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "nikodem.roy@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-20"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 17,
+    "fields": {
+        "project": 7,
+        "text_en": "",
+        "text_pl": "XD",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "asd",
+        "user_email": "pentagon24@gmail.com",
+        "ip": "192.168.8.132",
+        "creation_date": "2022-06-20"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 18,
+    "fields": {
+        "project": 7,
+        "text_en": "123123",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "niki6017@wp.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-20"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 19,
+    "fields": {
+        "project": 6,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 20,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 21,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 22,
+    "fields": {
+        "project": 7,
+        "text_en": "asd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "12",
+        "user_email": "pentagon24@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 23,
+    "fields": {
+        "project": 7,
+        "text_en": "123123",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "pentagon24@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 24,
+    "fields": {
+        "project": 7,
+        "text_en": "asd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "pentagon24@gmail.comasd",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 25,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "pentagon24@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 26,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "niki6017@wp.plas",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 27,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "niki6017@wp.pla",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 28,
+    "fields": {
+        "project": 6,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@mat-sped.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 29,
+    "fields": {
+        "project": 6,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 30,
+    "fields": {
+        "project": 2,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 31,
+    "fields": {
+        "project": 4,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "nikodem.roy@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 32,
+    "fields": {
+        "project": 7,
+        "text_en": "123",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@mat-sped.com1",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 33,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "info@brovan.pl",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 34,
+    "fields": {
+        "project": 7,
+        "text_en": "asdasd",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "a",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 35,
+    "fields": {
+        "project": 7,
+        "text_en": "a",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Nikodem",
+        "user_email": "zuzu.przybylska@gmail.com",
+        "ip": "127.0.0.1",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 36,
+    "fields": {
+        "project": 7,
+        "text_en": "Bahahdhdhsb",
+        "text_pl": "",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Hdaha",
+        "user_email": "info@mat-sped.com",
+        "ip": "192.168.8.132",
+        "creation_date": "2022-06-23"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 37,
+    "fields": {
+        "project": 7,
+        "text_en": "",
+        "text_pl": "komentarz",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "niki6017@wp.pl",
+        "ip": "192.168.8.133",
+        "creation_date": "2022-06-24"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 38,
+    "fields": {
+        "project": 6,
+        "text_en": "",
+        "text_pl": "komentarz po polsku",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "Adam",
+        "user_email": "info@brovan.pl",
+        "ip": "192.168.8.133",
+        "creation_date": "2022-06-24"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 39,
+    "fields": {
+        "project": 7,
+        "text_en": "",
+        "text_pl": "asdasdasdasdasd",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "asd",
+        "user_email": "asdasd@wp.pl",
+        "ip": "192.168.8.133",
+        "creation_date": "2022-07-01"
+    }
+},
+{
+    "model": "comments.comment",
+    "pk": 40,
+    "fields": {
+        "project": 2,
+        "text_en": "",
+        "text_pl": "mhhhh klej",
+        "is_new": true,
+        "is_public": true,
+        "user_name": "MHHHHH",
+        "user_email": "lubieplacki@wp.pl",
+        "ip": "192.168.1.58",
+        "creation_date": "2022-07-22"
+    }
+}
+]

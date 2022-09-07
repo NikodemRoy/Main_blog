@@ -9,16 +9,17 @@
 {% block css_style %}
 <link rel="stylesheet" href="{% static 'blog/css/project_detail.css' %}">{% endblock css_style %}
 {% block css_responsive %}
-<link rel="stylesheet" href="{% static 'blog/css_responsive/project_detail_responsive.css' %}">{% endblock css_responsive %}
+<link rel="stylesheet" href="{% static 'blog/css_responsive/project_detail_responsive.css' %}">
+{% endblock css_responsive %}
 
 
 {% block content %}
 
 <div class="main_section">
     <div class="container">
-        
+
         {% include 'includes/left_section.html' %}
-        
+
         <div class="right_section">
             <div class="top_section">
                 <div class="banner_image">
@@ -39,6 +40,17 @@
                         <img src="{% static 'images/image_first.jpg' %}" alt="image">
                     </div> -->
 
+                    <!-- <div class="container_image"> -->
+                        <p><img src="http://zamowsaune.pl/media/project_image/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png"
+                                alt="image"></p>
+                    <!-- </div> -->
+
+                    <div class="container_image">
+                        <p><img src="http://zamowsaune.pl/media/project_image/13-Things-You-Should-Know-Before-You-Enter-In-Web-Development.png"
+                                alt="image"></p>
+                    </div>
+
+
                     <!-- <div class="container_image second">
                         <img src="{% static 'images/image_second.jpg' %}" alt="image">
                     </div> -->
@@ -52,11 +64,11 @@
                         {% endfor %}
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
-        
+
     </div>
 
 </div>

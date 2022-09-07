@@ -2,80 +2,84 @@ let responsiveBarParent = document.getElementById("responsive-bar-parent");
 let navbarBarParent = document.getElementById("navbar-parent");
 
 document.querySelector('.adds').addEventListener('click', function () {
-    responsiveBarParent.classList.add("active")
-    navbarBarParent.classList.add("active")
+  responsiveBarParent.classList.add("active")
+  navbarBarParent.classList.add("active")
 })
 document.querySelector('.close').addEventListener('click', function () {
-    responsiveBarParent.classList.remove("active")
-    navbarBarParent.classList.remove("active")
+  responsiveBarParent.classList.remove("active")
+  navbarBarParent.classList.remove("active")
 })
 
 var linkToggle = document.querySelectorAll('.dropdown-toggle');
 
 for (i = 0; i < linkToggle.length; i++) {
 
-    linkToggle[i].addEventListener('click', function (event) {
+  linkToggle[i].addEventListener('click', function (event) {
 
-        event.preventDefault();
+    event.preventDefault();
 
-        var container = document.getElementById('dropdown-menu');
-        container.classList.toggle("active");
-        document.getElementById('category-nav-heading').classList.toggle('bb-0')
-        this.classList.toggle('rotate_span')
+    var container = document.getElementById('dropdown-menu');
+    container.classList.toggle("active");
+    document.getElementById('category-nav-heading').classList.toggle('bb-0')
+    this.classList.toggle('rotate_span')
 
 
 
-    });
+  });
 
 }
 
 
 function getScrollMaxY() {
-    "use strict";
-    var innerh = window.innerHeight || ebody.clientHeight,
-      yWithScroll = 0;
-  
-    if (window.innerHeight && window.scrollMaxY) {
-      // Firefox 
-      yWithScroll = window.innerHeight + window.scrollMaxY;
-    } else if (document.body.scrollHeight > document.body.offsetHeight) {
-      // all but Explorer Mac 
-      yWithScroll = document.body.scrollHeight;
+  "use strict";
+  var innerh = window.innerHeight || ebody.clientHeight,
+    yWithScroll = 0;
+
+  if (window.innerHeight && window.scrollMaxY) {
+    // Firefox 
+    yWithScroll = window.innerHeight + window.scrollMaxY;
+  } else if (document.body.scrollHeight > document.body.offsetHeight) {
+    // all but Explorer Mac 
+    yWithScroll = document.body.scrollHeight;
+  } else {
+    // works in Explorer 6 Strict, Mozilla (not FF) and Safari 
+    yWithScroll = document.body.offsetHeight;
+  }
+  return yWithScroll - innerh;
+}
+
+function setEqualHeight() {
+  let scrollAblepx = getScrollMaxY();
+  // var maxscroll = window.scrollMaxY
+  let innerWidth = window.innerWidth
+  if (innerWidth < 768) {
+    if (scrollAblepx < 105) {
+      document.querySelector(".footer").classList.add("no_scroll");
     } else {
-      // works in Explorer 6 Strict, Mozilla (not FF) and Safari 
-      yWithScroll = document.body.offsetHeight;
+      document.querySelector(".footer").classList.remove("no_scroll");
     }
-    return yWithScroll - innerh;
-  }
-  
-  function setEqualHeight() {
-    let scrollAblepx = getScrollMaxY();
-    // var maxscroll = window.scrollMaxY
-    let innerWidth = window.innerWidth
-    if(innerWidth<768){
-      if (scrollAblepx < 105) {
-        document.querySelector(".footer").classList.add("no_scroll");
-      } else {
-        document.querySelector(".footer").classList.remove("no_scroll");
-      }
-  
-    }else{
-      if (scrollAblepx < 5) {
-        document.querySelector(".footer").classList.add("no_scroll");
-      } else {
-        document.querySelector(".footer").classList.remove("no_scroll");
-      }
-  
+
+  } else {
+    if (scrollAblepx < 5) {
+      document.querySelector(".footer").classList.add("no_scroll");
+    } else {
+      document.querySelector(".footer").classList.remove("no_scroll");
     }
-    
+
   }
-  setEqualHeight();
-  window.onresize = setEqualHeight;
 
+}
+setEqualHeight();
+window.onresize = setEqualHeight;
 
+// var s = document.getElementById('messag').style;
+// s.opacity = 1;
+// (function fade(){(s.opacity-=0)<0?s.display="none":setTimeout(fade,400)})();
 
-// var button = document.getElementById('save_btn');
-
+setTimeout(() => {
+  const box = document.getElementById('messag');
+  box.style.display = 'none';
+}, 3200);
 // button.onclick = function () {
 
 //     // this adds the 'active' class to the classes that the element already has
@@ -92,3 +96,4 @@ function getScrollMaxY() {
 //         document.querySelector('form').submit();
 //     }
 // });
+

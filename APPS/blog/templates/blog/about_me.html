@@ -21,7 +21,7 @@
             <div class="top_section">
                 <h3 class="heading_text">{% trans 'About Me' %}</h3>
                 <div class="details_text">
-                    <p>{{profile.full_text}}</p>
+                    <p>{{profile.full_text|safe}}</p>
                 </div>
 
                 <h3 class="heading_text">{% trans 'My Skills:' %}</h3>
@@ -31,7 +31,7 @@
 
                     <div class="single_details">
                         <h5>{{mainskill.skill_name}}</h5>
-                        <p>{{mainskill.skill_description}}</p>
+                        <p>{{mainskill.skill_description|safe}}</p>
                     </div>
 
                     {% endfor %}
