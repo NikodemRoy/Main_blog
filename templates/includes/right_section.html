@@ -62,7 +62,7 @@
                 <div class="list_items">
 
                     {% for tag in tag_list %}
-                    <a href="{% url 'home' %}search/?search={{tag}}"><span>#</span>{{tag}}</a>
+                    <a href="{% url 'search' %}?search={{tag}}"><span>#</span>{{tag}}</a>
                     {% endfor %}
 
                 </div>
