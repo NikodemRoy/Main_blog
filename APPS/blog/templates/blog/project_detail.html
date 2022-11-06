@@ -5,6 +5,13 @@
 
 {% block title %}Blog{% endblock title %}
 
+{% block head_script %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/docco.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>
+    hljs.highlightAll();
+</script>
+{% endblock head_script %}
 
 {% block css_style %}
 <link rel="stylesheet" href="{% static 'blog/css/project_detail.css' %}">{% endblock css_style %}
@@ -33,7 +40,7 @@
                     </div>
 
                     <div class="para_text">
-                        <p>{{project.project_fulldescription}}</p>
+                        <p>{{project.project_fulldescription|safe}}</p>
                     </div>
 
                     <!-- <div class="container_image first">
