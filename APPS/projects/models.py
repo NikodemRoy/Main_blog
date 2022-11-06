@@ -64,3 +64,20 @@ class Stack(TranslatableModel):
     def __str__(self):
         return self.stack
 
+class MainprojectImage(models.Model):
+    main_project = models.ForeignKey(Mainproject, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='project_image', blank=True)
+    alt_pl = models.CharField(max_length=255, blank=True)
+    alt_en = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return f'project: {self.main_project}'
+
+class ProjectImage(models.Model):
+    main_project = models.ForeignKey(Projects, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='project_image', blank=True)
+    alt_pl = models.CharField(max_length=255, blank=True)
+    alt_en = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return f'project: {self.main_project}'
